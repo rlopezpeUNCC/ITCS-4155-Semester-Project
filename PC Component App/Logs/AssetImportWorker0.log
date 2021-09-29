@@ -1,289 +1,171 @@
-Unity Editor version:    2020.3.17f1 (a4537701e4ab)
-Branch:                  2020.3/staging
-Build type:              Release
-Batch mode:              YES
-macOS version:           Version 11.4 (Build 20F71)
-Darwin version:          20.5.0
-Architecture:            x86_64
-Running under Rosetta:   YES
-Available memory:        16384 MB
 Using pre-set license
-Pro License: NO
+Built from '2020.3/staging' branch; Version is '2020.3.17f1 (a4537701e4ab) revision 10769271'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Education; OS build 19042.1237; Version 2009; 64bit' Language: 'en' Physical Memory: 16291 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/MacOS/Unity
+C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/Users/chica/uncc/fall2021/ITCS4155/ITCS-4155-Semester-Project/PC Component App
+C:/Users/chica/UNCC/fall 2021/ITCS 4155/ITCS-4155-Semester-Project/PC Component App
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49374
-Successfully changed project path to: /Users/chica/uncc/fall2021/ITCS4155/ITCS-4155-Semester-Project/PC Component App
-/Users/chica/uncc/fall2021/ITCS4155/ITCS-4155-Semester-Project/PC Component App
+59548
+Successfully changed project path to: C:/Users/chica/UNCC/fall 2021/ITCS 4155/ITCS-4155-Semester-Project/PC Component App
+C:/Users/chica/UNCC/fall 2021/ITCS 4155/ITCS-4155-Semester-Project/PC Component App
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 24.06 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 26.55 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.17f1 (a4537701e4ab)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/chica/uncc/fall2021/ITCS4155/ITCS-4155-Semester-Project/PC Component App/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/chica/UNCC/fall 2021/ITCS 4155/ITCS-4155-Semester-Project/PC Component App/Assets
 GfxDevice: creating device client; threaded=0
-2021-09-29 10:01:41.266 Unity[32415:962595] (null) preferred device: Apple M1 (high power)
-2021-09-29 10:01:41.267 Unity[32415:962595] Metal devices available: 1
-2021-09-29 10:01:41.267 Unity[32415:962595] 0: Apple M1 (high power)
-2021-09-29 10:01:41.267 Unity[32415:962595] Using device Apple M1 (high power)
-Initializing Metal device caps: Apple M1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1e89)
+    Vendor:   
+    VRAM:     5968 MB
+    Driver:   30.0.14.7196
 Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = '/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56415
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56264
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000387 seconds.
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 25.62 ms, found 2 plugins.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001740 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 25.83 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.914 seconds
+- Completed reload, in  0.856 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1914ms)
-		BeginReloadAssembly (69ms)
+	ReloadAssembly (857ms)
+		BeginReloadAssembly (43ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (3ms)
-		EndReloadAssembly (812ms)
-			LoadAssemblies (66ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (332ms)
+			LoadAssemblies (41ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (178ms)
+			SetupTypeCache (124ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (444ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (127ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (26ms)
-				BeforeProcessingInitializeOnLoad (21ms)
-				ProcessInitializeOnLoadAttributes (293ms)
-				ProcessInitializeOnLoadMethodAttributes (94ms)
+				BeforeProcessingInitializeOnLoad (13ms)
+				ProcessInitializeOnLoadAttributes (62ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (1ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001009 seconds.
+Registered in 0.003223 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.172 seconds
+- Completed reload, in  0.904 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2173ms)
-		BeginReloadAssembly (239ms)
+	ReloadAssembly (905ms)
+		BeginReloadAssembly (122ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (27ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (39ms)
-		EndReloadAssembly (1843ms)
-			LoadAssemblies (147ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (728ms)
+			LoadAssemblies (68ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (305ms)
+			SetupTypeCache (235ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (1104ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (310ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
-				SetLoadedEditorAssemblies (2ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (104ms)
-				ProcessInitializeOnLoadAttributes (964ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (31ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Validating Project structure ... 0.000545 seconds.
-Shader import version has changed; will reimport all shaders...
-Upgrading shader files ...0.008293 seconds.
-Application.AssetDatabase Initial Script Refresh Start
-RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
-RefreshProfiler: Total: 0.000ms
-Application.AssetDatabase Initial Script Refresh End
-Application.AssetDatabase.Refresh Start
-Application.AssetDatabase.Refresh End
-RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
-RefreshProfiler: Total: 0.000ms
-Launching external process: /Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Initializing Unity extensions:
-[C# Project] Writing /Users/chica/uncc/fall2021/ITCS4155/ITCS-4155-Semester-Project/PC Component App/PC Component App.sln because it has changed
-[C# Project] First difference on line 4
-
-[C# Project] Current /Users/chica/uncc/fall2021/ITCS4155/ITCS-4155-Semester-Project/PC Component App/PC Component App.sln:
-[C# Project]   004: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{E2FB5FDB-0E5F-CD05-7A77-02286AF38CE9}"
-[C# Project]   005: EndProject
-[C# Project]   006: Global
-[C# Project]   007: 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-[C# Project]   008: 		Debug|Any CPU = Debug|Any CPU
-
-[C# Project] New /Users/chica/uncc/fall2021/ITCS4155/ITCS-4155-Semester-Project/PC Component App/PC Component App.sln:
-[C# Project]   004: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.TestRunner", "UnityEngine.TestRunner.csproj", "{380DB456-3D22-07F8-666E-A5649F2F1314}"
-[C# Project]   005: EndProject
-[C# Project]   006: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.UI.Tests", "UnityEngine.UI.Tests.csproj", "{A22B4635-8D06-29FE-9649-604E5DEEDADF}"
-[C# Project]   007: EndProject
-[C# Project]   008: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Timeline", "Unity.Timeline.csproj", "{5D853AB2-79A2-B8A1-8227-203ADB7613D2}"
-[C# Project] Writing /Users/chica/uncc/fall2021/ITCS4155/ITCS-4155-Semester-Project/PC Component App/Assembly-CSharp.csproj because it has changed
-[C# Project] First difference on line 642
-
-[C# Project] Current /Users/chica/uncc/fall2021/ITCS4155/ITCS-4155-Semester-Project/PC Component App/Assembly-CSharp.csproj:
-[C# Project]   642:  <Reference Include="Unity.VSCode.Editor">
-[C# Project]   643:  <HintPath>/Users/chica/uncc/fall2021/ITCS4155/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-[C# Project]   644:  </Reference>
-[C# Project]   645:  <Reference Include="Unity.TextMeshPro.Editor">
-[C# Project]   646:  <HintPath>/Users/chica/uncc/fall2021/ITCS4155/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-
-[C# Project] New /Users/chica/uncc/fall2021/ITCS4155/ITCS-4155-Semester-Project/PC Component App/Assembly-CSharp.csproj:
-[C# Project]   642:   </ItemGroup>
-[C# Project]   643:   <ItemGroup>
-[C# Project]   644:     <ProjectReference Include="Unity.VSCode.Editor.csproj">
-[C# Project]   645:       <Project>{A3052F5A-7E7D-7916-6E1F-7A2A1D1EE9C3}</Project>
-[C# Project]   646:       <Name>Unity.VSCode.Editor</Name>
 ========================================================================
 Worker process is ready to serve import requests
-Refreshing native plugins compatible for Editor in 0.17 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1412 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 162.2 MB.
-System memory in use after: 161.4 MB.
+Unloading 1411 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.6 MB.
+System memory in use after: 67.7 MB.
 
-Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 1884.
-Total: 2.502625 ms (FindLiveObjects: 0.081625 ms CreateObjectMapping: 0.030500 ms MarkObjects: 1.952333 ms  DeleteObjects: 0.437333 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1844.
+Total: 3.148000 ms (FindLiveObjects: 0.215400 ms CreateObjectMapping: 0.043200 ms MarkObjects: 2.807800 ms  DeleteObjects: 0.080100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/3D Models/uploads_files_618244_Tower+pc.obj
-  artifactKey: Guid(5385f4d2b83244a359c5d175b531601c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/uploads_files_618244_Tower+pc.obj using Guid(5385f4d2b83244a359c5d175b531601c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77666486b35813a4423578aff2f35451') in 1.262319 seconds 
-  Import took 1.264508 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 42.833867 seconds.
-  path: Assets/3D Models/uploads_files_618244_Tower+pc.FBX
-  artifactKey: Guid(e54a57286a2204d6e83e3cb3ad99fc64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/uploads_files_618244_Tower+pc.FBX using Guid(e54a57286a2204d6e83e3cb3ad99fc64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91e47d6111bd33ce943b0670eec5f76b') in 0.626164 seconds 
-  Import took 0.628219 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 70.867520 seconds.
-  path: Assets/3D Models/Gigabyte Shassis.max
-  artifactKey: Guid(9a95f9c35543b4310a52b8f994c3966a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/Gigabyte Shassis.max using Guid(9a95f9c35543b4310a52b8f994c3966a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85a0ddc3ddb2ee669fcf0c2e2e4f9d89') in 0.173232 seconds 
-  Import took 0.175783 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 195.312208 seconds.
-  path: Assets/3D Models/Processor.c4d
-  artifactKey: Guid(a04c710c4414448f187fb60a31f6c95b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/Processor.c4d using Guid(a04c710c4414448f187fb60a31f6c95b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Assets/3D Models/Processor.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-
- -> (artifact id: '3427c123edade6a015390e231b04ca63') in 0.100434 seconds 
-  Import took 0.104790 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 74.582334 seconds.
   path: Assets/3D Models/power.obj
   artifactKey: Guid(3dc23abc3ad9142859f3070fa6dd4fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/power.obj using Guid(3dc23abc3ad9142859f3070fa6dd4fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dce915711df123b710f9cbaef7b0ab41') in 0.037115 seconds 
-  Import took 0.039889 seconds .
+Start importing Assets/3D Models/power.obj using Guid(3dc23abc3ad9142859f3070fa6dd4fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '291b26a057d1f04b40005bfa568ff1eb') in 0.216832 seconds 
+  Import took 0.219469 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003355 seconds.
-  path: Assets/3D Models/power.obj
-  artifactKey: Guid(3dc23abc3ad9142859f3070fa6dd4fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/power.obj using Guid(3dc23abc3ad9142859f3070fa6dd4fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dce915711df123b710f9cbaef7b0ab41') in 0.031843 seconds 
-  Import took 0.034403 seconds .
+  Time since last request: 0.000165 seconds.
+  path: Assets/3D Models
+  artifactKey: Guid(5efcbc97a41a94346a7bc4961f343a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models using Guid(5efcbc97a41a94346a7bc4961f343a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a9bf07db08d0c438ef00ed5b467dad7') in 0.004716 seconds 
+  Import took 0.006452 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.881678 seconds.
-  path: Assets/3D Models/power.3DS
-  artifactKey: Guid(e189c1fc7ee23456686fa42a8e6afd38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/power.3DS using Guid(e189c1fc7ee23456686fa42a8e6afd38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e036ae1a372d8d7fd51e3b378c579d4') in 6.033784 seconds 
-  Import took 6.045160 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 148.962496 seconds.
-  path: Assets/3D Models/motherboard.3ds
-  artifactKey: Guid(45674eaf433d94ca39ee51abb37dca34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/motherboard.3ds using Guid(45674eaf433d94ca39ee51abb37dca34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b34fcbe71a5054964101911677abc9') in 0.264134 seconds 
-  Import took 0.266628 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.324772 seconds.
-  path: Assets/3D Models/cpu_fan.blend
-  artifactKey: Guid(36f2d55da349e4700a6db77ee44b31b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cpu_fan.blend using Guid(36f2d55da349e4700a6db77ee44b31b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a68b10297046913b4918bf7d36515a2a') in 0.462936 seconds 
-  Import took 0.465005 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.991548 seconds.
-  path: Assets/3D Models/cpu_fan.blend1
-  artifactKey: Guid(12a5d083fce3749afa7477efe47331d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cpu_fan.blend1 using Guid(12a5d083fce3749afa7477efe47331d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac5d410cba585ed8483570d80a171efa') in 0.086096 seconds 
-  Import took 0.088442 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.684652 seconds.
+  Time since last request: 0.000167 seconds.
   path: Assets/3D Models/chip.FBX
   artifactKey: Guid(a3bfe5036ffd14a219110e1a8daf1612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/chip.FBX using Guid(a3bfe5036ffd14a219110e1a8daf1612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dbf95b4ea1af4d798ed145f8c8d6ce4') in 0.017650 seconds 
-  Import took 0.019811 seconds .
+Start importing Assets/3D Models/chip.FBX using Guid(a3bfe5036ffd14a219110e1a8daf1612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '921ca1a92d141cf04aee55c4efa0cf15') in 0.195450 seconds 
+  Import took 0.197697 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.007623 seconds.
-  path: Assets/3D Models/chip.FBX
-  artifactKey: Guid(a3bfe5036ffd14a219110e1a8daf1612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/chip.FBX using Guid(a3bfe5036ffd14a219110e1a8daf1612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dbf95b4ea1af4d798ed145f8c8d6ce4') in 0.014360 seconds 
-  Import took 0.016206 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 98.425685 seconds.
+  Time since last request: 0.000159 seconds.
   path: Assets/3D Models/2080.obj
   artifactKey: Guid(b8ebaaa15c40240aa8425c8a33363b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/2080.obj using Guid(b8ebaaa15c40240aa8425c8a33363b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '336bf241fea5e632e793af189137b0c7') in 0.075702 seconds 
-  Import took 0.079976 seconds .
+Start importing Assets/3D Models/2080.obj using Guid(b8ebaaa15c40240aa8425c8a33363b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ff4b03438127c8553aca103e2bd9b14') in 0.090471 seconds 
+  Import took 0.094471 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/3D Models/motherboard.3ds
+  artifactKey: Guid(45674eaf433d94ca39ee51abb37dca34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/motherboard.3ds using Guid(45674eaf433d94ca39ee51abb37dca34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16957ffc68097f77bf8fb38f9ea23d32') in 0.161566 seconds 
+  Import took 0.164011 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
