@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.17f1 (a4537701e4ab) revision 10769271'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19041.928; Version 2004; 64bit' Language: 'en' Physical Memory: 16347 MB
+OS: 'Windows 10 Education; OS build 19042.1237; Version 2009; 64bit' Language: 'en' Physical Memory: 16291 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -11,113 +11,113 @@ C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Robert Lopez-Perez/Desktop/ITCS-4155-Semester-Project/PC Component App
+C:/Users/chica/UNCC/fall 2021/ITCS 4155/ITCS-4155-Semester-Project/PC Component App
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63711
-Successfully changed project path to: C:/Users/Robert Lopez-Perez/Desktop/ITCS-4155-Semester-Project/PC Component App
-C:/Users/Robert Lopez-Perez/Desktop/ITCS-4155-Semester-Project/PC Component App
+61272
+Successfully changed project path to: C:/Users/chica/UNCC/fall 2021/ITCS 4155/ITCS-4155-Semester-Project/PC Component App
+C:/Users/chica/UNCC/fall 2021/ITCS 4155/ITCS-4155-Semester-Project/PC Component App
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 33.72 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 27.00 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.17f1 (a4537701e4ab)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Robert Lopez-Perez/Desktop/ITCS-4155-Semester-Project/PC Component App/Assets
+[Subsystems] Discovering subsystems at path C:/Users/chica/UNCC/fall 2021/ITCS 4155/ITCS-4155-Semester-Project/PC Component App/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1e89)
     Vendor:   
-    VRAM:     6052 MB
-    Driver:   30.0.14.7212
+    VRAM:     5968 MB
+    Driver:   30.0.14.7196
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56336
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56320
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002207 seconds.
+Registered in 0.001805 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 29.52 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 26.84 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.049 seconds
+- Completed reload, in  0.860 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1049ms)
-		BeginReloadAssembly (53ms)
+	ReloadAssembly (860ms)
+		BeginReloadAssembly (42ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (413ms)
-			LoadAssemblies (51ms)
+		EndReloadAssembly (334ms)
+			LoadAssemblies (41ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (158ms)
+			SetupTypeCache (127ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (156ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (126ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (30ms)
+				RefreshPlugins (27ms)
 				BeforeProcessingInitializeOnLoad (13ms)
-				ProcessInitializeOnLoadAttributes (81ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
+				ProcessInitializeOnLoadAttributes (61ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004469 seconds.
+Registered in 0.003184 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.103 seconds
+- Completed reload, in  0.882 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1104ms)
-		BeginReloadAssembly (147ms)
+	ReloadAssembly (882ms)
+		BeginReloadAssembly (121ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (892ms)
-			LoadAssemblies (81ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (706ms)
+			LoadAssemblies (68ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (279ms)
+			SetupTypeCache (226ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (390ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (301ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (88ms)
-				ProcessInitializeOnLoadAttributes (278ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (13ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (225ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1411 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 67.6 MB.
-System memory in use after: 67.6 MB.
+System memory in use after: 67.7 MB.
 
 Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1844.
-Total: 2.381900 ms (FindLiveObjects: 0.135600 ms CreateObjectMapping: 0.049900 ms MarkObjects: 2.132600 ms  DeleteObjects: 0.062900 ms)
+Total: 2.861100 ms (FindLiveObjects: 0.211000 ms CreateObjectMapping: 0.051100 ms MarkObjects: 2.536400 ms  DeleteObjects: 0.062000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -126,7 +126,6 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
@@ -134,727 +133,31 @@ AssetImportParameters requested are different than current active one (requested
 Received Import Request.
   path: Assets/3D Models
   artifactKey: Guid(5efcbc97a41a94346a7bc4961f343a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models using Guid(5efcbc97a41a94346a7bc4961f343a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b481dc0977076c4b1067b11362c433c6') in 0.007548 seconds 
-  Import took 0.009659 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.602066 seconds.
-  path: Assets/3D Models/cpu_fan.fbx
-  artifactKey: Guid(0dfb8d17406b97d42ae7361f07497276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cpu_fan.fbx using Guid(0dfb8d17406b97d42ae7361f07497276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c12acc671c6d2bbd2521f62f806496f3') in 0.194361 seconds 
-  Import took 0.197408 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 752.287049 seconds.
-  path: Assets/3D Models/cpu_fan.blend
-  artifactKey: Guid(36f2d55da349e4700a6db77ee44b31b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cpu_fan.blend using Guid(36f2d55da349e4700a6db77ee44b31b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '172790bf184b4b8c44803091b79c1b40') in 0.104601 seconds 
-  Import took 0.118338 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 40.574992 seconds.
-  path: Assets/3D Models/cadnav.com_model
-  artifactKey: Guid(f25a860b3602d394fb6ac56cc7cecb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model using Guid(f25a860b3602d394fb6ac56cc7cecb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '108921cb0e366d8e9796a3f96af0a5ae') in 0.009736 seconds 
-  Import took 0.012066 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.030477 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058
-  artifactKey: Guid(5ea5575a11d5c1149beb451b9763b787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058 using Guid(5ea5575a11d5c1149beb451b9763b787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48401f199e8f99a3797dc82257b6428d') in 0.009930 seconds 
-  Import took 0.012067 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.071346 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/computer.fbx
-  artifactKey: Guid(3eee309d9cbb2604880a0da42223457d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/computer.fbx using Guid(3eee309d9cbb2604880a0da42223457d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '927583a290af23c32912746cfe06be0a') in 4.117873 seconds 
-  Import took 4.129141 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.497770 seconds.
-  path: Assets/3D Models/cadnav.com_model/Free 3D Models.url
-  artifactKey: Guid(82a3db7ac277ddc4a8cee76a33920536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Free 3D Models.url using Guid(82a3db7ac277ddc4a8cee76a33920536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66032e5a0986a062826ea0db6b5ed6a9') in 0.015010 seconds 
-  Import took 0.017237 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.823908 seconds.
-  path: Assets/3D Models/cadnav.com_model/readme.txt
-  artifactKey: Guid(dda40aa41ddd6134dbaf1fd872fc65dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/readme.txt using Guid(dda40aa41ddd6134dbaf1fd872fc65dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ed56d02a7278db91d1091f819566d78') in 0.014202 seconds 
-  Import took 0.016368 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.035046 seconds.
-  path: Assets/3D Models/cadnav.com_model/readme.txt
-  artifactKey: Guid(dda40aa41ddd6134dbaf1fd872fc65dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/readme.txt using Guid(dda40aa41ddd6134dbaf1fd872fc65dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ed56d02a7278db91d1091f819566d78') in 0.004710 seconds 
-  Import took 0.007324 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 138.382871 seconds.
-  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
-  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdddd331c3f1b7826858a8d92db67e39') in 0.068236 seconds 
-  Import took 0.070777 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
-  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '289988fcecf3b00d1602f8d2b589f7dd') in 0.082673 seconds 
-  Import took 0.084703 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cce1ea6eabc4d092294fe11ead0b46db') in 0.043050 seconds 
-  Import took 0.045167 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
-  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca0d2861f60500f05bd29199894f7bb5') in 0.083015 seconds 
-  Import took 0.085137 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
-  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1280cc7be10b532b2897fc8654f95d3') in 0.047864 seconds 
-  Import took 0.049984 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 149.769915 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/computer.fbx
-  artifactKey: Guid(3eee309d9cbb2604880a0da42223457d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/computer.fbx using Guid(3eee309d9cbb2604880a0da42223457d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08bd448fee1d02b8215460e85ae172ce') in 3.250175 seconds 
-  Import took 3.258117 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.752064 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials
-  artifactKey: Guid(3b2dcc4cabad7e74796c68fe0ec3423d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials using Guid(3b2dcc4cabad7e74796c68fe0ec3423d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7ea91c75b3fe97b4e689c3305015a18') in 0.008291 seconds 
-  Import took 0.011088 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.532682 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/0.mat
-  artifactKey: Guid(8c77dfc7f91b1c949828989b8e7ef182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/0.mat using Guid(8c77dfc7f91b1c949828989b8e7ef182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d16338bc4818c0731b8197aa91ddeda') in 0.015891 seconds 
-  Import took 0.018228 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/aa6e00.mat
-  artifactKey: Guid(4a0afec5939ad554f8cee6a763838911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/aa6e00.mat using Guid(4a0afec5939ad554f8cee6a763838911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '698576d95928e06da2737783f81522ef') in 0.023337 seconds 
-  Import took 0.027487 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/e0e0e.mat
-  artifactKey: Guid(f531440a55184ba41a737941a3d69800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/e0e0e.mat using Guid(f531440a55184ba41a737941a3d69800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3376ba846505262c4306fe706538eea') in 0.015552 seconds 
-  Import took 0.020090 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000096 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/1c1c1c.mat
-  artifactKey: Guid(7dce423c327b06d40908139814790ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/1c1c1c.mat using Guid(7dce423c327b06d40908139814790ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c10646961ec259be93990da0720d0b6') in 0.026321 seconds 
-  Import took 0.029303 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/136d0b.mat
-  artifactKey: Guid(822eb841072abc447abf12a48208475c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/136d0b.mat using Guid(822eb841072abc447abf12a48208475c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02b36683cb5d92f6fc8d0a01a87b3d05') in 0.018743 seconds 
-  Import took 0.021142 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/d3d3d3.mat
-  artifactKey: Guid(578293a6af40c434d8e1604c4431fbf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/d3d3d3.mat using Guid(578293a6af40c434d8e1604c4431fbf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b04fc6a86726926b66590fec87174f0') in 0.017592 seconds 
-  Import took 0.020369 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/70707.mat
-  artifactKey: Guid(7345f92f1f9d43b40bc204c554ed9207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/70707.mat using Guid(7345f92f1f9d43b40bc204c554ed9207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feda8644a00ce5687250fdc0e0d8b4ac') in 0.013307 seconds 
-  Import took 0.015651 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000107 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/a20a0a.mat
-  artifactKey: Guid(f1dc144be2e4813408b8903ca5271dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/a20a0a.mat using Guid(f1dc144be2e4813408b8903ca5271dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8461c154e22bef8ed244d9135ceca78c') in 0.015554 seconds 
-  Import took 0.019013 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000075 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/468c02.mat
-  artifactKey: Guid(a52b97e1e744a2f40b0727ed483f95f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/468c02.mat using Guid(a52b97e1e744a2f40b0727ed483f95f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0fdb30f645b1c0374b3b4ded63498f6') in 0.018551 seconds 
-  Import took 0.022927 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/252525.mat
-  artifactKey: Guid(8324a7569e3af504f8e6a9a89c43936e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/252525.mat using Guid(8324a7569e3af504f8e6a9a89c43936e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '323bc0d5e84749804eda5b28fd3fad18') in 0.012781 seconds 
-  Import took 0.015124 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/f0f0f.mat
-  artifactKey: Guid(08e64a59fa8c51e43a0a2e49aacb44a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/f0f0f.mat using Guid(08e64a59fa8c51e43a0a2e49aacb44a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b743b57982e6ad55ce9ff1b3664ff51') in 0.021840 seconds 
-  Import took 0.023937 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/111111.mat
-  artifactKey: Guid(b936bec017805fa499e85c6f7f071e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/111111.mat using Guid(b936bec017805fa499e85c6f7f071e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5124835970d3d699cc2a5e8105bf8b44') in 0.011656 seconds 
-  Import took 0.013836 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/90909.mat
-  artifactKey: Guid(09be2991ff7502e4ab47605c980b396b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/90909.mat using Guid(09be2991ff7502e4ab47605c980b396b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d4498890ca607927c89970d42afea7e') in 0.020621 seconds 
-  Import took 0.022893 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/898989.mat
-  artifactKey: Guid(0b77d2152a7145f4bb7a6265ef5df1b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/898989.mat using Guid(0b77d2152a7145f4bb7a6265ef5df1b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60222813f6f3f9460b3d18ce81e6d36c') in 0.017646 seconds 
-  Import took 0.020113 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/1e2d0e.mat
-  artifactKey: Guid(cc8186d8bda940c49adf7ebbabb02886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/1e2d0e.mat using Guid(cc8186d8bda940c49adf7ebbabb02886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85c20102ab977fab523a55e07168b625') in 0.014633 seconds 
-  Import took 0.017397 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000195 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/5e5e5e.mat
-  artifactKey: Guid(4900014fb49474848b714b3d4151bf8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/5e5e5e.mat using Guid(4900014fb49474848b714b3d4151bf8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aaf857c1d288805cfcceaa108b199a1') in 0.013327 seconds 
-  Import took 0.015524 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/acacac.mat
-  artifactKey: Guid(db452213de57dbe438aa79a7181464bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/acacac.mat using Guid(db452213de57dbe438aa79a7181464bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f40e55fc5ecb1937b3aa1700f06d054') in 0.017194 seconds 
-  Import took 0.019161 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/1e1e1e.mat
-  artifactKey: Guid(2aa07fd973f27794da6c73853c1122c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/1e1e1e.mat using Guid(2aa07fd973f27794da6c73853c1122c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '216b7462f62a757c5411dedc683d6cdf') in 0.014949 seconds 
-  Import took 0.017238 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/2b2b2b.mat
-  artifactKey: Guid(337bed72d0538614fada97dde715ff74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/2b2b2b.mat using Guid(337bed72d0538614fada97dde715ff74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e89988ff72a30f31a2d1c1d433d343d') in 0.017903 seconds 
-  Import took 0.020202 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/319d14.mat
-  artifactKey: Guid(b1578bbfe19090342b012361c429560f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/319d14.mat using Guid(b1578bbfe19090342b012361c429560f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '550665fc2590d8a6952d7920b138d40f') in 0.012215 seconds 
-  Import took 0.015150 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000245 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/8c8c8c.mat
-  artifactKey: Guid(ae20ba5c3a41ebc46a499fe12c53f048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/8c8c8c.mat using Guid(ae20ba5c3a41ebc46a499fe12c53f048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '188d18ea8c623a0588a19f29f4d51c8b') in 0.017696 seconds 
-  Import took 0.020166 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/5d5d5d.mat
-  artifactKey: Guid(c9e3caf6a4b62d044b74cb764c0f0061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/5d5d5d.mat using Guid(c9e3caf6a4b62d044b74cb764c0f0061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba75eb47eb1ab26b3f68b20e06514fa9') in 0.017296 seconds 
-  Import took 0.019801 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/b0b0b0.mat
-  artifactKey: Guid(44b26445bf2f28d45bd59963376e25e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/b0b0b0.mat using Guid(44b26445bf2f28d45bd59963376e25e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d36cf23f6987f1fbb28e404815d3348') in 0.026314 seconds 
-  Import took 0.028439 seconds .
+Start importing Assets/3D Models using Guid(5efcbc97a41a94346a7bc4961f343a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a9bf07db08d0c438ef00ed5b467dad7') in 0.008122 seconds 
+  Import took 0.009929 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000158 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/b7c08.mat
-  artifactKey: Guid(3fbcfeafd90846840b7b9c10b033169b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/b7c08.mat using Guid(3fbcfeafd90846840b7b9c10b033169b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '097e6d30667e601687e4ab56f057aa8a') in 0.019279 seconds 
-  Import took 0.021581 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/1ba0.mat
-  artifactKey: Guid(b6191af1d5df9e34f85ca431bdbe5bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/1ba0.mat using Guid(b6191af1d5df9e34f85ca431bdbe5bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c434f056a1bb85f76cf1801af4e3446') in 0.021419 seconds 
-  Import took 0.023833 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000083 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/1b1b1b.mat
-  artifactKey: Guid(223e34659073f964aa997beb0a5d1508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/1b1b1b.mat using Guid(223e34659073f964aa997beb0a5d1508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b026bf90a2c893823ab3787f0e093ee') in 0.021884 seconds 
-  Import took 0.024862 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/3a3939.mat
-  artifactKey: Guid(c0b7b84040b4b8247bd55ed10508e6e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/3a3939.mat using Guid(c0b7b84040b4b8247bd55ed10508e6e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '919bddaf1081b10d3844798edf8916a1') in 0.026867 seconds 
-  Import took 0.030206 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/7e7e7e.mat
-  artifactKey: Guid(477e591fa10458445afc0b491476be74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/7e7e7e.mat using Guid(477e591fa10458445afc0b491476be74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de710c3d2753a233cbbe3a0162253687') in 0.017241 seconds 
-  Import took 0.020153 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/3c3c3c.mat
-  artifactKey: Guid(5fa26730f512eb74e89d6cb4f118fd3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/3c3c3c.mat using Guid(5fa26730f512eb74e89d6cb4f118fd3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f72336ab33a295dede183b0cd1500702') in 0.043847 seconds 
-  Import took 0.045961 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/3f3f3f.mat
-  artifactKey: Guid(7f0b2f5b37e00d242ab47df02fdf9cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/3f3f3f.mat using Guid(7f0b2f5b37e00d242ab47df02fdf9cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8398404b39fde37f9b74f009d6fa8d0d') in 0.029742 seconds 
-  Import took 0.041002 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000090 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/565656.mat
-  artifactKey: Guid(e48035751149b454090feee5753f24df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/565656.mat using Guid(e48035751149b454090feee5753f24df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73bfbb936039f6fe445996f95403fdf5') in 0.018774 seconds 
-  Import took 0.023357 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/a0a0a0.mat
-  artifactKey: Guid(0afbbf9920e484043b40fa3a47182dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/a0a0a0.mat using Guid(0afbbf9920e484043b40fa3a47182dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df6a24da198597eb545a2c53732023ab') in 0.012236 seconds 
-  Import took 0.015489 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/414141.mat
-  artifactKey: Guid(6b99c521e95294143870c8074643418a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/414141.mat using Guid(6b99c521e95294143870c8074643418a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeb03d956cc380653ea53b1fcecafb09') in 0.017383 seconds 
-  Import took 0.019725 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/204ebe.mat
-  artifactKey: Guid(83bd0885ef3620c4dbd2d8a5124396c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/204ebe.mat using Guid(83bd0885ef3620c4dbd2d8a5124396c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '542aaf524afbd55c0ab79a41d382eca9') in 0.013973 seconds 
-  Import took 0.016429 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000095 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/202020.mat
-  artifactKey: Guid(710ae403406fc794f801cc1ec19e4e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/202020.mat using Guid(710ae403406fc794f801cc1ec19e4e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5022a967830f450078ffe80bb2cd764') in 0.020336 seconds 
-  Import took 0.022626 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/20202.mat
-  artifactKey: Guid(870ff3232f370fd46bcb464cf1dab12e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/20202.mat using Guid(870ff3232f370fd46bcb464cf1dab12e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2242473ebfba6a631f5cc1dbffd2f0d2') in 0.011736 seconds 
-  Import took 0.014114 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/212121.mat
-  artifactKey: Guid(fadd829f1df475c45ab031f3fb892d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/212121.mat using Guid(fadd829f1df475c45ab031f3fb892d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34bbf9bd47bfb889ce8fa03b5c15d909') in 0.016147 seconds 
-  Import took 0.018798 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/666666.mat
-  artifactKey: Guid(401cb0c72f6706a4591ad873e8aa8402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/666666.mat using Guid(401cb0c72f6706a4591ad873e8aa8402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80639c6403676f1daad05639f68cd465') in 0.015191 seconds 
-  Import took 0.017283 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/fe2020.mat
-  artifactKey: Guid(c1d0694b90f4ca34ea3b0d774126cf8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/fe2020.mat using Guid(c1d0694b90f4ca34ea3b0d774126cf8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96c205af3fde25089505ade3116df817') in 0.021941 seconds 
-  Import took 0.024967 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/f42843.mat
-  artifactKey: Guid(8cdf652ebe7d011438bb36f086830697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/f42843.mat using Guid(8cdf652ebe7d011438bb36f086830697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db885089f8c5369354c75f9ab652afbe') in 0.019631 seconds 
-  Import took 0.024015 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/694489.mat
-  artifactKey: Guid(b740ad265b82c774dbeeffc1b38eb6e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/694489.mat using Guid(b740ad265b82c774dbeeffc1b38eb6e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '467b76f7b6c85429713cc4f49a37eb1a') in 0.021252 seconds 
-  Import took 0.023812 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/353535.mat
-  artifactKey: Guid(3cd3746cb21eaf44fb4cddfca5d92f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/353535.mat using Guid(3cd3746cb21eaf44fb4cddfca5d92f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5584fd2e1ff10bf612df6d0b06fe82e') in 0.019668 seconds 
-  Import took 0.023255 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/848484.mat
-  artifactKey: Guid(1180c194daad1224686000a70286a14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/848484.mat using Guid(1180c194daad1224686000a70286a14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1c1090410635a3023f84d0f33229ecb') in 0.011113 seconds 
-  Import took 0.014341 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 66.262433 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/computer.fbx
-  artifactKey: Guid(3eee309d9cbb2604880a0da42223457d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/computer.fbx using Guid(3eee309d9cbb2604880a0da42223457d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c8bb30aee1d447a55a7d09457555aae') in 3.517843 seconds 
-  Import took 3.525489 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 55.334760 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-0.mat
-  artifactKey: Guid(39b561776137345469f1af425c8b55fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-0.mat using Guid(39b561776137345469f1af425c8b55fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1277eb49e5a6a4b25bee37afa809ef51') in 0.023967 seconds 
-  Import took 0.028717 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-136d0b.mat
-  artifactKey: Guid(34a90941b091bac439d322b639c1bd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-136d0b.mat using Guid(34a90941b091bac439d322b639c1bd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9141982690020cfb6e3c4250e9e69b95') in 0.012640 seconds 
-  Import took 0.015200 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-319d14.mat
-  artifactKey: Guid(9ef099ea9ccbb1f41bac92447af3418e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-319d14.mat using Guid(9ef099ea9ccbb1f41bac92447af3418e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ec45327c9f8f8a9b864206ab013e07d') in 0.020573 seconds 
-  Import took 0.023701 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-90909.mat
-  artifactKey: Guid(8a906fa840b875a4f9425c7475b874d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-90909.mat using Guid(8a906fa840b875a4f9425c7475b874d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c73fb08fd49d9d31593da86efd801fdf') in 0.022516 seconds 
-  Import took 0.024768 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-252525.mat
-  artifactKey: Guid(70acadb9e84639a4ea0de4d6533518da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-252525.mat using Guid(70acadb9e84639a4ea0de4d6533518da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7147ce6bc6de65d42499113591db79cf') in 0.031073 seconds 
-  Import took 0.033663 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-5d5d5d.mat
-  artifactKey: Guid(660f1fe488cbe26439dedd8064c7ae00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-5d5d5d.mat using Guid(660f1fe488cbe26439dedd8064c7ae00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c67c517edbaa6f64aa8844d9e1709c3c') in 0.014197 seconds 
-  Import took 0.016673 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000176 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-468c02.mat
-  artifactKey: Guid(013c091be06e1244d9fd63b912ea7f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-468c02.mat using Guid(013c091be06e1244d9fd63b912ea7f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '080b13f76220f8aecfde6d66f271a477') in 0.017027 seconds 
-  Import took 0.019878 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-414141.mat
-  artifactKey: Guid(a646b77a99da1c045a32f7cc79b53cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-414141.mat using Guid(a646b77a99da1c045a32f7cc79b53cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e695cbdcff300100c70ce989fd8af77') in 0.017637 seconds 
-  Import took 0.020080 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000160 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/computer.fbx
-  artifactKey: Guid(3eee309d9cbb2604880a0da42223457d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/computer.fbx using Guid(3eee309d9cbb2604880a0da42223457d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9444deabda44efad1a4cc0fa795bf2bd') in 4.153814 seconds 
-  Import took 4.165545 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-1ba0.mat
-  artifactKey: Guid(cf84d99c28794f048a907f2ef23ec2b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-1ba0.mat using Guid(cf84d99c28794f048a907f2ef23ec2b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27cdf1df1068ba65e8b10fc36269339a') in 0.023242 seconds 
-  Import took 0.025631 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-8c8c8c.mat
-  artifactKey: Guid(9c58f5e8eb177b94b915d422db49ed9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-8c8c8c.mat using Guid(9c58f5e8eb177b94b915d422db49ed9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f01c580400b454b28ceebeeccd394aa4') in 0.023003 seconds 
-  Import took 0.025426 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-3a3939.mat
-  artifactKey: Guid(ce0c8dc18d17468468b9cc4c041a7bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-3a3939.mat using Guid(ce0c8dc18d17468468b9cc4c041a7bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6b436ca3a7cf29553bcb99ee09d32d0') in 0.023952 seconds 
-  Import took 0.026990 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-5e5e5e.mat
-  artifactKey: Guid(47ea37befc436d94ab599b492537f1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-5e5e5e.mat using Guid(47ea37befc436d94ab599b492537f1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aacabdf2fbc08f1c434e64054d9bf3b4') in 0.020621 seconds 
-  Import took 0.023214 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-202020.mat
-  artifactKey: Guid(49c64b30e27a0a74493136641293668d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-202020.mat using Guid(49c64b30e27a0a74493136641293668d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20dd85f4e62a7b5955057e8fb27cae09') in 0.019885 seconds 
-  Import took 0.021950 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-111111.mat
-  artifactKey: Guid(f22230b8287d61547998d5640148c60c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-111111.mat using Guid(f22230b8287d61547998d5640148c60c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b47236f768ca7091d7c31f1eb0ecd93') in 0.019459 seconds 
-  Import took 0.022153 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-1c1c1c.mat
-  artifactKey: Guid(b912dec7f391c9e4ea85fb61f5bc9fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-1c1c1c.mat using Guid(b912dec7f391c9e4ea85fb61f5bc9fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c80063614d32db87c2decfe2d1d9d43') in 0.018687 seconds 
-  Import took 0.022016 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-1e1e1e.mat
-  artifactKey: Guid(a21007f413089ab40bf6acc8aec17728) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-1e1e1e.mat using Guid(a21007f413089ab40bf6acc8aec17728) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77ff48f8798f02ab7f38450abecd7e8') in 0.020037 seconds 
-  Import took 0.022552 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-7e7e7e.mat
-  artifactKey: Guid(2e13689896cb2b047871d17e44c546dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-7e7e7e.mat using Guid(2e13689896cb2b047871d17e44c546dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae3ee47ec5e5ae723e8a18ae41a34e82') in 0.019193 seconds 
-  Import took 0.021609 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-204ebe.mat
-  artifactKey: Guid(21855dafa940b4b4999cdd3431189950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-204ebe.mat using Guid(21855dafa940b4b4999cdd3431189950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6733e80d6e14b3875f1830ecd3544ee6') in 0.016442 seconds 
-  Import took 0.018759 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000330 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-20202.mat
-  artifactKey: Guid(0d1d4f6605e3e43478193b807d61c074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-20202.mat using Guid(0d1d4f6605e3e43478193b807d61c074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '507f118cb81c75477afc026e4bbb9ec6') in 0.017890 seconds 
-  Import took 0.020173 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-212121.mat
-  artifactKey: Guid(7e5206ded814d8144b2cc5167f41f242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-212121.mat using Guid(7e5206ded814d8144b2cc5167f41f242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3896ca64afce1521edba4e2720027627') in 0.017813 seconds 
-  Import took 0.019926 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-70707.mat
-  artifactKey: Guid(58a74e5f73834734d95e49dc98eae272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-70707.mat using Guid(58a74e5f73834734d95e49dc98eae272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdab199e89a7cc9403824a1c4c6eb062') in 0.023659 seconds 
-  Import took 0.026139 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-3f3f3f.mat
-  artifactKey: Guid(830b3915579bcc547a93dd2048826cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-3f3f3f.mat using Guid(830b3915579bcc547a93dd2048826cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6be4305cb82c281f434bd116cd49a69') in 0.015851 seconds 
-  Import took 0.018597 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-1e2d0e.mat
-  artifactKey: Guid(bdeba643a924a3144a7739bdae1e9815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-1e2d0e.mat using Guid(bdeba643a924a3144a7739bdae1e9815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '513e9e8abe8dde5f5ba1b0e5ad91d996') in 0.025183 seconds 
-  Import took 0.027706 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-2b2b2b.mat
-  artifactKey: Guid(3fc058faa33dea24b978b357781b8340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-2b2b2b.mat using Guid(3fc058faa33dea24b978b357781b8340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09661e6963d447c5c3e5dc33b3300312') in 0.016410 seconds 
-  Import took 0.018856 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-3c3c3c.mat
-  artifactKey: Guid(b2a149156dd6e0b47b244d5788c446e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-3c3c3c.mat using Guid(b2a149156dd6e0b47b244d5788c446e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6834cbbd06164f7a41747477b18fbac3') in 0.020108 seconds 
-  Import took 0.024647 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000166 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-353535.mat
-  artifactKey: Guid(60c516a073d30174e9fe220ad91c2bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-353535.mat using Guid(60c516a073d30174e9fe220ad91c2bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b56e6b395cdfd4d335b242427739035') in 0.013073 seconds 
-  Import took 0.015348 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-1b1b1b.mat
-  artifactKey: Guid(fdafddf6e3af20e42a18e4e65c868c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav.com_model/Models_E0115A058/Materials/computer-1b1b1b.mat using Guid(fdafddf6e3af20e42a18e4e65c868c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd983940e0d4f20fc86031cb79932749b') in 0.017904 seconds 
-  Import took 0.020199 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 488.620920 seconds.
-  path: Assets/3D Models/cadnav-1P326194607.rar
-  artifactKey: Guid(aaaedccf9bc7907428039e9fd79c9581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/cadnav-1P326194607.rar using Guid(aaaedccf9bc7907428039e9fd79c9581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04f35c5223c9276f2e254616719c70bd') in 0.010889 seconds 
-  Import took 0.013336 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.722454 seconds.
-  path: Assets/3D Models/Old Models
-  artifactKey: Guid(50b462bd839f7b9439f052284d6405eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/Old Models using Guid(50b462bd839f7b9439f052284d6405eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7a0b135513fe27c81cf00d82642dc67') in 0.007230 seconds 
-  Import took 0.009596 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.305474 seconds.
   path: Assets/3D Models/Complete PC model
   artifactKey: Guid(f25a860b3602d394fb6ac56cc7cecb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D Models/Complete PC model using Guid(f25a860b3602d394fb6ac56cc7cecb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88fde1cad18bba0bdcd42db1da151d1d') in 0.007233 seconds 
-  Import took 0.009726 seconds .
+Start importing Assets/3D Models/Complete PC model using Guid(f25a860b3602d394fb6ac56cc7cecb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be198ee8b1ae47a1aebd99356fce2fe1') in 0.001792 seconds 
+  Import took 0.003590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.036769 seconds.
+  path: Assets/3D Models/Complete PC model/Models_E0115A058
+  artifactKey: Guid(5ea5575a11d5c1149beb451b9763b787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Complete PC model/Models_E0115A058 using Guid(5ea5575a11d5c1149beb451b9763b787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe62d5e42282d38d43c408f3c9d02668') in 0.006319 seconds 
+  Import took 0.008492 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.077979 seconds.
+  path: Assets/3D Models/Complete PC model/Models_E0115A058/computer.fbx
+  artifactKey: Guid(3eee309d9cbb2604880a0da42223457d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Complete PC model/Models_E0115A058/computer.fbx using Guid(3eee309d9cbb2604880a0da42223457d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73dd04964f04fa234f7aeace3252e160') in 2.635587 seconds 
+  Import took 2.642355 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
