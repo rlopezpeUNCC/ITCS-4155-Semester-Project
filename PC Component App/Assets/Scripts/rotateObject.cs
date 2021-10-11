@@ -1,24 +1,14 @@
-
+using System.Collections;
 using UnityEngine;	
 
 public class rotateObject : MonoBehaviour{
-
-	float rotX, rotY;
-	float speed, scale;
-
-	private void Start(){
-
-		speed = 5;
-		scale = 0.5f;
-	}	
+	float speed = 150;
 	
-	private void OnMouseDrag(){
+	void OnMouseDrag() {
+		float rotX = Input.GetAxis("Mouse X") * speed * Mathf.Deg2Rad;
+		float rotY = Input.GetAxis("Mouse Y") * speed * Mathf.Deg2Rad;
 
-		rotX += Input.GetAxis("Mouse X") * speed;
-		rotY += Input.GetAxis("Mouse Y") * speed;
-
-		Quaternion target = Quaternion.Euler(rotY, -rotX, 0);
-
-		transform.rotation = Quaternion.Slerp(transform.rotation, target, scale);
+		transform.Rotate(Vector3.right, rotY, Space.World);
+		transform.Rotate(Vector3.down, rotX, Space.World);
 	}
 }

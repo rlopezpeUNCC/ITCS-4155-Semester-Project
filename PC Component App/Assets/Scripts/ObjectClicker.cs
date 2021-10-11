@@ -3,8 +3,8 @@ using UnityEngine;
 public class ObjectClicker : MonoBehaviour {
 
     void Update() {
-        //checks if m1 is pressed
-        if (Input.GetMouseButtonDown(0)) {
+        //checks if m2 is pressed
+        if (Input.GetMouseButtonDown(1)) {
             RaycastHit hit;
             //sends out a raycast
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -12,7 +12,7 @@ public class ObjectClicker : MonoBehaviour {
             if (Physics.Raycast(ray, out hit, 100f)) {
                 //makes sure a object is hit, and not NULL
                 if (hit.transform) {
-                    PrintName(hit.transform.gameObject);
+                    PrintName(hit.collider.transform.gameObject);
                 }
             }
         }

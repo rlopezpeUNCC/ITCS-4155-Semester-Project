@@ -20,7 +20,7 @@ public class TableCheckBoxes : MonoBehaviour
             thisToggle.onValueChanged.AddListener(delegate {
                 ToggleValueChanged(thisToggle);
             });
-            print("Listener added for checkbox " + thisToggle.name);
+           // print("Listener added for checkbox " + thisToggle.name);
         }
     }
 
