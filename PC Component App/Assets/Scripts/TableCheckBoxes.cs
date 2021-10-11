@@ -27,6 +27,7 @@ public class TableCheckBoxes : MonoBehaviour
     // TODO: Show/hide computer part when its respective toggle is clicked
     void ToggleValueChanged(Toggle thisToggle)
     {
+        FindObjectOfType<AudioManager>().Play("ButtonClicked2");
         print("Checkbox " + thisToggle.name + " state = " + thisToggle.isOn);
     }
 }

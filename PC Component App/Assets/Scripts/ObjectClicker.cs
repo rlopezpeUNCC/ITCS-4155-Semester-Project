@@ -12,6 +12,7 @@ public class ObjectClicker : MonoBehaviour {
             if (Physics.Raycast(ray, out hit, 100f)) {
                 //makes sure a object is hit, and not NULL
                 if (hit.transform) {
+                    FindObjectOfType<AudioManager>().Play("ButtonClicked1");
                     PrintName(hit.collider.transform.gameObject);
                 }
             }
