@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -932,6 +932,7 @@ GameObject:
   m_Component:
   - component: {fileID: 88480070}
   - component: {fileID: 88480071}
+  - component: {fileID: 88480072}
   m_Layer: 0
   m_Name: CPU
   m_TagString: Untagged
@@ -967,6 +968,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0331764, y: 1.0180688, z: 41.487778}
   m_Center: {x: 0.042155385, y: 2.2561915, z: 20.243889}
+--- !u!114 &88480072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88480069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23a372609ab3f847b761952cadb44dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Generic CPU
 --- !u!1 &90799684
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,6 +991,7 @@ GameObject:
   m_Component:
   - component: {fileID: 90799685}
   - component: {fileID: 90799686}
+  - component: {fileID: 90799687}
   m_Layer: 0
   m_Name: GPU
   m_TagString: Untagged
@@ -1117,6 +1132,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &90799687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90799684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23a372609ab3f847b761952cadb44dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Generic GPU
 --- !u!1 &102163250
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,8 +1317,9 @@ GameObject:
   m_Component:
   - component: {fileID: 106573496}
   - component: {fileID: 106573497}
+  - component: {fileID: 106573498}
   m_Layer: 0
-  m_Name: Case Fan
+  m_Name: Case Cooling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1341,6 +1370,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.598153, y: 0.18205261, z: 1.3813467}
   m_Center: {x: 2.1254134, y: 1.7660115, z: 1.6965536}
+--- !u!114 &106573498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106573495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23a372609ab3f847b761952cadb44dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Generic Case Fan
 --- !u!1 &112633456
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,8 +1553,9 @@ GameObject:
   m_Component:
   - component: {fileID: 121314416}
   - component: {fileID: 121314417}
+  - component: {fileID: 121314418}
   m_Layer: 0
-  m_Name: PSU
+  m_Name: Power Supply
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1575,6 +1618,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.8364205, y: 1.9135876, z: 3.024569}
   m_Center: {x: -2.9914124, y: 1.2757645, z: 2.2952678}
+--- !u!114 &121314418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121314415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23a372609ab3f847b761952cadb44dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Generic PSU
 --- !u!1 &122928692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1824,8 +1880,9 @@ GameObject:
   - component: {fileID: 138283100}
   - component: {fileID: 138283102}
   - component: {fileID: 138283101}
+  - component: {fileID: 138283103}
   m_Layer: 0
-  m_Name: PC case
+  m_Name: Case
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1927,6 +1984,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.6621194, y: 0.17352962, z: 8.061016}
   m_Center: {x: 0.17325854, y: -0.0029492378, z: 0.067798615}
+--- !u!114 &138283103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138283099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23a372609ab3f847b761952cadb44dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Generic PC Case
 --- !u!1 &139988634
 GameObject:
   m_ObjectHideFlags: 0
@@ -3483,6 +3553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 258439152}
   - component: {fileID: 258439153}
+  - component: {fileID: 258439154}
   m_Layer: 0
   m_Name: Motherboard
   m_TagString: Untagged
@@ -3726,6 +3797,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.5885572, y: 0.26795673, z: 4.537068}
   m_Center: {x: 0.7940073, y: 0.67820024, z: 1.4744098}
+--- !u!114 &258439154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258439151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23a372609ab3f847b761952cadb44dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Generic Motherboard
 --- !u!1 &264972852
 GameObject:
   m_ObjectHideFlags: 0
@@ -23452,6 +23536,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1714514192}
   - component: {fileID: 1714514193}
+  - component: {fileID: 1714514194}
   m_Layer: 0
   m_Name: RAM
   m_TagString: Untagged
@@ -23518,6 +23603,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.2983885, y: 0.67219734, z: 1.2258747}
   m_Center: {x: 2.1141448, y: 1.0959435, z: 0.11293736}
+--- !u!114 &1714514194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714514191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23a372609ab3f847b761952cadb44dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Generic RAM
 --- !u!1 &1718451879
 GameObject:
   m_ObjectHideFlags: 0
@@ -34132,8 +34230,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6505083794693817233}
   - component: {fileID: 2113585665712417563}
+  - component: {fileID: 2113585665712417564}
   m_Layer: 0
-  m_Name: HDD/SSD Bays
+  m_Name: Storage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34152,6 +34251,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.8595548, y: 1.8256388, z: 2.0635238}
   m_Center: {x: -0.10155821, y: 0.4128194, z: -0.015577376}
+--- !u!114 &2113585665712417564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113585665712417562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23a372609ab3f847b761952cadb44dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Generic HDD?SSD Bays
 --- !u!4 &2126473769406620840
 Transform:
   m_ObjectHideFlags: 0
@@ -44834,6 +44946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4591739708695328729}
   - component: {fileID: 6421322022177150723}
+  - component: {fileID: 6421322022177150724}
   m_Layer: 0
   m_Name: Disc Drives
   m_TagString: Untagged
@@ -44854,6 +44967,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.1261282, y: 2.0741034, z: 2.3308754}
   m_Center: {x: -0.05183029, y: 0.032617092, z: -0.018915892}
+--- !u!114 &6421322022177150724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6421322022177150722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23a372609ab3f847b761952cadb44dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Generic Disc Drives
 --- !u!1 &6422683181799134987
 GameObject:
   m_ObjectHideFlags: 0
@@ -50617,8 +50743,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7093566343287887324}
   - component: {fileID: 8886204831920601392}
+  - component: {fileID: 8886204831920601393}
   m_Layer: 0
-  m_Name: CPU Fan
+  m_Name: CPU Cooling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50637,6 +50764,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1, z: 1.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8886204831920601393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8886204831920601391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23a372609ab3f847b761952cadb44dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Generic CPU Fan
 --- !u!33 &8889471606844545563
 MeshFilter:
   m_ObjectHideFlags: 0
