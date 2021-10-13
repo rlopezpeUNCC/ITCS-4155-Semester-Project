@@ -40,14 +40,16 @@ public class TableCheckBoxes : MonoBehaviour
     {
         // Find the tocParts member with the same name as the clicked toggle, then gather its children
         Renderer[] lChildRenderers=tocParts[thisToggle.name].GetComponentsInChildren<Renderer>();
-
+        
         // Show (or hide) each child until the part is fully shown/hidden
         if (thisToggle.isOn) { // Checked (Show)
+            tocParts[thisToggle.name].GetComponent<BoxCollider>().enabled = true; //enables collider
             foreach ( Renderer lRenderer in lChildRenderers)
             {
                 lRenderer.enabled=true;
             }
         } else { // Unchecked (Hide)
+            tocParts[thisToggle.name].GetComponent<BoxCollider>().enabled = false; //disables collider
             foreach ( Renderer lRenderer in lChildRenderers)
             {
                 lRenderer.enabled=false;
