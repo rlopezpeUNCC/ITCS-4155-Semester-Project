@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\TableCheckBoxes.cs" />
      <Compile Include="Assets\Scripts\Sound.cs" />
      <Compile Include="Assets\Scripts\AudioManager.cs" />
+     <Compile Include="Assets\Scripts\DetailedPartName.cs" />
      <Compile Include="Assets\Scripts\wheelZoom.cs" />
      <Compile Include="Assets\Scripts\ObjectClicker.cs" />
      <Compile Include="Assets\Scripts\rotateObject.cs" />

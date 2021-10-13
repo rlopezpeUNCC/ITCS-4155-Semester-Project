@@ -9,7 +9,7 @@ using System.Linq;
 public class TableCheckBoxes : MonoBehaviour
 {
     private List<Toggle> tocToggles; // list of checkboxes in ToC
-    Dictionary<string, Transform> tocParts; // dictionary of parts named by each toggle
+    public Dictionary<string, Transform> tocParts; // dictionary of parts named by each toggle
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class TableCheckBoxes : MonoBehaviour
         foreach (Transform child in parentComputer.transform)
         {
             tocParts.Add(child.name, child);
-            print("Added to tocParts: " + child.name);
+            // print("Added to tocParts: " + child.name);
         }
 
         // Make list of each Toggle in ToCPanel
