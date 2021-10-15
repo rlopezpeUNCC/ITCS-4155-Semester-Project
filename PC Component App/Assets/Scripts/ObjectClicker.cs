@@ -2,6 +2,9 @@ using UnityEngine;
 //currently attached to Main Camera
 public class ObjectClicker : MonoBehaviour {
 
+[SerializeField]
+ComponentMenu menu;
+
     void Update() {
         //checks if m2 is pressed
         if (Input.GetMouseButtonDown(1)) {
@@ -14,6 +17,9 @@ public class ObjectClicker : MonoBehaviour {
                 if (hit.transform) {
                     FindObjectOfType<AudioManager>().Play("ButtonClicked1");
                     PrintName(hit.collider.transform.gameObject);
+
+                    menu.DetailSetup(hit.collider.transform.gameObject.name);
+
                 }
             }
         }

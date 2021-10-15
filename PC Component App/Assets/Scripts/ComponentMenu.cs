@@ -38,7 +38,8 @@ public class ComponentMenu : MonoBehaviour
         CPU.price = "price";
 
         GraphicsCard.name = "name";
-        GraphicsCard.description = "description";
+        GraphicsCard.description = " A motherboard is the main printed circuit board in general-purpose computers and other expandable systems. "+
+        "It holds and allows communication between many of the crucial electronic components of a system, such as the central processing unit and memory, and provides connectors for other peripherals";
         GraphicsCard.price = "price";
 
         CPUCooler.name = "name";
@@ -79,26 +80,27 @@ public class ComponentMenu : MonoBehaviour
 
     public void DetailSetup (string component) {
         menu.active = true;
-
+        Debug.Log(component);
+        
         switch (component){
 
             case ("CPU"):
                 componentName.text = CPU.name;
-                componentName.text = CPU.description;
-                componentName.text = CPU.price;
+                componentDescription.text = CPU.description;
+                componentPrice.text = CPU.price;
 
                 break;
 
             case ("Motherboard"):
                 componentName.text = Motherboard.name;
-                componentName.text = Motherboard.description;
-                componentName.text = Motherboard.price;
+                componentDescription.text = Motherboard.description;
+                componentPrice.text = Motherboard.price;
                 break;
 
-            case ("GraphicsCard"):
+            case ("GPU"):
                 componentName.text = GraphicsCard.name;
-                componentName.text = GraphicsCard.description;
-                componentName.text = GraphicsCard.price;
+                componentDescription.text = GraphicsCard.description;
+                componentPrice.text = GraphicsCard.price;
                 break;
 
             case ("CPUCooler"):
