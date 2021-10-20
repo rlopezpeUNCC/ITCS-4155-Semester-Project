@@ -4,27 +4,26 @@ using UnityEngine;
 
 public class Highlight : MonoBehaviour
 {
-    Color hoverColor = Color.blue;
-    Color currentColor;
+    public Material startColor;
+    public Material mouseOverColor;
+    Renderer rend;
 
-    MeshRenderer mats;
+    void OnMouseEnter()
+    {
+        rend.sharedMaterial = mouseOverColor;
+    }
 
+    private void OnMouseExit()
+    {
+        rend.sharedMaterial = startColor;
+    }
     // Start is called before the first frame update
     void Start()
     {
-        mats = GetComponent<MeshRenderer>();
-        currentColor = mats.material.color;        
-    }
-
-    // Update is called once per frame
-    void OnMouseOver() 
-    {
-        mats.material.color = hoverColor;        
-    }
-
-    void OnMouseExit()
-    {
-        mats.material.color = currentColor;
-        
+        rend = GetComponent<Renderer>();
+        rend.enabled = true;
+        rend.sharedMaterial = startColor;
     }
 }
+
+  
