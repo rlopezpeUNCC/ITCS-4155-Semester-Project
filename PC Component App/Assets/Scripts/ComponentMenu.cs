@@ -117,7 +117,7 @@ public class ComponentMenu : MonoBehaviour
                 componentPrice.text = GraphicsCard.price;
                 break;
 
-            case ("CPU Cooler"):
+            case ("CPU Cooling"):
                 componentName.text = CPUCooler.name;
                 componentDescription.text = CPUCooler.description;
                 componentPrice.text = CPUCooler.price;
