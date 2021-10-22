@@ -42,10 +42,10 @@
      <Compile Include="Assets\Scripts\ComponentMenu.cs" />
      <Compile Include="Assets\Scripts\DetailedPartName.cs" />
      <Compile Include="Assets\Scripts\wheelZoom.cs" />
+     <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\ObjectClicker.cs" />
      <Compile Include="Assets\Scripts\rotateObject.cs" />
      <Compile Include="Assets\Scripts\TableButtons.cs" />
-     <Compile Include="Assets\Scripts\MainMenu.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
