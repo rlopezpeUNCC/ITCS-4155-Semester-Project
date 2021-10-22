@@ -76,7 +76,10 @@ public class ComponentMenu : MonoBehaviour
         " They also provide power to the various components of the computer, such as hard drives, fans, and optical drives. ";
         PowerSupply.price = "Can range anywhere from $40 to $150";
 
-        
+        Storage.name = "Storage";
+        Storage.description = "The purpose of a data storage component in the computer world is to store items (data) and allow easy access to them as shelves storage in the real world. "+
+        "There are many different types of storage such as hard disk, CD ROM, RAM, floppy disks, etc.";
+        Storage.price = "Depends on what type of storage you are looking for.";
 
         DiskDrivers.name = "DiskDrivers";
         DiskDrivers.description = "A disk drive is a device that allows a computer to read from and write data to a disk";
