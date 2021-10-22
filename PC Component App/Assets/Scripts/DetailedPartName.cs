@@ -16,6 +16,6 @@ public class DetailedPartName : MonoBehaviour
     // Use this for initialization
     void Start () 
     {
-        Debug.Log("Part name is " + partName);
+        // Debug.Log("Part name is " + partName);
     }
 }

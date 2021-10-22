@@ -4,25 +4,36 @@ using UnityEngine;
 
 public class Highlight : MonoBehaviour
 {
-    public Material startColor;
+    Material startColor;
     public Material mouseOverColor;
+    GameObject oldComponent;
 
     public void objectSelected(GameObject component)
     {
+        startColor = component.GetComponentInChildren<Renderer>().sharedMaterial;
         Renderer[] children = component.GetComponentsInChildren<Renderer>();
         foreach (Renderer rend in children) 
         {
             rend.sharedMaterial = mouseOverColor;
-        } 
+        }
+
+        objectDeselected(component);
     }
 
-    private void OnMouseExit()
+    private void objectDeselected(GameObject component)
     {
-       // rend.sharedMaterial = startColor;
+        Renderer[] children = oldComponent.GetComponentsInChildren<Renderer>();
+        foreach (Renderer rend in children)
+        {
+            rend.sharedMaterial = startColor;
+        }
+        oldComponent = component;
+
     }
     // Start is called before the first frame update
     void Start()
     {
+        oldComponent = new GameObject();
         //rend = getcomponent<renderer>();
         //rend.enabled = true;
         //rend.sharedmaterial = startcolor;
