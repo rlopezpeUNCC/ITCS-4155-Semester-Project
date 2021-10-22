@@ -6,23 +6,26 @@ public class Highlight : MonoBehaviour
 {
     public Material startColor;
     public Material mouseOverColor;
-    Renderer rend;
 
-    void OnMouseEnter()
+    public void objectSelected(GameObject component)
     {
-        rend.sharedMaterial = mouseOverColor;
+        Renderer[] children = component.GetComponentsInChildren<Renderer>();
+        foreach (Renderer rend in children) 
+        {
+            rend.sharedMaterial = mouseOverColor;
+        } 
     }
 
     private void OnMouseExit()
     {
-        rend.sharedMaterial = startColor;
+       // rend.sharedMaterial = startColor;
     }
     // Start is called before the first frame update
     void Start()
     {
-        rend = GetComponent<Renderer>();
-        rend.enabled = true;
-        rend.sharedMaterial = startColor;
+        //rend = getcomponent<renderer>();
+        //rend.enabled = true;
+        //rend.sharedmaterial = startcolor;
     }
 }
 
