@@ -81,7 +81,7 @@ public class ComponentMenu : MonoBehaviour
         "There are many different types of storage such as hard disk, CD ROM, RAM, floppy disks, etc.";
         Storage.price = "Depends on what type of storage you are looking for.";
 
-        DiskDrivers.name = "DiskDrivers";
+        DiskDrivers.name = "Disc Drives";
         DiskDrivers.description = "A disk drive is a device that allows a computer to read from and write data to a disk";
         DiskDrivers.price = "$100";
 
@@ -161,7 +161,7 @@ public class ComponentMenu : MonoBehaviour
                 componentPrice.text = Storage.price;
                 break;
 
-            case ("DiskDrivers"):
+            case ("Disc Drives"):
                 componentName.text = DiskDrivers.name;
                 componentDescription.text = DiskDrivers.description;
                 componentPrice.text = DiskDrivers.price;

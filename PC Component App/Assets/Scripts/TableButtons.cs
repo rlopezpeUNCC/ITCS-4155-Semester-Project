@@ -7,7 +7,10 @@ using System.Linq;
 
 public class TableButtons : MonoBehaviour
 {
-    private List<Button> tocButtons; // list of buttons in ToC
+    [SerializeField]
+    ComponentMenu menu;     // lets us use ComponentMenu functions
+
+    private List<Button> tocButtons;    // list of buttons in ToC
     // from TableCheckBoxes: public Dictionary<string, Transform> tocParts;
 
     // Start is called before the first frame update
@@ -25,9 +28,10 @@ public class TableButtons : MonoBehaviour
         }
     }
 
-    // TODO: Highlight computer part when its respective ToC Button is clicked
+    // TODO: Highlight computer part when its respective ToC Button is clicked and pull up context menu
     void ButtonClicked(Button thisButton)
     {
-        print("Button clicked for " + thisButton.GetComponentInParent<Toggle>().name);
+        //print("Button clicked for " + thisButton.GetComponentInParent<Toggle>().name);
+        menu.DetailSetup(thisButton.GetComponentInParent<Toggle>().name);
     }
 }
