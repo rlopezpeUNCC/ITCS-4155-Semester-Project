@@ -1,8 +1,27 @@
+using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
-using UnityEngine;	
+using System.Collections.Generic;
+using System.Linq;
+// Currently attached to Computer
 
 public class rotateObject : MonoBehaviour{
 	float speed = 150;
+	Vector3 defPos = new Vector3(0.0f, 0.0f, 14.39f);
+	Quaternion defRot = new Quaternion(-0.5f, -0.5f, 0.5f, 0.5f);
+
+	[SerializeField]
+    Button ResetView;
+
+	// Start is called before the first frame update
+    void Start()
+    {
+		// Add listener to ResetView
+        ResetView.onClick.AddListener(delegate {
+            ButtonClicked(ResetView);
+        });
+        //print("Listener added for button " + ResetView.name);
+    }
 	
 	void OnMouseDrag() {
 		float rotX = Input.GetAxis("Mouse X") * speed * Mathf.Deg2Rad;
@@ -11,4 +30,11 @@ public class rotateObject : MonoBehaviour{
 		transform.Rotate(Vector3.right, rotY, Space.World);
 		transform.Rotate(Vector3.down, rotX, Space.World);
 	}
+
+	// On click, reset Computer position
+    void ButtonClicked(Button btn)
+    {
+		transform.SetPositionAndRotation(defPos, defRot);
+        print("ResetView clicked");
+    }
 }

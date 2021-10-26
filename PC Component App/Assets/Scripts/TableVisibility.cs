@@ -2,30 +2,22 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Linq;
+// Currently attached to Canvas
 
 public class TableVisibility : MonoBehaviour
 {
     [SerializeField]
     GameObject ToCPanel;
-
-    private List<Button> allButtons;    // list of buttons under Canvas (why does unity work this way?)
+    [SerializeField]
+    Button ToCShowHide;
 
     // Start is called before the first frame update
     void Start()
     {
-        // Make list of each Button under Canvas
-        allButtons = GetComponentsInChildren<Button>().ToList();
-
-        // Try to find the right button, then add listener
-        foreach(Button thisButton in allButtons) {
-            //print("Looking at button " + thisButton.name);
-            if (thisButton.name == "ToCShowHide") {
-                thisButton.onClick.AddListener(delegate {
-                    ButtonClicked(thisButton);
-                });
-                print("Listener added for button " + thisButton.name);
-            }
-        }
+        ToCShowHide.onClick.AddListener(delegate {
+            ButtonClicked(ToCShowHide);
+        });
+        print("Listener added for button " + ToCShowHide.name);
     }
 
     // On click, show/hide the ToC
