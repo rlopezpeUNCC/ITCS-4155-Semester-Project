@@ -4,7 +4,8 @@ public class ObjectClicker : MonoBehaviour {
 
 [SerializeField]
 ComponentMenu menu;
-
+    [SerializeField]
+    Highlight highlight;
     void Update() {
         //checks if m2 is pressed
         if (Input.GetMouseButtonDown(1)) {
@@ -17,7 +18,7 @@ ComponentMenu menu;
                 if (hit.transform) {
                     FindObjectOfType<AudioManager>().Play("ButtonClicked1");
                     PrintName(hit.collider.transform.gameObject);
-
+                    highlight.ObjectSelected(hit.collider.transform.gameObject);
                     menu.DetailSetup(hit.collider.transform.gameObject.name);
 
                 }
