@@ -4,28 +4,30 @@ using UnityEngine;
 
 public class Highlight : MonoBehaviour
 {
-    Material startColor;
-    public Material mouseOverColor;
+    public Shader startColor;
+    public Shader mouseOverColor;
     GameObject oldComponent;
+    Color baseColor;
+    [SerializeField]
+    Material[] mats = new Material[20];
 
-    public void objectSelected(GameObject component)
+    public void ObjectSelected(GameObject component)
     {
-        startColor = component.GetComponentInChildren<Renderer>().sharedMaterial;
         Renderer[] children = component.GetComponentsInChildren<Renderer>();
         foreach (Renderer rend in children) 
         {
-            rend.sharedMaterial = mouseOverColor;
+            rend.material.SetColor("_OutlineColor", Color.yellow);
         }
-
-        objectDeselected(component);
+        ObjectDeselected(component);
     }
 
-    private void objectDeselected(GameObject component)
+    private void ObjectDeselected(GameObject component)
     {
         Renderer[] children = oldComponent.GetComponentsInChildren<Renderer>();
         foreach (Renderer rend in children)
         {
-            rend.sharedMaterial = startColor;
+            baseColor = rend.material.GetColor("_BaseColor");
+            rend.material.SetColor("_OutlineColor", baseColor);
         }
         oldComponent = component;
 
@@ -34,9 +36,11 @@ public class Highlight : MonoBehaviour
     void Start()
     {
         oldComponent = new GameObject();
-        //rend = getcomponent<renderer>();
-        //rend.enabled = true;
-        //rend.sharedmaterial = startcolor;
+        foreach (Material mat in mats)
+        {
+            baseColor = mat.GetColor("_BaseColor");
+            mat.SetColor("_OutlineColor", baseColor);
+        }
     }
 }
 

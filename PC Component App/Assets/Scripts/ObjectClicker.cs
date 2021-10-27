@@ -18,7 +18,7 @@ ComponentMenu menu;
                 if (hit.transform) {
                     FindObjectOfType<AudioManager>().Play("ButtonClicked1");
                     PrintName(hit.collider.transform.gameObject);
-                    highlight.objectSelected(hit.collider.transform.gameObject);
+                    highlight.ObjectSelected(hit.collider.transform.gameObject);
                     menu.DetailSetup(hit.collider.transform.gameObject.name);
 
                 }
