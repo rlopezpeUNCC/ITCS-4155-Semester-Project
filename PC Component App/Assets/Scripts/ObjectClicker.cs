@@ -2,10 +2,8 @@ using UnityEngine;
 //currently attached to Main Camera
 public class ObjectClicker : MonoBehaviour {
 
-[SerializeField]
-ComponentMenu menu;
     [SerializeField]
-    Highlight highlight;
+    ComponentMenu menu;    
     void Update() {
         //checks if m2 is pressed
         if (Input.GetMouseButtonDown(1)) {
@@ -17,8 +15,7 @@ ComponentMenu menu;
                 //makes sure a object is hit, and not NULL
                 if (hit.transform) {
                     FindObjectOfType<AudioManager>().Play("ButtonClicked1");
-                    PrintName(hit.collider.transform.gameObject);
-                    highlight.ObjectSelected(hit.collider.transform.gameObject);
+                    //PrintName(hit.collider.transform.gameObject);                    
                     menu.DetailSetup(hit.collider.transform.gameObject.name);
 
                 }
