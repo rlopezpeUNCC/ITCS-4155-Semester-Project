@@ -10,10 +10,22 @@ public class Highlight : MonoBehaviour
     Color baseColor;
     [SerializeField]
     Material[] mats = new Material[20];
+    // Start is called before the first frame update
+    void Start()
+    {
+        oldComponent = new GameObject();
+        foreach (Material mat in mats)
+        {
+            baseColor = mat.GetColor("_BaseColor");
+            mat.SetColor("_OutlineColor", baseColor);
+        }
+    }
 
     public void ObjectSelected(GameObject component)
     {
+        
         Renderer[] children = component.GetComponentsInChildren<Renderer>();
+        //Debug.Log("highlighting: " + component.name + ". Children: " + children.Length);
         foreach (Renderer rend in children) 
         {
             rend.material.SetColor("_OutlineColor", Color.yellow);
@@ -32,16 +44,7 @@ public class Highlight : MonoBehaviour
         oldComponent = component;
 
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        oldComponent = new GameObject();
-        foreach (Material mat in mats)
-        {
-            baseColor = mat.GetColor("_BaseColor");
-            mat.SetColor("_OutlineColor", baseColor);
-        }
-    }
+    
 }
 
   

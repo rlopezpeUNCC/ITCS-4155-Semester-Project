@@ -33,7 +33,7 @@ public class TableButtons : MonoBehaviour
 
     // TODO: Highlight computer part when its respective ToC Button is clicked and pull up context menu
     void ButtonClicked(Button thisButton) {
-        //print("Button clicked for " + thisButton.GetComponentInParent<Toggle>().name);        
+        //print("Button clicked for " + thisButton.GetComponentInParent<Toggle>().name);      
         menu.DetailSetup(thisButton.GetComponentInParent<Toggle>().name);
     }
 

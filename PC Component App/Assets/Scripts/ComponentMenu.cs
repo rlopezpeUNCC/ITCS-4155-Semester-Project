@@ -5,9 +5,12 @@ using TMPro;
 public class ComponentMenu : MonoBehaviour
 {
     [SerializeField]
-   TextMeshProUGUI componentName,componentDescription,componentPrice;
+    TextMeshProUGUI componentName,componentDescription,componentPrice;
     [SerializeField]
     GameObject menu;
+    [SerializeField]
+    Highlight highlight;
+
 
     //one for each component
    componentDetail CPU = new componentDetail();
@@ -32,8 +35,7 @@ public class ComponentMenu : MonoBehaviour
    } 
    
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         
 // all 3 one for each
         CPU.name = "CPU";
@@ -86,24 +88,23 @@ public class ComponentMenu : MonoBehaviour
         DiskDrivers.price = "$100";
 
 
-        DetailSetup("CPU");
-        DetailSetup("GraphicsCard");
-        DetailSetup("CPU Cooler");
-        DetailSetup("RAM");
-        DetailSetup("Case");
-        DetailSetup("Case Cooling");
-        DetailSetup("Motherboard");
-        DetailSetup("Power Supply");
-        DetailSetup("Storage");
-        DetailSetup("DiskDrivers");
-        
-
+        // DetailSetup("CPU");
+        // DetailSetup("GraphicsCard");
+        // DetailSetup("CPU Cooler");
+        // DetailSetup("RAM");
+        // DetailSetup("Case");
+        // DetailSetup("Case Cooling");
+        // DetailSetup("Motherboard");
+        // DetailSetup("Power Supply");
+        // DetailSetup("Storage");
+        // DetailSetup("DiskDrivers");
     }
 
     public void DetailSetup (string component) {
-        menu.active = true;
-        Debug.Log(component);
-        
+        GameObject componentObj = GameObject.Find("Computer/" +component);
+        highlight.ObjectSelected(componentObj);
+        menu.SetActive(true);
+       
         switch (component){
 
             case ("CPU"):
@@ -173,7 +174,7 @@ public class ComponentMenu : MonoBehaviour
     }
 
     public void Close (){
-            menu.active = false;
+            menu.SetActive(false);
         }
 
 }
