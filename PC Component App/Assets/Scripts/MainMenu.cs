@@ -8,4 +8,22 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Main Scene");
         
     }
+
+     public void Tutorial(){
+        SceneManager.LoadScene("Tutorial");
+        
+    }
+
+     public void MiniGame(){
+        SceneManager.LoadScene("MiniGame");
+        
+    }
+
+
+    public void QuitGame (){
+
+        Debug.Log("QUIT");
+        Application.Quit();
+    } 
+
 }
