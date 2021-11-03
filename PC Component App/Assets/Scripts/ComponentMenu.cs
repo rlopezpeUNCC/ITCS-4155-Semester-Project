@@ -14,6 +14,7 @@ public class ComponentMenu : MonoBehaviour
     Animator arrowAnimator;
     [SerializeField]
     Animator animator;
+    string component;
 
     //one for each component
     componentDetail CPU = new componentDetail();
@@ -87,15 +88,35 @@ public class ComponentMenu : MonoBehaviour
     }
 
     public void DetailSetup (string component) {
-        FindObjectOfType<AudioManager>().Play("ButtonClicked1");
-        GameObject componentObj = GameObject.Find("Computer/" +component);
-        highlight.ObjectSelected(componentObj);
-       
         bool isOpen = animator.GetBool("open");
-        if (!isOpen) {
-            animator.SetBool("open", !isOpen);
-            arrowAnimator.SetBool("open", isOpen);
+        GameObject componentObj = GameObject.Find("Computer/" +component);
+        if (this.component == component) {
+            if (!isOpen) {
+                animator.SetBool("open", !isOpen);
+                arrowAnimator.SetBool("open", isOpen);
+                highlight.ObjectSelected(componentObj);
+            } else {
+                animator.SetBool("open", !isOpen);
+                arrowAnimator.SetBool("open", isOpen);
+                highlight.ObjectDeselected(componentObj);
+            }
+        } else {         
+            highlight.ObjectDeselected(componentObj);
+            this.component = component;   
+            if (!isOpen) {
+                componentObj = GameObject.Find("Computer/" +component);
+                animator.SetBool("open", !isOpen);
+                arrowAnimator.SetBool("open", isOpen);                
+            } 
+            highlight.ObjectSelected(componentObj);
         }
+        
+        FindObjectOfType<AudioManager>().Play("ButtonClicked1");
+        
+        
+       
+        
+        
         
        
         switch (component){
@@ -168,9 +189,12 @@ public class ComponentMenu : MonoBehaviour
 
     public void Close (){
             bool isOpen = animator.GetBool("open");
-
             animator.SetBool("open", !isOpen);
             arrowAnimator.SetBool("open", isOpen);
+            if (isOpen) {
+                GameObject componentObj = GameObject.Find("Computer/" +component);
+                highlight.ObjectDeselected(componentObj);
+            }
         }
 
 }

@@ -30,19 +30,27 @@ public class Highlight : MonoBehaviour
         {
             rend.material.SetColor("_OutlineColor", Color.yellow);
         }
-        ObjectDeselected(component);
     }
 
-    private void ObjectDeselected(GameObject component)
+    public void ObjectDeselected(GameObject component)
     {
-        Renderer[] children = oldComponent.GetComponentsInChildren<Renderer>();
-        foreach (Renderer rend in children)
-        {
-            baseColor = rend.material.GetColor("_BaseColor");
-            rend.material.SetColor("_OutlineColor", baseColor);
-        }
-        oldComponent = component;
-
+        //if (oldComponent != component) {
+            Renderer[] children = oldComponent.GetComponentsInChildren<Renderer>();
+            foreach (Renderer rend in children)
+            {
+                baseColor = rend.material.GetColor("_BaseColor");
+                rend.material.SetColor("_OutlineColor", baseColor);
+            }
+            oldComponent = component;
+        // } else if (exception) {
+        //     Renderer[] children = oldComponent.GetComponentsInChildren<Renderer>();
+        //     foreach (Renderer rend in children)
+        //     {
+        //         baseColor = rend.material.GetColor("_BaseColor");
+        //         rend.material.SetColor("_OutlineColor", baseColor);
+        //     }
+        //     oldComponent = component;
+        // }
     }
     
 }

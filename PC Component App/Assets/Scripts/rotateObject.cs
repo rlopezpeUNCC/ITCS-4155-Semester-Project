@@ -12,6 +12,8 @@ public class rotateObject : MonoBehaviour{
 
 	[SerializeField]
     Button ResetView;
+	[SerializeField]
+	Animator[] aninations;
 
 	// Start is called before the first frame update
     void Start()
@@ -33,8 +35,13 @@ public class rotateObject : MonoBehaviour{
 
 	// On click, reset Computer position
     void ButtonClicked(Button btn)
-    {
+    {	
 		transform.SetPositionAndRotation(defPos, defRot);
+		foreach (Animator an in aninations) {
+			an.Play("Default", -1, 0f);
+			an.speed = 1.75f;
+		} 
+		
         print("ResetView clicked");
     }
 }
