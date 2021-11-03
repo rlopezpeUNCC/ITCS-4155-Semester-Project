@@ -13,8 +13,7 @@ public class ObjectClicker : MonoBehaviour {
             //stores any object hit by the ray into 'hit', and sets the distance the ray will travel to 100
             if (Physics.Raycast(ray, out hit, 100f)) {
                 //makes sure a object is hit, and not NULL
-                if (hit.transform) {
-                    FindObjectOfType<AudioManager>().Play("ButtonClicked1");
+                if (hit.transform) {                    
                     //PrintName(hit.collider.transform.gameObject);                    
                     menu.DetailSetup(hit.collider.transform.gameObject.name);
 

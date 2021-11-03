@@ -10,23 +10,22 @@ public class ComponentMenu : MonoBehaviour
     GameObject menu;
     [SerializeField]
     Highlight highlight;
-
+    [SerializeField]
+    Animator arrowAnimator;
+    [SerializeField]
+    Animator animator;
 
     //one for each component
-   componentDetail CPU = new componentDetail();
-   componentDetail GraphicsCard = new componentDetail();
-   componentDetail CPUCooler = new componentDetail();
-   componentDetail RAM = new componentDetail();
-   componentDetail Case = new componentDetail();
-   componentDetail CaseCooling = new componentDetail();
-   componentDetail Motherboard = new componentDetail();
-   componentDetail PowerSupply = new componentDetail();
-   componentDetail Storage = new componentDetail();
-   componentDetail DiskDrivers = new componentDetail();
-
-   
-
-
+    componentDetail CPU = new componentDetail();
+    componentDetail GraphicsCard = new componentDetail();
+    componentDetail CPUCooler = new componentDetail();
+    componentDetail RAM = new componentDetail();
+    componentDetail Case = new componentDetail();
+    componentDetail CaseCooling = new componentDetail();
+    componentDetail Motherboard = new componentDetail();
+    componentDetail PowerSupply = new componentDetail();
+    componentDetail Storage = new componentDetail();
+    componentDetail DiskDrivers = new componentDetail();
    public struct componentDetail
    {
     public string  name;
@@ -35,9 +34,8 @@ public class ComponentMenu : MonoBehaviour
    } 
    
     // Start is called before the first frame update
-    void Start() {
-        
-// all 3 one for each
+    void Start() {        
+        // all 3 one for each
         CPU.name = "CPU";
         CPU.description = "A central processing unit, also called a central processor, main processor or just processor, is the electronic circuitry that executes instructions comprising a computer program. "+
         "The CPU performs basic arithmetic, logic, controlling, and input/output operations specified by the instructions in the program.";
@@ -86,24 +84,19 @@ public class ComponentMenu : MonoBehaviour
         DiskDrivers.name = "Disc Drives";
         DiskDrivers.description = "A disk drive is a device that allows a computer to read from and write data to a disk";
         DiskDrivers.price = "$100";
-
-
-        // DetailSetup("CPU");
-        // DetailSetup("GraphicsCard");
-        // DetailSetup("CPU Cooler");
-        // DetailSetup("RAM");
-        // DetailSetup("Case");
-        // DetailSetup("Case Cooling");
-        // DetailSetup("Motherboard");
-        // DetailSetup("Power Supply");
-        // DetailSetup("Storage");
-        // DetailSetup("DiskDrivers");
     }
 
     public void DetailSetup (string component) {
+        FindObjectOfType<AudioManager>().Play("ButtonClicked1");
         GameObject componentObj = GameObject.Find("Computer/" +component);
         highlight.ObjectSelected(componentObj);
-        menu.SetActive(true);
+       
+        bool isOpen = animator.GetBool("open");
+        if (!isOpen) {
+            animator.SetBool("open", !isOpen);
+            arrowAnimator.SetBool("open", isOpen);
+        }
+        
        
         switch (component){
 
@@ -174,7 +167,10 @@ public class ComponentMenu : MonoBehaviour
     }
 
     public void Close (){
-            menu.SetActive(false);
+            bool isOpen = animator.GetBool("open");
+
+            animator.SetBool("open", !isOpen);
+            arrowAnimator.SetBool("open", isOpen);
         }
 
 }

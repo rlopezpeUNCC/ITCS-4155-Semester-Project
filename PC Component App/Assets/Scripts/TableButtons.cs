@@ -11,13 +11,14 @@ public class TableButtons : MonoBehaviour
     ComponentMenu menu;     // lets us use ComponentMenu functions
     [SerializeField]
     Animator arrowAnimator;
-
+    Animator animator;
     List<Button> tocButtons;    // list of buttons in ToC
     // from TableCheckBoxes: public Dictionary<string, Transform> tocParts;
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = gameObject.GetComponent<Animator>(); 
         // Make list of each Button in ToCPanel
         tocButtons = GetComponentsInChildren<Button>().ToList();        
         // Add listener to each Button to know when clicked
@@ -38,7 +39,7 @@ public class TableButtons : MonoBehaviour
     }
 
     public void OpenCloseMenu() {
-        Animator animator = gameObject.GetComponent<Animator>();        
+        animator = gameObject.GetComponent<Animator>();        
         bool isOpen = animator.GetBool("open");
         animator.SetBool("open", !isOpen);
         arrowAnimator.SetBool("open", isOpen);
