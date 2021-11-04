@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "1RwxvZrniA+h5C54iud88lh6xBKWBR/PpKORbIk6ajZJHyAzaUOYlm8G7CQuZ7OYtgKVvRLkXFEkl22WA1rmLQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mpg40\\Desktop\\WebScraper\\WebScraper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mpg40\\.nuget\\packages\\csvhelper\\27.1.1\\csvhelper.27.1.1.nupkg.sha512",
+    "C:\\Users\\mpg40\\.nuget\\packages\\htmlagilitypack\\1.11.37\\htmlagilitypack.1.11.37.nupkg.sha512"
+  ],
+  "logs": []
+}
