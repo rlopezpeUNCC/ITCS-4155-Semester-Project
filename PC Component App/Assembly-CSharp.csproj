@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\ObjectClicker.cs" />
     <Compile Include="Assets\Scripts\rotateObject.cs" />
     <Compile Include="Assets\Scripts\TableButtons.cs" />
+    <Compile Include="Assets\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
