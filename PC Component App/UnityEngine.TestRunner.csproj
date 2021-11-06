@@ -94,10 +94,10 @@
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\OuterUnityTestActionCommand.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\Utils\AssemblyProvider\IAssemblyWrapper.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\Assertions\Is.cs" />
-     <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\Utils\AssemblyProvider\AssemblyWrapper.cs" />
-     <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Filters\CategoryFilterExtended.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\Utils\Vector3ComparerWithEqualsOperator.cs" />
+     <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Filters\CategoryFilterExtended.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\TestRunner\TestPlatform.cs" />
+     <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\Utils\AssemblyProvider\AssemblyWrapper.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\Utils\TestRunCallbackAttribute.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\BaseDelegator.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\UnityTestMethodCommand.cs" />
@@ -115,8 +115,8 @@
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\TestResultExtensions.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\TestRunner\Callbacks\PlayModeRunnerCallback.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\EnumerableSetUpTearDownCommand.cs" />
-     <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\Utils\IPrebuildSceneSetup.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\Utils\MonoBehaviourTest\IMonoBehaviourTest.cs" />
+     <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\Utils\IPrebuildSceneSetup.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\UnitySetUpAttribute.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Runner\UnityWorkItemDataHolder.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\Utils\MonoBehaviourTest\MonoBehaviourTest.cs" />

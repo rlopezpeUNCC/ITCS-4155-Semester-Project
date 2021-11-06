@@ -36,14 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Image.cs" />
-     <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Button.cs" />
-     <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Text.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Toggle.cs" />
-     <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Layout\CanvasScaler.cs" />
+     <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Text.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\GraphicRaycaster.cs" />
-     <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\EventSystem.cs" />
-     <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\InputModules\StandaloneInputModule.cs" />
+     <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Image.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Layout\LayoutElement.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\IGraphicEnabledDisabled.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Selectable.cs" />
@@ -53,8 +49,8 @@
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\IMaskable.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Utility\VertexHelper.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\EventData\BaseEventData.cs" />
-     <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Utility\ListPool.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\EventData\PointerEventData.cs" />
+     <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Utility\ListPool.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\VertexModifiers\IMeshModifier.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\MoveDirection.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\UIBehaviour.cs" />
@@ -66,17 +62,21 @@
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Culling\RectangularVertexClipper.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\EventInterfaces.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Graphic.cs" />
+     <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Layout\CanvasScaler.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\MaterialModifiers\IMaterialModifier.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\SetPropertyUtility.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Layout\AspectRatioFitter.cs" />
+     <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\EventSystem.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\StencilMaterial.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Culling\IClipRegion.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Misc.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\InputField.cs" />
+     <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\InputModules\StandaloneInputModule.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Scrollbar.cs" />
-     <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\ToggleGroup.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\FontUpdateTracker.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\RaycastResult.cs" />
+     <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\ToggleGroup.cs" />
+     <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Button.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\ColorBlock.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Navigation.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Layout\ContentSizeFitter.cs" />
@@ -105,8 +105,8 @@
      <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\EventData\AxisEventData.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\Raycasters\BaseRaycaster.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\SpecializedCollections\IndexedSet.cs" />
-     <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\EventTriggerType.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\MaskableGraphic.cs" />
+     <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\EventTriggerType.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\MultipleDisplayUtilities.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\VertexModifiers\BaseMeshEffect.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Layout\LayoutRebuilder.cs" />
@@ -114,8 +114,8 @@
      <Compile Include="Packages\com.unity.ugui\Runtime\Properties\AssemblyInfo.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\IMask.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Layout\HorizontalOrVerticalLayoutGroup.cs" />
-     <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\EventHandle.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Layout\LayoutGroup.cs" />
+     <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\EventHandle.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\InputModules\BaseInputModule.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Layout\GridLayoutGroup.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\InputModules\PointerInputModule.cs" />
@@ -350,17 +350,20 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
         <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    <Reference Include="log4netPlastic">
+        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.render-pipelines.core@10.6.0\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

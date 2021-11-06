@@ -36,14 +36,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.timeline\Editor\inspectors\AnimationPlayableAssetInspector.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Actions\Menus\MenuItemActionBase.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\inspectors\AnimationPlayableAssetInspector.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Actions\TrackAction.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\Range.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Window\ViewModel\ScriptableObjectViewPrefs.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\Utilities\SequenceSelectorNameFormater.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\Utils\EditModeReplaceUtils.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\Scopes\HorizontalScope.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\Utilities\SequenceSelectorNameFormater.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Window\TimelineWindow_Breadcrumbs.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\ManipulationsTimeline.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\Control.cs" />
@@ -67,10 +67,10 @@
      <Compile Include="Packages\com.unity.timeline\Editor\Window\Modes\TimelineActiveMode.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\Cursors\TimelineCursors.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Signals\SignalUtility.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\AddDelete\IAddDeleteItemMode.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\MarkerModifier.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Animation\CurveDataSource.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Animation\AnimationPlayableAssetEditor.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\AddDelete\IAddDeleteItemMode.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Window\TimelineMarkerHeaderGUI.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\ControlTrack\ControlPlayableAssetEditor.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Window\TimelineWindow_Duration.cs" />
@@ -79,8 +79,8 @@
      <Compile Include="Packages\com.unity.timeline\Editor\inspectors\TimelineInspectorUtility.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\Sequence\SelectAndMoveItem.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\Scopes\LabelWidthScope.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\Items\ItemsGroup.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\CurveEditUtility.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\Items\ItemsGroup.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\TimelineUtility.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Actions\IMenuName.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\TimelineTreeViewGUI.cs" />
@@ -104,8 +104,8 @@
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\TrackResourceCache.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\inspectors\EditorClipFactory.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\ManipulationsClips.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\treeview\Drawers\InfiniteTrackDrawer.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\Sequence\Jog.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\treeview\Drawers\InfiniteTrackDrawer.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Shortcuts.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Window\TimelineWindowTimeControl.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Window\TimelineWindow_EditorCallbacks.cs" />
@@ -121,11 +121,11 @@
      <Compile Include="Packages\com.unity.timeline\Editor\Animation\BindingTreeViewDataSource.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Attributes\MenuEntryAttribute.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Animation\AnimationTrackActions.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\Utilities\SpacePartitioner.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\Graphics.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\Attributes\ActiveInModeAttribute.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\TrackGui\InlineCurveEditor.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Recording\TimelineRecording_PlayableAsset.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\Attributes\ActiveInModeAttribute.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\Utilities\SpacePartitioner.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\inspectors\TimeFieldDrawer.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\inspectors\TimelineProjectSettings.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Trackhead.cs" />
@@ -133,17 +133,17 @@
      <Compile Include="Packages\com.unity.timeline\Editor\Animation\CurveTreeViewNode.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\StyleNormalColorOverride.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Extensions\TrackExtensions.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\inspectors\ClipInspector\ClipInspector.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\EditModeInputHandler.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\inspectors\ClipInspector\ClipInspector.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Animation\AnimationClipExtensions.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\TrackGui\TrackResizeHandle.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\Move\IMoveItemMode.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\ManipulationsTracks.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\Move\IMoveItemMode.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\DisplayNameHelper.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Window\TimelineWindow_PreviewPlayMode.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\Window\Modes\TimelineMode.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\AnimatedPropertyUtility.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Animation\AnimationClipActions.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\Window\Modes\TimelineMode.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\TimelineEditor.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\IRowGUI.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\inspectors\BuiltInCurvePresets.cs" />
@@ -179,8 +179,8 @@
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\Drawers\Layers\ClipsLayer.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\TimeIndicator.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\TimelineDataSource.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\Animation\AnimationOffsetMenu.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\CustomEditors\MarkerEditor.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\Animation\AnimationOffsetMenu.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\ClipModifier.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\TimelineKeyboardNavigation.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Signals\SignalReceiverHeader.cs" />
@@ -190,8 +190,8 @@
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\TrackPropertyCurvesDataSource.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\Snapping\IAttractable.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\Trim\TrimItemModeReplace.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\MenuPriority.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\ItemGui\ISelectable.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\MenuPriority.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Animation\ClipCurveEditor.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Actions\TimelineAction.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Actions\TrackActions.cs" />
@@ -199,8 +199,8 @@
      <Compile Include="Packages\com.unity.timeline\Editor\Items\MarkerItem.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\inspectors\CurvesOwner\CurvesOwnerInspectorHelper.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\AddDelete\AddDeleteItemModeMix.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\Window\TimelineWindow.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\ItemGui\TimelineItemGUI.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\Window\TimelineWindow.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Signals\SignalAssetInspector.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Undo\UndoScope.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\CustomEditors\TrackEditor.cs" />
@@ -223,8 +223,8 @@
      <Compile Include="Packages\com.unity.timeline\Editor\DirectorNamedColor.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Actions\ActionContext.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\ControlPlayableUtility.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\Signals\SignalEventDrawer.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\Trim\ITrimItemMode.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\Signals\SignalEventDrawer.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Actions\IMenuChecked.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Actions\IAction.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\Drawers\ClipDrawer.cs" />
@@ -239,10 +239,10 @@
      <Compile Include="Packages\com.unity.timeline\Editor\Signals\TreeView\SignalReceiverItem.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\Move\MovingItems.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\Move\MoveItemModeReplace.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\inspectors\TrackAssetInspector.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Window\PlaybackScroller.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\Scopes\GUIGroupScope.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Actions\MarkerActions.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\inspectors\TrackAssetInspector.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\AnimatedParameterUtility.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Window\TimelineWindow_Manipulators.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\PickerUtils.cs" />
@@ -265,15 +265,15 @@
      <Compile Include="Packages\com.unity.timeline\Editor\inspectors\ClipInspector\ClipInspectorSelectionInfo.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\DirectorStyles.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\AddDelete\AddDeleteItemModeRipple.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\treeview\Drawers\TrackItemsDrawer.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Window\TimelineWindow_TrackGui.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\treeview\Drawers\TrackItemsDrawer.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\ObjectReferenceField.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\Clipboard.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\treeview\IPropertyKeyDataSource.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\TrackGui\TimelineTrackErrorGUI.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\TimeReferenceUtility.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\Window\TimelineWindow_PlayRange.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\TrackGui\TimelineTrackGUI.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\Window\TimelineWindow_PlayRange.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\treeview\IPropertyKeyDataSource.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\AnimationTrackKeyDataSource.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\treeview\Drawers\AnimationTrackDrawer.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\Scopes\PropertyScope.cs" />
@@ -287,8 +287,8 @@
      <Compile Include="Packages\com.unity.timeline\Editor\inspectors\AnimationTrackInspector.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\State\WindowState.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\Move\MoveItemModeRipple.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\treeview\ItemGui\TimelineClipGUI.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\Scopes\GUIColorOverride.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\treeview\ItemGui\TimelineClipGUI.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\inspectors\DirectorNamedColorInspector.cs" />
      <None Include="Packages\com.unity.timeline\Editor\Unity.Timeline.Editor.asmdef" />
      <None Include="Packages\com.unity.timeline\Editor\StyleSheets\res\Timeline_LightSkin.txt" />
@@ -524,17 +524,20 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
         <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    <Reference Include="log4netPlastic">
+        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.render-pipelines.core@10.6.0\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

@@ -73,8 +73,8 @@
      <Compile Include="Packages\com.unity.ide.visualstudio\Editor\Messaging\Message.cs" />
      <Compile Include="Packages\com.unity.ide.visualstudio\Editor\AsyncOperation.cs" />
      <Compile Include="Packages\com.unity.ide.visualstudio\Editor\Discovery.cs" />
-     <Compile Include="Packages\com.unity.ide.visualstudio\Editor\Testing\TestRunnerCallbacks.cs" />
      <Compile Include="Packages\com.unity.ide.visualstudio\Editor\Testing\TestAdaptor.cs" />
+     <Compile Include="Packages\com.unity.ide.visualstudio\Editor\Testing\TestRunnerCallbacks.cs" />
      <None Include="Packages\com.unity.ide.visualstudio\Editor\com.unity.ide.visualstudio.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

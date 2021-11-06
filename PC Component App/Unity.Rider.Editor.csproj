@@ -43,8 +43,8 @@
      <Compile Include="Packages\com.unity.ide.rider\Rider\Editor\ProjectGeneration\GUIDProvider.cs" />
      <Compile Include="Packages\com.unity.ide.rider\Rider\Editor\UnitTesting\CallbackInitializer.cs" />
      <Compile Include="Packages\com.unity.ide.rider\Rider\Editor\Util\SerializableVersion.cs" />
-     <Compile Include="Packages\com.unity.ide.rider\Rider\Editor\ProjectGeneration\IGUIDGenerator.cs" />
      <Compile Include="Packages\com.unity.ide.rider\Rider\Editor\RiderFileSystemWatcher.cs" />
+     <Compile Include="Packages\com.unity.ide.rider\Rider\Editor\ProjectGeneration\IGUIDGenerator.cs" />
      <Compile Include="Packages\com.unity.ide.rider\Rider\Editor\Util\LibcNativeInterop.cs" />
      <Compile Include="Packages\com.unity.ide.rider\Rider\Editor\UnitTesting\SyncTestRunEventsHandler.cs" />
      <Compile Include="Packages\com.unity.ide.rider\Rider\Editor\UnitTesting\CallbackData.cs" />

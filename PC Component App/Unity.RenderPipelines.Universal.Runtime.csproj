@@ -36,13 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Data\UniversalRenderPipelineAsset.cs" />
-     <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\ForwardRendererData.cs" />
-     <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\UniversalAdditionalCameraData.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\2D\Shadows\ShadowUtility.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\XR\XRLayout.cs" />
-     <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Overrides\Tonemapping.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\ScriptableRenderer.cs" />
+     <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Overrides\Tonemapping.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\2D\Passes\Utility\Light2DLookupTexture.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\2D\Light2D.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Passes\DeferredPass.cs" />
@@ -57,16 +54,16 @@
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Overrides\WhiteBalance.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\DeferredLights.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\2D\Passes\PixelPerfectBackgroundPass.cs" />
-     <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\2D\Passes\IRenderPass2D.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\RendererFeatures\RenderObjects.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Passes\XROcclusionMeshPass.cs" />
+     <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\2D\Passes\IRenderPass2D.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Overrides\ColorCurves.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\2D\Light2DPoint.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\External\LibTessDotNet\PriorityQueue.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\ForwardLights.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\2D\Light2DManager.cs" />
-     <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Passes\CapturePass.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\2D\Passes\Utility\RendererLighting.cs" />
+     <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Passes\CapturePass.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\DeferredShaderData.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\2D\PixelPerfectCamera.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Overrides\SplitToning.cs" />
@@ -97,6 +94,7 @@
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\ShadowUtils.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Passes\InvokeOnRenderObjectCallbackPass.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\External\LibTessDotNet\Tess.cs" />
+     <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\UniversalAdditionalCameraData.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Passes\MainLightShadowCasterPass.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Overrides\FilmGrain.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\External\LibTessDotNet\Dict.cs" />
@@ -106,6 +104,7 @@
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Passes\DrawObjectsPass.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Passes\FinalBlitPass.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\UniversalRenderPipeline.cs" />
+     <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Data\UniversalRenderPipelineAsset.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Passes\DepthOnlyPass.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\2D\Shadows\ShadowCasterGroup2DManager.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\2D\Passes\Render2DLightingPass.cs" />
@@ -126,8 +125,8 @@
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Overrides\MotionBlur.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\ShaderUtils.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Overrides\Bloom.cs" />
-     <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Overrides\PaniniProjection.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Overrides\ChromaticAberration.cs" />
+     <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Overrides\PaniniProjection.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\External\LibTessDotNet\Geom.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Deprecated.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Overrides\LensDistortion.cs" />
@@ -136,14 +135,15 @@
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\External\LibTessDotNet\Sweep.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\2D\CinemachineUniversalPixelPerfect.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Passes\CopyColorPass.cs" />
+     <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\ForwardRendererData.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\2D\Shadows\ShadowRendering.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\2D\Light2DAuthoring.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\RendererFeatures\DisallowMultipleRendererFeature.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Overrides\Vignette.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Data\UniversalRenderPipelineEditorResources.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\Passes\SceneViewDepthCopy.cs" />
-     <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\2D\Renderer2D.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\XR\XRSystem.cs" />
+     <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\2D\Renderer2D.cs" />
      <Compile Include="Packages\com.unity.render-pipelines.universal\Runtime\PostProcessUtils.cs" />
      <None Include="Packages\com.unity.render-pipelines.universal\Runtime\Unity.RenderPipelines.Universal.Runtime.asmdef" />
      <None Include="Packages\com.unity.render-pipelines.universal\Runtime\External\LibTessDotNet\LICENSE.txt" />
@@ -375,20 +375,20 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
         <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    <Reference Include="log4netPlastic">
+        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.render-pipelines.core@10.6.0\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.NRefactory">
-        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.render-pipelines.core@10.6.0\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
+    <Reference Include="unityplastic">
+        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
