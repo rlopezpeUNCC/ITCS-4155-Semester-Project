@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+// Currently attached to AppManager
 
 public class TutorialPopupManager : MonoBehaviour {
     [SerializeField]
@@ -17,6 +19,11 @@ public class TutorialPopupManager : MonoBehaviour {
         }
         popUp = Instantiate(popUpPrefab, new Vector3(positionX, positionY, 0), Quaternion.identity);
         popUp.GetComponent<tutorialPopup>().SetUp(title, body, buttonEnabled);
+    }
+
+    // Allows TutorialSteps to get popup button to make a listener with
+    public Button getPopUpButton() {
+        return popUp.GetComponent<tutorialPopup>().GetComponentInChildren<Button>();
     }
 
     public void Close() {
