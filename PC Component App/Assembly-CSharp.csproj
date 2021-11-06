@@ -49,14 +49,27 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\TableCheckBoxes.cs" />
      <Compile Include="Assets\Scripts\Highlight.cs" />
+     <Compile Include="Assets\InfoSlider\Scripts\SliderDataRunTimeSet.cs" />
      <Compile Include="Assets\Scripts\Sound.cs" />
+     <Compile Include="Assets\InfoSlider\Scripts\InfoPopupUtil.cs" />
+     <Compile Include="Assets\InfoSlider\Scripts\RunTimeSet.cs" />
+     <Compile Include="Assets\InfoSlider\NewBehaviourScript.cs" />
+     <Compile Include="Assets\InfoSlider\Plugins\Pixelplacement\iTween\Sample\MoveSample.cs" />
+     <Compile Include="Assets\InfoSlider\Scripts\InfoHandler.cs" />
      <Compile Include="Assets\Scripts\AudioManager.cs" />
      <Compile Include="Assets\Scripts\TableVisibility.cs" />
      <Compile Include="Assets\Scripts\ComponentMenu.cs" />
+     <Compile Include="Assets\InfoSlider\Plugins\Pixelplacement\iTween\iTween.cs" />
+     <Compile Include="Assets\InfoSlider\Plugins\Pixelplacement\iTween\Sample\RotateSample.cs" />
+     <Compile Include="Assets\tutorialPopup.cs" />
      <Compile Include="Assets\Scripts\DetailedPartName.cs" />
+     <Compile Include="Assets\InfoSlider\Scripts\SliderData.cs" />
+     <Compile Include="Assets\InfoSlider\Scripts\PopUpType.cs" />
+     <Compile Include="Assets\InfoSlider\Plugins\Pixelplacement\iTween\Sample\SampleInfo.cs" />
      <Compile Include="Assets\Scripts\wheelZoom.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\ObjectClicker.cs" />
+     <Compile Include="Assets\InfoSlider\Scripts\Demo.cs" />
      <Compile Include="Assets\Scripts\rotateObject.cs" />
      <Compile Include="Assets\Scripts\TableButtons.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -64,6 +77,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <None Include="Assets\InfoSlider\ReadMe.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -304,7 +318,7 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -652,70 +666,70 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ShaderGraph.Editor">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Shaders">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Editor">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Runtime">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics.Editor">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Searcher.Editor">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Runtime">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Editor">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics">
- <HintPath>C:/Users/mpg40/Desktop/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ <HintPath>C:/Users/rober/Desktop/Unity Projects/ITCS-4155-Semester-Project/PC Component App/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
