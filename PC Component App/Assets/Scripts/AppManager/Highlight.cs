@@ -23,17 +23,21 @@ public class Highlight : MonoBehaviour
 
     public void ObjectSelected(GameObject component)
     {
-        
-        Renderer[] children = component.GetComponentsInChildren<Renderer>();
-        //Debug.Log("highlighting: " + component.name + ". Children: " + children.Length);
-        foreach (Renderer rend in children) 
-        {
-            rend.material.SetColor("_OutlineColor", Color.yellow);
+        if (component != null) {
+            Renderer[] children = component.GetComponentsInChildren<Renderer>();
+            //Debug.Log("highlighting: " + component.name + ". Children: " + children.Length);
+            foreach (Renderer rend in children) 
+            {
+                rend.material.SetColor("_OutlineColor", Color.yellow);
+            }
+        } else {
+            Debug.Log("Hit Null: ");
         }
     }
 
     public void ObjectDeselected(GameObject component)
     {
+        if (component != null) {
         //if (oldComponent != component) {
             Renderer[] children = oldComponent.GetComponentsInChildren<Renderer>();
             foreach (Renderer rend in children)
@@ -42,6 +46,7 @@ public class Highlight : MonoBehaviour
                 rend.material.SetColor("_OutlineColor", baseColor);
             }
             oldComponent = component;
+        }
         // } else if (exception) {
         //     Renderer[] children = oldComponent.GetComponentsInChildren<Renderer>();
         //     foreach (Renderer rend in children)
