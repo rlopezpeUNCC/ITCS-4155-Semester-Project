@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Highlight : MonoBehaviour
@@ -14,11 +12,6 @@ public class Highlight : MonoBehaviour
     void Start()
     {
         oldComponent = new GameObject();
-        foreach (Material mat in mats)
-        {
-            baseColor = mat.GetColor("_BaseColor");
-            mat.SetColor("_OutlineColor", baseColor);
-        }
     }
 
     public void ObjectSelected(GameObject component)
@@ -28,7 +21,7 @@ public class Highlight : MonoBehaviour
             //Debug.Log("highlighting: " + component.name + ". Children: " + children.Length);
             foreach (Renderer rend in children) 
             {
-                rend.material.SetColor("_OutlineColor", Color.yellow);
+                rend.material.SetFloat("_HighLightEnabled", 1);
             }
         } else {
             Debug.Log("Hit Null: ");
@@ -42,20 +35,10 @@ public class Highlight : MonoBehaviour
             Renderer[] children = oldComponent.GetComponentsInChildren<Renderer>();
             foreach (Renderer rend in children)
             {
-                baseColor = rend.material.GetColor("_BaseColor");
-                rend.material.SetColor("_OutlineColor", baseColor);
+                rend.material.SetFloat("_HighLightEnabled", 0);
             }
             oldComponent = component;
         }
-        // } else if (exception) {
-        //     Renderer[] children = oldComponent.GetComponentsInChildren<Renderer>();
-        //     foreach (Renderer rend in children)
-        //     {
-        //         baseColor = rend.material.GetColor("_BaseColor");
-        //         rend.material.SetColor("_OutlineColor", baseColor);
-        //     }
-        //     oldComponent = component;
-        // }
     }
     
 }

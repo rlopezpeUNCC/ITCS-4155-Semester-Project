@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Toggle.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Text.cs" />
+     <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\InputModules\StandaloneInputModule.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\GraphicRaycaster.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Image.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Layout\LayoutElement.cs" />
@@ -71,7 +72,6 @@
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Culling\IClipRegion.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Misc.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\InputField.cs" />
-     <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\InputModules\StandaloneInputModule.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\Scrollbar.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\UI\Core\FontUpdateTracker.cs" />
      <Compile Include="Packages\com.unity.ugui\Runtime\EventSystem\RaycastResult.cs" />

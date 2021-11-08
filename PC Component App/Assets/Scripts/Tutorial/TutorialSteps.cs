@@ -20,6 +20,7 @@ public class TutorialSteps : MonoBehaviour
                                         {"Finished!", "That's everything you need to know for now! We don't have an exit button/feature yet, so I guess you're trapped here now..."}};
     float[,] tutStepCoords = new float[,] {{0,0}, {0,0}, {0,0}, {0,0}, {0,0}, {0,0}, {0,0}, {0,0}, {0,0}};
     int stepNum;
+    float delay;
     
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,8 @@ public class TutorialSteps : MonoBehaviour
         // Set counter to start position and simply future references to TutorialPopupManager to save resources
         stepNum = 0;
         popUpMgr = appManager.GetComponent<TutorialPopupManager>();
-
+        //gets delay to make sure its synced
+        delay = popUpMgr.GetDelay();
         // Start tutorial sequence
         NextPopUp();
     }
@@ -35,10 +37,8 @@ public class TutorialSteps : MonoBehaviour
     // Create next popup in the tutorial sequence
     void NextPopUp() {
         popUpMgr.CreatePopup(tutSteps[stepNum,0], tutSteps[stepNum,1], tutStepCoords[stepNum,0], tutStepCoords[stepNum,1], true);
-        Button popBtn = popUpMgr.getPopUpButton();
-        popBtn.onClick.AddListener(delegate {
-            PopUpClosed(popBtn);
-        });
+        //Starts coroutine for retrieving button
+        StartCoroutine(SetUpButton());
         stepNum++;
     }
     
@@ -48,5 +48,14 @@ public class TutorialSteps : MonoBehaviour
         if (stepNum < tutSteps.GetLength(0)) {
             NextPopUp();
         }
+    }
+    //Sets up button listener after delay. 
+    //Since the pop up is created after a delay, this ensure it doesn't try to retrieve the button before it is created
+    IEnumerator SetUpButton() {
+        yield return new WaitForSeconds(delay);
+        Button popBtn = popUpMgr.getPopUpButton();
+        popBtn.onClick.AddListener(delegate {
+            PopUpClosed(popBtn);
+        });
     }
 }

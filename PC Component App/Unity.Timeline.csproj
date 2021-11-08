@@ -74,8 +74,8 @@
      <Compile Include="Packages\com.unity.timeline\Runtime\Playables\BasicScriptPlayable.cs" />
      <Compile Include="Packages\com.unity.timeline\Runtime\Animation\AnimationTrack.cs" />
      <Compile Include="Packages\com.unity.timeline\Runtime\Extensions\TrackExtensions.cs" />
-     <Compile Include="Packages\com.unity.timeline\Runtime\Evaluation\IntervalTree.cs" />
      <Compile Include="Packages\com.unity.timeline\Runtime\Audio\AudioPlayableAsset.cs" />
+     <Compile Include="Packages\com.unity.timeline\Runtime\Evaluation\IntervalTree.cs" />
      <Compile Include="Packages\com.unity.timeline\Runtime\Playables\NotificationFlags.cs" />
      <Compile Include="Packages\com.unity.timeline\Runtime\Activation\ActivationTrack.cs" />
      <Compile Include="Packages\com.unity.timeline\Runtime\Activation\ActivationMixerPlayable.cs" />
