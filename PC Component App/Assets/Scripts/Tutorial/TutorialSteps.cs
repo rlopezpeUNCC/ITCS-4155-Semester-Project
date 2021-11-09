@@ -14,11 +14,11 @@ public class TutorialSteps : MonoBehaviour
                                         {"Component Details", "Right-clicking a part opens the description. When you start customizing, you'll see part stats here. Click that arrow on the right to hide the description."},
                                         {"Moving On", "Now, check out this button on the left."},
                                         {"Table of Contents", "This list gives you all the parts in the system. It also helps you see hidden parts! Try clicking the checkbox next to \"CPU Cooling\""},
-                                        {"Hiding Parts", "Now you can see the CPU clearly. (BTW, right-clicking a part's name on the list also shows its info). Almost done! Close the Table of Contents with this button here."},
-                                        {"Rotation", "If you still need a better view, you can rotate the computer by left-clicking. Try to find the case cooling fan by rotating, then click on it."},
+                                        {"Hiding Parts", "Now you can see the CPU clearly. (BTW, right-clicking a part's name on the list also shows its info). Almost done! Close the Table of Contents with the arrow button."},
+                                        {"Rotation", "If you still need a better view, you can rotate the computer by left-clicking. Try to find the case cooling fan by rotating, then right-click on it."},
                                         {"That's about it!", "If this view doesn't suit your fancy, you can zoom in and out with the scroll wheel, too. If you ever get lost, hit Reset View at the bottom and zoom accordingly."},
                                         {"Finished!", "That's everything you need to know for now! We don't have an exit button/feature yet, so I guess you're trapped here now..."}};
-    float[,] tutStepCoords = new float[,] {{0,0}, {0,0}, {0,0}, {0,0}, {0,0}, {0,0}, {0,0}, {0,0}, {0,0}};
+    float[,] tutStepCoords = new float[,] {{0,0}, {0,-410}, {0,0}, {-400,0}, {-400,-250}, {300,200}, {300,-150}, {300,-250}, {0,0}};
     int stepNum;
     float delay;
     
