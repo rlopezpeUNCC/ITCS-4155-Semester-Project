@@ -15,9 +15,11 @@ public class Highlight : MonoBehaviour
     {
         oldComponent = new GameObject();
         foreach (Material mat in mats)
-        {
-            baseColor = mat.GetColor("_BaseColor");
-            mat.SetColor("_OutlineColor", baseColor);
+        {   
+            if(mat.HasProperty("_BaseColor")) {
+                baseColor = mat.GetColor("_BaseColor");
+                mat.SetColor("_OutlineColor", baseColor);
+            }
         }
     }
 

@@ -607,7 +607,7 @@ MonoBehaviour:
   m_text: PC Components
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3c0e2209331279543ac923263e4ac21f, type: 2}
-  m_sharedMaterial: {fileID: -3161343127891647094, guid: 3c0e2209331279543ac923263e4ac21f,
+  m_sharedMaterial: {fileID: -4625732327203533369, guid: 3c0e2209331279543ac923263e4ac21f,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -917,7 +917,7 @@ MonoBehaviour:
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3c0e2209331279543ac923263e4ac21f, type: 2}
-  m_sharedMaterial: {fileID: -3161343127891647094, guid: 3c0e2209331279543ac923263e4ac21f,
+  m_sharedMaterial: {fileID: -4625732327203533369, guid: 3c0e2209331279543ac923263e4ac21f,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1302,7 +1302,7 @@ MonoBehaviour:
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3c0e2209331279543ac923263e4ac21f, type: 2}
-  m_sharedMaterial: {fileID: -3161343127891647094, guid: 3c0e2209331279543ac923263e4ac21f,
+  m_sharedMaterial: {fileID: -4625732327203533369, guid: 3c0e2209331279543ac923263e4ac21f,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1597,7 +1597,7 @@ MonoBehaviour:
   m_text: Mini Game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3c0e2209331279543ac923263e4ac21f, type: 2}
-  m_sharedMaterial: {fileID: -3161343127891647094, guid: 3c0e2209331279543ac923263e4ac21f,
+  m_sharedMaterial: {fileID: -4625732327203533369, guid: 3c0e2209331279543ac923263e4ac21f,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
