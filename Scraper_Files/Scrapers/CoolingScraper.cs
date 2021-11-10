@@ -12,7 +12,7 @@ namespace WebScraper{
         static void Main(string[] args){
 
             HtmlWeb web = new HtmlWeb();
-            HtmlDocument doc = web.Load("http://atdcomputers.com/computer-components/video-cards.html");
+            HtmlDocument doc = web.Load("http://atdcomputers.com/computer-components/cooling-fans.html?limit=all");
 
             var HeaderNamesN = doc.DocumentNode.SelectNodes("//h2[@class='product-name']/a");
             var titles = new List<RowN>();

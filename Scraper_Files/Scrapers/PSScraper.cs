@@ -3,16 +3,14 @@ using HtmlAgilityPack;
 using System.IO;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Xml;
-using System.Xml.XPath;
 
 
-namespace WebScraper{
+namespace WebScraperB{
     class Program{
         static void Main(string[] args){
 
             HtmlWeb web = new HtmlWeb();
-            HtmlDocument doc = web.Load("http://atdcomputers.com/computer-components/video-cards.html");
+            HtmlDocument doc = web.Load("http://atdcomputers.com/computer-components/power-supplies.html?limit=all");
 
             var HeaderNamesN = doc.DocumentNode.SelectNodes("//h2[@class='product-name']/a");
             var titles = new List<RowN>();
@@ -30,8 +28,7 @@ namespace WebScraper{
             }
 
             //var HeaderNamesC = doc.DocumentNode.SelectNodes("//span[starts-with(@id, 'pricediv')]");
-            var HeaderNamesC = doc.DocumentNode.SelectNodes("//span[(@class='price')]");
-            //var HeaderNamesC = doc.DocumentNode.SelectNodes("//span[(@class='regular-price')]");
+            var HeaderNamesC = doc.DocumentNode.SelectNodes("//span[(@class='price')] | //span[starts-with(@id, 'product-price-')]");
             var prices = new List<RowC>();
 
             foreach (var item in HeaderNamesC){
@@ -52,7 +49,8 @@ namespace WebScraper{
 
 class RowN{
     public string Name {get; set;}
+    public string Cost {get; set;}
 }
 class RowC{
-    public string Cost {get; set;}
+    
 }

@@ -28,7 +28,7 @@ namespace WebScraperB{
             }
 
             //var HeaderNamesC = doc.DocumentNode.SelectNodes("//span[starts-with(@id, 'pricediv')]");
-            var HeaderNamesC = doc.DocumentNode.SelectNodes("//span[(@class='price')] | //span[starts-with(@id, 'product-price-')]");
+            var HeaderNamesC = doc.DocumentNode.SelectNodes("//span[(@class='price')]");
             var prices = new List<RowC>();
 
             foreach (var item in HeaderNamesC){
@@ -49,8 +49,7 @@ namespace WebScraperB{
 
 class RowN{
     public string Name {get; set;}
-    public string Cost {get; set;}
 }
 class RowC{
-    
+    public string Cost {get; set;}
 }
