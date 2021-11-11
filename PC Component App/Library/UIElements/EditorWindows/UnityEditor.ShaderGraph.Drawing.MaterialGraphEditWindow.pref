@@ -24,5 +24,10 @@ MonoBehaviour:
   - '{}'
   - '{}'
   - '{}'
+<<<<<<< Updated upstream
   - '{"position":{"x":97.5999984741211,"y":-147.1999969482422,"z":0.0},"scale":{"x":0.25,"y":0.25,"z":1.0}}'
   - '{"m_Version":31,"m_SelectedElementsArray":["1922d111-b9af-46ef-a3f1-339887d948fb","e5dcbeb0-8e60-4c34-8205-9f041717b0e0"]}'
+=======
+  - '{"position":{"x":164.0,"y":-80.0,"z":0.0},"scale":{"x":0.25,"y":0.25,"z":1.0}}'
+  - '{"m_Version":35,"m_SelectedElementsArray":[]}'
+>>>>>>> Stashed changes
