@@ -19,6 +19,16 @@ public class MainMenu : MonoBehaviour
         
     }
 
+    public void Credits(){
+        SceneManager.LoadScene("Credits");
+        
+    }
+    
+    public void TeamInfo(){
+        SceneManager.LoadScene("Team Info");
+        
+    }
+
 
     public void QuitGame (){
 

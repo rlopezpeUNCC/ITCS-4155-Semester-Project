@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 using TMPro;
 public class ComponentMenu : MonoBehaviour
@@ -112,12 +113,6 @@ public class ComponentMenu : MonoBehaviour
         }
         
         FindObjectOfType<AudioManager>().Play("ButtonClicked1");
-        
-        
-       
-        
-        
-        
        
         switch (component){
 
@@ -197,5 +192,10 @@ public class ComponentMenu : MonoBehaviour
                 highlight.ObjectDeselected(componentObj);
             }
         }
+
+        public void BackToMainMenu(){
+            SceneManager.LoadScene("Main Menu");
+        }
+
 
 }
