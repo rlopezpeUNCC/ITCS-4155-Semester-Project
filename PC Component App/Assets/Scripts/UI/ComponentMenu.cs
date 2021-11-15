@@ -36,8 +36,7 @@ public class ComponentMenu : MonoBehaviour
    } 
    
     // Start is called before the first frame update
-    void Start() {        
-        // all 3 one for each
+    void Start() {                
         CPU.name = "CPU";
         CPU.description = "A central processing unit, also called a central processor, main processor or just processor, is the electronic circuitry that executes instructions comprising a computer program. "+
         "The CPU performs basic arithmetic, logic, controlling, and input/output operations specified by the instructions in the program.";
@@ -193,9 +192,13 @@ public class ComponentMenu : MonoBehaviour
             }
         }
 
-        public void BackToMainMenu(){
-            SceneManager.LoadScene("Main Menu");
-        }
+    public void BackToMainMenu(){
+        SceneManager.LoadScene("Main Menu");
+    }
+
+    public string GetName() {
+        return componentName.text;
+    }
 
 
 }
