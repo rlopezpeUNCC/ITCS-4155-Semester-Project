@@ -28,13 +28,15 @@ public class TutorialPopupManager : MonoBehaviour {
     public void Close() {
         popUp.GetComponent<tutorialPopup>().Close();
     }
+
     //creates popup clone from prefab after a delay
     IEnumerator Create(string title, string body, float x, float y, bool buttonEnabled) {
         yield return new WaitForSeconds(delay);
         popUp = Instantiate(popUpPrefab, Vector3.zero, Quaternion.identity);
         //sets up pop up
         popUp.GetComponent<tutorialPopup>().SetUp(title, body, buttonEnabled, x, y);
-    } 
+    }
+
     //returns delay
     public float GetDelay() {
         return delay;
