@@ -31,7 +31,7 @@ public class SwitchToggle : MonoBehaviour
     }
 
     void OnSwitch(bool on) {
-        uiHandleRectTransform.anchoredPosition = on ? handlePosition * -1 : handlePosition; 
+        uiHandleRectTransform.anchoredPosition = on ? handlePosition : handlePosition * -1; 
         backgroundImage.color = on ? backgroundActiveColor : backgroundDefaultColor;
         handleImage.color = on ? handleActiveColor : handleDefaultColor;
     }
