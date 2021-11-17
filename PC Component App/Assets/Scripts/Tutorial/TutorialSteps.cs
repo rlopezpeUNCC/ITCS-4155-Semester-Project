@@ -37,8 +37,7 @@ public class TutorialSteps : MonoBehaviour
     Renderer goalObjRenderer;
     
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         // Set counter to start position
         stepNum = 0;
         // simplify future references to TutorialPopupManager to save resources
@@ -48,7 +47,7 @@ public class TutorialSteps : MonoBehaviour
         checkForMenu = false;
         checkToggle = false;
         // gets delay to make sure its synced
-        delay = popUpMgr.GetDelay();
+        delay = popUpMgr.GetDelay()+.01f;
         // Start tutorial sequence
         NextPopUp();
     }

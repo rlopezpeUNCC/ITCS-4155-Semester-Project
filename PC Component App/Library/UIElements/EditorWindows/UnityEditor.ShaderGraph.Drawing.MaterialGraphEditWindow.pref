@@ -13,21 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Keys:
-  - __PanelContainer__rootVisualContainer__3c31937a445be424bb0a28361c0c356c__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedViewTransform
-  - __PanelContainer__rootVisualContainer__3c31937a445be424bb0a28361c0c356c__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedSelection
-  - __PanelContainer__rootVisualContainer__df9b16376f54d924d98c9bd2f1245607__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedViewTransform
-  - __PanelContainer__rootVisualContainer__df9b16376f54d924d98c9bd2f1245607__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedSelection
   - __PanelContainer__rootVisualContainer__6369e606b687014478cf4b862b45d28c__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedViewTransform
   - __PanelContainer__rootVisualContainer__6369e606b687014478cf4b862b45d28c__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedSelection
   m_Values:
-  - '{}'
-  - '{}'
-  - '{}'
-  - '{}'
-<<<<<<< Updated upstream
-  - '{"position":{"x":97.5999984741211,"y":-147.1999969482422,"z":0.0},"scale":{"x":0.25,"y":0.25,"z":1.0}}'
-  - '{"m_Version":31,"m_SelectedElementsArray":["1922d111-b9af-46ef-a3f1-339887d948fb","e5dcbeb0-8e60-4c34-8205-9f041717b0e0"]}'
-=======
-  - '{"position":{"x":164.0,"y":-80.0,"z":0.0},"scale":{"x":0.25,"y":0.25,"z":1.0}}'
-  - '{"m_Version":35,"m_SelectedElementsArray":[]}'
->>>>>>> Stashed changes
+  - '{"position":{"x":1245.0,"y":-1410.0,"z":0.0},"scale":{"x":0.7561436891555786,"y":0.7561436891555786,"z":1.0}}'
+  - '{"m_Version":37,"m_SelectedElementsArray":[]}'

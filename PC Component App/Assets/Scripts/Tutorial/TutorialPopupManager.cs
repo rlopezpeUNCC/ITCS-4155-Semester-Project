@@ -9,20 +9,27 @@ public class TutorialPopupManager : MonoBehaviour {
     GameObject popUp;
     //delay between closing and creating new pop up
     float delay = 1.5f;
-    
+
     //Creates the pop up at (positionX, positionY) with title and body
     public void CreatePopup(string title, string body, float positionX, float positionY, bool buttonEnabled) {
         //if popUp exist, close it
         if (popUp != null) {
             popUp.GetComponent<tutorialPopup>().Close();
         }
+        Debug.Log("creating pop up");
         //create new pop up after delay
         StartCoroutine(Create(title, body, positionX, positionY, buttonEnabled));
     }
 
     // Allows TutorialSteps to get popup button to make a listener with
     public Button getPopUpButton() {
-        return popUp.GetComponent<tutorialPopup>().GetComponentInChildren<Button>();
+        if (popUp != null) {
+            return popUp.GetComponent<tutorialPopup>().GetComponentInChildren<Button>();
+        } else {
+            Debug.Log("returning null");
+            return null;
+        }
+        
     }
 
     public void Close() {
@@ -35,6 +42,7 @@ public class TutorialPopupManager : MonoBehaviour {
         popUp = Instantiate(popUpPrefab, Vector3.zero, Quaternion.identity);
         //sets up pop up
         popUp.GetComponent<tutorialPopup>().SetUp(title, body, buttonEnabled, x, y);
+        Debug.Log("created pop up");
     }
 
     //returns delay
