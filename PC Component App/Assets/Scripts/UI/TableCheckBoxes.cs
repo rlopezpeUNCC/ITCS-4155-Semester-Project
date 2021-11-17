@@ -61,33 +61,43 @@ public class TableCheckBoxes : MonoBehaviour
             switch(thisToggle.name) {
                 case("Case"):
                     caseDissolving = true;
+                    caseMaterializing = false;
                     break;
                 case("Case Cooling"):
                     caseCoolingDissolving = true;
+                    caseCoolingMaterializing = false;
                     break;
                 case("Motherboard"):
                     motherboardDissolving = true;
+                    motherboardMaterializing = false;
                     break;
                 case("CPU"):
                     cpuDissolving = true;
+                    cpuCoolingMaterializing = false;
                     break;
                 case("CPU Cooling"):
                     cpuCoolingDissolving = true;
+                    cpuCoolingMaterializing = false;
                     break;
                 case("RAM"):
                     ramDissolving = true;
+                    ramMaterializing = false;
                     break;
                 case("GPU"):
                     gpuDissolving = true;
+                    gpuMaterializing = false;
                     break;
                 case("Storage"):
                     storageDissolving = true;
+                    storageMaterializing = false;
                     break;
                 case("Disc Drives"):
                     discDrivesDissolving = true;
+                    discDrivesMaterializing = false;
                     break;
                 case("Power Supply"):
                     psuDissolving = true;
+                    psuMaterializing = false;
                     break;
                 default:
                     Debug.Log("Couldnt find: " + thisToggle.name);
@@ -490,26 +500,3 @@ public class TableCheckBoxes : MonoBehaviour
     }
     
 }
-/*
-tocParts[thisToggle.name].GetComponent<BoxCollider>().enabled = true; //enables collider
-foreach ( Renderer lRenderer in lChildRenderers)
-            {
-                while(lRenderer.material.GetFloat("_Step") > 0) {
-                    lRenderer.material.SetFloat("_Step", lRenderer.material.GetFloat("_Step")-Time.deltaTime);
-                    Debug.Log(lRenderer.name + "_Step: " + lRenderer.material.GetFloat("_Step"));
-                }
-                lRenderer.enabled=true;
-            }
-        } else { // Unchecked (Hide)
-            tocParts[thisToggle.name].GetComponent<BoxCollider>().enabled = false; //disables collider
-            foreach (Renderer lRenderer in lChildRenderers)
-            {   
-                lRenderer.material.SetFloat("_DissolveEnabled", 1);
-                while(lRenderer.material.GetFloat("_Step") < .8f) {
-                    lRenderer.material.SetFloat("_Step", lRenderer.material.GetFloat("_Step")+Time.deltaTime);
-                    Debug.Log(lRenderer.name + "_Step: " + lRenderer.material.GetFloat("_Step"));
-                }
-                lRenderer.enabled=false;
-                lRenderer.material.SetFloat("_DissolveEnabled", 0);
-            }
-        */
