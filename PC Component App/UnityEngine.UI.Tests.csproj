@@ -56,8 +56,8 @@
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\Util\ImageHook.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\EventSystem\InputModuleTests.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\InputField\GenericInputFieldTests.cs" />
-     <Compile Include="Packages\com.unity.ugui\Tests\Runtime\TextEditor\TextEditorTests.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\EventSystem\GraphicRaycasterWorldSpaceCanvasTests.cs" />
+     <Compile Include="Packages\com.unity.ugui\Tests\Runtime\TextEditor\TextEditorTests.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\Canvas\RectMask2DWithNestedCanvasCullsUsingCorrectCanvasRect.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\Graphic\MaskTests.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\Canvas\CanvasScalerWithChildTextObjectDoesNotCrash.cs" />
@@ -75,8 +75,8 @@
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\LayoutGroup\LayoutGroupArrangement.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\ScrollRect\ScrollRectStableLayout.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\EventSystem\PhysicsRaycasterTests.cs" />
-     <Compile Include="Packages\com.unity.ugui\Tests\Runtime\Graphic\RawImageTest.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\ScrollRect\ScrollRectClamp.cs" />
+     <Compile Include="Packages\com.unity.ugui\Tests\Runtime\Graphic\RawImageTest.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\Button\TestButton.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\Canvas\CreateSceneUtility.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\InputField\InputFieldTests.cs" />

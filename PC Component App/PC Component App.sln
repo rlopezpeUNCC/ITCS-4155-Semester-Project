@@ -1,4 +1,5 @@
 ﻿
+<<<<<<< HEAD
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.UI", "UnityEngine.UI.csproj", "{9526184c-68ee-33fa-6d86-265a0c0914ac}"
@@ -54,6 +55,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VSCode.Editor", "Unity.VSCode.Editor.csproj", "{5a2f05a3-7d7e-1679-6e1f-7a2a1d1ee9c3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Mathematics.Editor", "Unity.Mathematics.Editor.csproj", "{7651e10d-9565-8236-7b57-f1464a79b120}"
+=======
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{E2FB5FDB-0E5F-CD05-7A77-02286AF38CE9}"
+>>>>>>> chica
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
