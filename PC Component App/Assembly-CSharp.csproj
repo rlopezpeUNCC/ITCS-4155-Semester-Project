@@ -40,6 +40,7 @@
      <Compile Include="Assets\Scripts\AppManager\Highlight.cs" />
      <Compile Include="Assets\Scripts\AppManager\Sound.cs" />
      <Compile Include="Assets\InfoSlider\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Scripts\SwitchToggle.cs" />
      <Compile Include="Assets\Scripts\AppManager\AudioManager.cs" />
      <Compile Include="Assets\Scripts\UI\DropDown.cs" />
      <Compile Include="Assets\Scripts\UI\TableVisibility.cs" />
