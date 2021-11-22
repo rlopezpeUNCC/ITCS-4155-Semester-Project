@@ -269,7 +269,7 @@ public class TableCheckBoxes : MonoBehaviour
         if (caseCoolingDissolving) {
             Renderer[] children = caseCooling.GetComponentsInChildren<Renderer>();
             foreach (Renderer rend in children) {
-                Debug.Log("going through rend");
+                //Debug.Log("going through rend");
                 if (rend.material.name.Contains("Lit")) {
                     Debug.Log(rend.gameObject.name);
                 }
