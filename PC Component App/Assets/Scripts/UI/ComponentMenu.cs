@@ -15,6 +15,8 @@ public class ComponentMenu : MonoBehaviour
     Animator arrowAnimator;
     [SerializeField]
     Animator animator;
+    [SerializeField]
+    TMPro.TMP_Dropdown dropdown;
     string component;
 
     //one for each component
@@ -178,7 +180,11 @@ public class ComponentMenu : MonoBehaviour
 
 
         }
-
+        if (dropdown.transform.FindChild("Dropdown List") != null) {
+            dropdown.Hide();
+            dropdown.Show();
+        }
+        
     }
 
     public void Close () {

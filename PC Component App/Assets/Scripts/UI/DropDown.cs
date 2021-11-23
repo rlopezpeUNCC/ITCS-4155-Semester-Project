@@ -2,8 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using Mono.Data.Sqlite; 
 using System.Data; 
-
-
+using TMPro;
 public class DropDown : MonoBehaviour {
     
     [SerializeField]
@@ -11,6 +10,7 @@ public class DropDown : MonoBehaviour {
     [SerializeField]
     ComponentMenu componentMenu;
     string selectedComponent = "Default";
+    string selectedModel = "Defualt";
 
     void Update() {
         if (componentMenu.GetName() != selectedComponent) {
@@ -20,6 +20,7 @@ public class DropDown : MonoBehaviour {
     }
     
     void UpdateList() {
+        selectedModel = "Default";
         dropdown.ClearOptions();
         switch(selectedComponent) {
             case("Case"):
@@ -50,7 +51,7 @@ public class DropDown : MonoBehaviour {
                 ReadDataBase("Memory");                
                 break;
             default:
-                Debug.Log("Couldn't find: " + selectedComponent);
+                //Debug.Log("Couldn't find: " + selectedComponent);
                 break;
         }
     }
@@ -59,7 +60,7 @@ public class DropDown : MonoBehaviour {
         List<string> models =  new List<string>();
         List<string> URLs =  new List<string>();
         List<double> prices =  new List<double>();
-        models.Add("Default");
+        models.Add(selectedModel);
         string conn = "URI=file:" + Application.dataPath + "/Database/"+component+".db"; //Path to database.
         IDbConnection dbconn;
         dbconn = (IDbConnection) new SqliteConnection(conn);
@@ -90,7 +91,7 @@ public class DropDown : MonoBehaviour {
     }
 
     public void ItemSelected() {
-        Debug.Log("Item selected");
+        selectedModel = dropdown.transform.FindChild("Label").GetComponent<TextMeshProUGUI>().text;
     }
    
 }
