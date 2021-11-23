@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using Mono.Data.Sqlite; 
 using System.Data; 
-using System;
+
 
 public class DropDown : MonoBehaviour {
     
@@ -65,6 +65,8 @@ public class DropDown : MonoBehaviour {
         dbconn = (IDbConnection) new SqliteConnection(conn);
         dbconn.Open(); //Open connection to the database.
         IDbCommand dbcmd = dbconn.CreateCommand();
+        if (component == "CaseCooling") component = "Cooling";
+        if (component == "CPUCoolin") component = "CPUCooling";
         string sqlQuery = "SELECT * FROM " +component;
         dbcmd.CommandText = sqlQuery;
         IDataReader reader = dbcmd.ExecuteReader();
@@ -85,6 +87,10 @@ public class DropDown : MonoBehaviour {
         dbcmd = null;
         dbconn.Close();
         dbconn = null;
+    }
+
+    public void ItemSelected() {
+        Debug.Log("Item selected");
     }
    
 }
