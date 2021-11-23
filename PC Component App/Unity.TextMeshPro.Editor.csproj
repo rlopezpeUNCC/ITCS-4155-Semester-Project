@@ -313,17 +313,14 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="System.Data">
-        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Assets\Imports\sqlite-unity-plugin-master\Plugins\System.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Data.Sqlite">
-        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Assets\Imports\sqlite-unity-plugin-master\Plugins\Mono.Data.Sqlite.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
         <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
         <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+        <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Assets\Plugins\Mono.Data.Sqlite.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
         <HintPath>C:\Users\Robert Lopez-Perez\Desktop\ITCS-4155-Semester-Project\PC Component App\Library\PackageCache\com.unity.render-pipelines.core@10.6.0\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
@@ -369,6 +366,9 @@
     </Reference>
     <Reference Include="Microsoft.CSharp">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+        <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Data.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Win32.Primitives">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\Microsoft.Win32.Primitives.dll</HintPath>

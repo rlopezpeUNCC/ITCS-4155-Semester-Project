@@ -25,8 +25,32 @@ public class DropDown : MonoBehaviour {
             case("Case"):
                 ReadDataBase("Cases");                
                 break;
+            case("CPU"):
+                ReadDataBase("Processors");                
+                break;
+            case("CPU Cooling"):
+                ReadDataBase("CPUCoolin");                
+                break;
+            case("Case Cooling"):
+                ReadDataBase("CaseCooling");                
+                break;
+            case("GPU"):
+                ReadDataBase("GPUs");                
+                break;
+            case("Storage"):
+                ReadDataBase("SSDs");                
+                break;
+            case("Motherboard"):
+                ReadDataBase("Boards");                
+                break;
+            case("Power Supply"):
+                ReadDataBase("PowerSupply");                
+                break;
+            case("RAM"):
+                ReadDataBase("Memory");                
+                break;
             default:
-
+                Debug.Log("Couldn't find: " + selectedComponent);
                 break;
         }
     }
@@ -45,14 +69,14 @@ public class DropDown : MonoBehaviour {
         dbcmd.CommandText = sqlQuery;
         IDataReader reader = dbcmd.ExecuteReader();
         while (reader.Read()) {
-            string model = reader.GetString(0);            
+            string model = reader.GetString(0) + " $" + reader.GetDouble(1).ToString();            
             string URL = reader.GetString(2);
             double price = reader.GetDouble(1);
             
             models.Add(model);
             URLs.Add(URL);
             prices.Add(price);
-            Debug.Log( "model= "+model+"  price =" +price+"  URL ="+  URL);
+            //Debug.Log( "model= "+model+"  price =" +price+"  URL ="+  URL);
         }
         dropdown.AddOptions(models);
         reader.Close();
