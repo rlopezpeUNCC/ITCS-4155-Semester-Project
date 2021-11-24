@@ -91,7 +91,7 @@ public class DropDown : MonoBehaviour {
     }
 
     public void ItemSelected() {
-        selectedModel = dropdown.transform.FindChild("Label").GetComponent<TextMeshProUGUI>().text;
+        selectedModel = dropdown.transform.Find("Label").GetComponent<TextMeshProUGUI>().text;
     }
    
 }

@@ -180,7 +180,7 @@ public class ComponentMenu : MonoBehaviour
 
 
         }
-        if (dropdown.transform.FindChild("Dropdown List") != null) {
+        if (dropdown.transform.Find("Dropdown List") != null) {
             dropdown.Hide();
             dropdown.Show();
         }
@@ -199,6 +199,7 @@ public class ComponentMenu : MonoBehaviour
         }
 
     public void BackToMainMenu(){
+        FindObjectOfType<AudioManager>().Play("ToMainMenu");
         SceneManager.LoadScene("Main Menu");
     }
 

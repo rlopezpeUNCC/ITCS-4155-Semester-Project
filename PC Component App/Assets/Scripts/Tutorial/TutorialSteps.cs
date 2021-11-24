@@ -22,7 +22,7 @@ public class TutorialSteps : MonoBehaviour
                                         {"This is the computer.", "It's made of a bunch of parts you can click on (and, later, replace with new ones). Try right-clicking on the GPU (labelled MSI)!"},
                                         {"Component Details", "Right-clicking a part opens the description. When you start customizing, you'll see part stats here. Click that arrow on the right to hide the description."},
                                         {"Moving On", "Now, check out this button on the left."},
-                                        {"Table of Contents", "This list gives you all the parts in the system. It also helps you see hidden parts! Try clicking the checkbox next to \"CPU Cooling\""},
+                                        {"Table of Contents", "This list gives you all the parts in the system. It also helps you see hidden parts! Try clicking the toggle next to \"CPU Cooling\"."},
                                         {"Hiding Parts", "Now you can see the CPU clearly. (BTW, right-clicking a part's name on the list also shows its info). Almost done! Close the Table of Contents with the arrow button."},
                                         {"Rotation", "If you still need a better view, you can rotate the computer by left-clicking. Try to find the case cooling fan by rotating, then right-click on it."},
                                         {"That's about it!", "If this view doesn't suit your fancy, you can zoom in and out with the scroll wheel, too. If you ever get lost, hit Reset View at the bottom and zoom accordingly."},

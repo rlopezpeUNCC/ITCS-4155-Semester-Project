@@ -20,18 +20,20 @@ public class MainMenu : MonoBehaviour
     }
 
     public void Credits(){
+        FindObjectOfType<AudioManager>().Play("MainMenuChoice");
         SceneManager.LoadScene("Credits");
         
     }
     
     public void TeamInfo(){
+        FindObjectOfType<AudioManager>().Play("MainMenuChoice");
         SceneManager.LoadScene("Team Info");
         
     }
 
 
     public void QuitGame (){
-
+        FindObjectOfType<AudioManager>().Play("MainMenuChoice");
         Debug.Log("QUIT");
         Application.Quit();
     } 
