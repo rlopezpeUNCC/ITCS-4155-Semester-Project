@@ -9,18 +9,31 @@ public class DropDown : MonoBehaviour {
     TMPro.TMP_Dropdown dropdown;
     [SerializeField]
     ComponentMenu componentMenu;
-    string selectedComponent = "Default";
-    string selectedModel = "Defualt";
+    string selectedComponent = "Default", comp;
 
+    string[,] selectedModels = new string[9, 2];
+    void Start() {
+        selectedModels[0, 0] = "Case";
+        selectedModels[1, 0] = "CPU";
+        selectedModels[2, 0] = "CPU Cooling";
+        selectedModels[3, 0] = "Case Cooling";
+        selectedModels[4, 0] = "GPU";
+        selectedModels[5, 0] = "Storage";
+        selectedModels[6, 0] = "Motherboard";
+        selectedModels[7, 0] = "Power Supply";
+        selectedModels[8, 0] = "RAM";
+
+        for (int i = 0; i < 9; i++) {
+            selectedModels[i, 1] = "Default";
+        }
+    }
     void Update() {
         if (componentMenu.GetName() != selectedComponent) {
             selectedComponent = componentMenu.GetName();
             UpdateList();
         }
     }
-    
     void UpdateList() {
-        selectedModel = "Default";
         dropdown.ClearOptions();
         switch(selectedComponent) {
             case("Case"):
@@ -57,10 +70,24 @@ public class DropDown : MonoBehaviour {
     }
 
     void ReadDataBase(string component) {
+        comp = component;
         List<string> models =  new List<string>();
         List<string> URLs =  new List<string>();
         List<double> prices =  new List<double>();
-        models.Add(selectedModel);
+        int index = 0;
+        for (int i = 0; i < 9; i++) {
+            if (component == selectedModels[i, 0]) {
+                index = i;
+                break;
+            }            
+        }
+        if (selectedModels[index, 1] == "Default") {
+            models.Add("Default");
+        } else {
+            print("Setting list start to: " + selectedModels[index, 1]);
+            models.Add(selectedModels[index, 1]);
+            models.Add("Default");
+        }
         string conn = "URI=file:" + Application.dataPath + "/Database/"+component+".db"; //Path to database.
         IDbConnection dbconn;
         dbconn = (IDbConnection) new SqliteConnection(conn);
@@ -91,7 +118,19 @@ public class DropDown : MonoBehaviour {
     }
 
     public void ItemSelected() {
-        selectedModel = dropdown.transform.Find("Label").GetComponent<TextMeshProUGUI>().text;
+      int index = 0;
+      for (int i = 0; i < 9; i++) {
+           if (comp == selectedModels[i, 0]) {
+               index = i;
+               break;
+           }            
+        }
+      selectedModels[index, 1] = dropdown.transform.Find("Label").GetComponent<TextMeshProUGUI>().text;
+      print("setting" + index + " to " + dropdown.transform.Find("Label").GetComponent<TextMeshProUGUI>().text);
+
+       for (int i = 0; i < 9; i++) {
+           print(selectedModels[i, 1]);
+       }
     }
    
 }

@@ -15,7 +15,7 @@ public class wheelZoom : MonoBehaviour{
 	private void Update(){	
 		if (mainCamera.orthographic){
 			if ((Input.GetAxis("Mouse ScrollWheel") > 0) & (mainCamera.orthographicSize > min)){
-				Debug.Log("zooming");
+				//Debug.Log("zooming");
 				mainCamera.orthographicSize -= speed;
 			}
 			else if ((Input.GetAxis("Mouse ScrollWheel") < 0) & (mainCamera.orthographicSize < max)){
