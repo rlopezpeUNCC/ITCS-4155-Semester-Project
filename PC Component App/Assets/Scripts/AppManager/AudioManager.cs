@@ -9,7 +9,6 @@ public class AudioManager : MonoBehaviour {
     public Sound[] sounds;
     public static AudioManager instance;
     // music-specific vars
-    public bool musicOn; // redundant, but keeping in case we implement long-term saving of muting decisions thru player data
     private Sound m;
     private string songName;
     [SerializeField]
@@ -18,6 +17,8 @@ public class AudioManager : MonoBehaviour {
     Sprite onTexture, offTexture;
 
     void Awake() {
+        /* Part 1: Prepare all sounds for this scene */
+
         if (instance == null) 
             instance = this;
         else {
@@ -25,7 +26,6 @@ public class AudioManager : MonoBehaviour {
             return;
         }
         //DontDestroyOnLoad(gameObject);
-        musicOn = true;
         
         foreach (Sound s in sounds) {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -38,14 +38,32 @@ public class AudioManager : MonoBehaviour {
             s.source.loop = s.loop;
         }
 
-        // Prepare/play appropriate music for scene
+        /* Part 2: Prepare music setting for this scene */
+
+        // Make sure PlayerPrefs for music setting exists with acceptable value
+        if (!PlayerPrefs.HasKey("MusicOn")) {
+            Debug.Log("No MusicOn setting found, creating PlayerPrefs entry with value 1");
+            PlayerPrefs.SetInt("MusicOn", 1);
+        } else if (PlayerPrefs.GetInt("MusicOn") < 0 || PlayerPrefs.GetInt("MusicOn") > 1) {
+            Debug.Log("MusicOn PlayerPrefs value is invalid, resetting to 1");
+            PlayerPrefs.SetInt("MusicOn", 1);
+        }
+
+        // Get song name for this scene if available
         Scene scene = SceneManager.GetActiveScene();
         if (scene.name == "Main Menu") {
             songName = "MainMenuMusic";
-            Play(songName);
         } else if (scene.name == "Tutorial" || scene.name == "Main Scene") {
             songName = "BuilderMusic";
+        }
+
+        // Set music toggle image and/or play music depending on music settings
+        if (PlayerPrefs.GetInt("MusicOn") == 1) {
+            // toggle image already defaults to "on", just play
             Play(songName);
+        } else {
+            musicToggleImg.sprite = offTexture;
+            m = Array.Find(sounds, sound => sound.name == songName); // prepare song in case they unmute
         }
     }
 
@@ -63,13 +81,13 @@ public class AudioManager : MonoBehaviour {
     }
 
     public void ToggleMusic() {
-        if (musicOn) {
+        if (PlayerPrefs.GetInt("MusicOn") == 1) {
             m.source.Stop();
-            musicOn = false;
+            PlayerPrefs.SetInt("MusicOn", 0);
             musicToggleImg.sprite = offTexture;
         } else {
             m.source.Play();
-            musicOn = true;
+            PlayerPrefs.SetInt("MusicOn", 1);
             musicToggleImg.sprite = onTexture;
         }
     }
