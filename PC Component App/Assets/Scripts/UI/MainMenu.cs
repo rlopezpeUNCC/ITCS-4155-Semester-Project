@@ -5,11 +5,13 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public void MainScene(){
+        FindObjectOfType<AudioManager>().Play("MainMenuChoice");
         SceneManager.LoadScene("Main Scene");
         
     }
 
      public void Tutorial(){
+         FindObjectOfType<AudioManager>().Play("MainMenuChoice");
         SceneManager.LoadScene("Tutorial");
         
     }
