@@ -13,15 +13,15 @@ public class DropDown : MonoBehaviour {
 
     string[,] selectedModels = new string[9, 2];
     void Start() {
-        selectedModels[0, 0] = "Case";
-        selectedModels[1, 0] = "CPU";
-        selectedModels[2, 0] = "CPU Cooling";
-        selectedModels[3, 0] = "Case Cooling";
-        selectedModels[4, 0] = "GPU";
-        selectedModels[5, 0] = "Storage";
-        selectedModels[6, 0] = "Motherboard";
-        selectedModels[7, 0] = "Power Supply";
-        selectedModels[8, 0] = "RAM";
+        selectedModels[0, 0] = "Cases";
+        selectedModels[1, 0] = "Processors";
+        selectedModels[2, 0] = "CPUCoolin";
+        selectedModels[3, 0] = "CaseCooling";
+        selectedModels[4, 0] = "GPUs";
+        selectedModels[5, 0] = "SSDs";
+        selectedModels[6, 0] = "Boards";
+        selectedModels[7, 0] = "PowerSupply";
+        selectedModels[8, 0] = "Memory";
 
         for (int i = 0; i < 9; i++) {
             selectedModels[i, 1] = "Default";
@@ -120,17 +120,25 @@ public class DropDown : MonoBehaviour {
     public void ItemSelected() {
       int index = 0;
       for (int i = 0; i < 9; i++) {
-           if (comp == selectedModels[i, 0]) {
+        if (comp == selectedModels[i, 0]) {
+               //print("match found: " + comp + " " + selectedModels[i, 0]); 
                index = i;
                break;
-           }            
+           }  
+                    
         }
       selectedModels[index, 1] = dropdown.transform.Find("Label").GetComponent<TextMeshProUGUI>().text;
-      print("setting" + index + " to " + dropdown.transform.Find("Label").GetComponent<TextMeshProUGUI>().text);
+      GetPrice();
+    }
 
-       for (int i = 0; i < 9; i++) {
-           print(selectedModels[i, 1]);
-       }
+    public float GetPrice() {
+        float price = 0;
+        for (int i = 0; i < 9; i++) {
+            if (selectedModels[i, 1].IndexOf("$") > 0)
+            price += float.Parse(selectedModels[i, 1].Substring(selectedModels[i, 1].IndexOf("$")+1));
+        }
+        Debug.Log("System price = " + price);
+        return price;
     }
    
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -210,6 +210,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4777837774767626436, guid: 2781215186e39114588ab2d578ada521,
+        type: 3}
+      propertyPath: dropdown
+      value: 
+      objectReference: {fileID: 1902706226}
     - target: {fileID: 4777837774767626436, guid: 2781215186e39114588ab2d578ada521,
         type: 3}
       propertyPath: highlight
@@ -579,7 +584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.20784314, g: 0.20784314, b: 0.20784314, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1279,6 +1284,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 571261473}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1902706226 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 272997687230347562, guid: 2781215186e39114588ab2d578ada521,
+    type: 3}
+  m_PrefabInstance: {fileID: 190026710}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1918147652 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1569070897061590809, guid: d7fa220c7dee2554e911c7074649653d,
