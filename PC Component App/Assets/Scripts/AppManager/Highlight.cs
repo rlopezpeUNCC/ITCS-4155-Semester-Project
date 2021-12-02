@@ -2,8 +2,12 @@ using UnityEngine;
 using System.Collections.Generic;
 public class Highlight : MonoBehaviour {
     GameObject oldComponent;
+<<<<<<< Updated upstream
     Color baseColor, highlightColor;
     List<GameObject> IncompatableComps = new List<GameObject>();
+=======
+    [SerializeField]
+>>>>>>> Stashed changes
     // Start is called before the first frame update
     void Start() {
         oldComponent = new GameObject();
@@ -13,7 +17,6 @@ public class Highlight : MonoBehaviour {
     public void ObjectSelected(GameObject component) {
         if (component != null) {
             Renderer[] children = component.GetComponentsInChildren<Renderer>();
-            //Debug.Log("highlighting: " + component.name + ". Children: " + children.Length);
             foreach (Renderer rend in children) 
             {
                 rend.material.SetFloat("_HighLightEnabled", 1);
