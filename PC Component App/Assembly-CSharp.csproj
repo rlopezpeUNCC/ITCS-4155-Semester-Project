@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\Tutorial\TutorialPopupManager.cs" />
      <Compile Include="Assets\Scripts\Tutorial\tutorialPopup.cs" />
      <Compile Include="Assets\Scripts\Control\wheelZoom.cs" />
+     <Compile Include="Assets\Scripts\AppManager\CompatabilityChecker.cs" />
      <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Control\ObjectClicker.cs" />
      <Compile Include="Assets\Scripts\Control\rotateObject.cs" />

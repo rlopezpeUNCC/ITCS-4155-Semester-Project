@@ -5262,6 +5262,7 @@ MonoBehaviour:
   highlight: {fileID: 0}
   arrowAnimator: {fileID: 4777837773786224785}
   animator: {fileID: 4777837774459537342}
+  dropdown: {fileID: 0}
 --- !u!114 &4777837774767626439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5338,6 +5339,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropdown: {fileID: 272997687230347562}
   componentMenu: {fileID: 4777837774767626436}
+  compatability: {fileID: 8701945289241439753, guid: 0e053c1a3fbac0345874e58e4bdb6aee,
+    type: 3}
 --- !u!1 &4777837774801464902
 GameObject:
   m_ObjectHideFlags: 0

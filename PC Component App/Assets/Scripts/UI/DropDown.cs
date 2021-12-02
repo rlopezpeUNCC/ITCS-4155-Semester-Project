@@ -9,6 +9,8 @@ public class DropDown : MonoBehaviour {
     TMPro.TMP_Dropdown dropdown;
     [SerializeField]
     ComponentMenu componentMenu;
+    [SerializeField]
+    CompatabilityChecker compatability;
     string selectedComponent = "Default", comp;
 
     string[,] selectedModels = new string[9, 2];
@@ -124,11 +126,11 @@ public class DropDown : MonoBehaviour {
                //print("match found: " + comp + " " + selectedModels[i, 0]); 
                index = i;
                break;
-           }  
-                    
+           } 
         }
       selectedModels[index, 1] = dropdown.transform.Find("Label").GetComponent<TextMeshProUGUI>().text;
       GetPrice();
+      compatability.CheckCompatability(selectedModels, index);
     }
 
     public float GetPrice() {
@@ -140,5 +142,4 @@ public class DropDown : MonoBehaviour {
         Debug.Log("System price = " + price);
         return price;
     }
-   
 }

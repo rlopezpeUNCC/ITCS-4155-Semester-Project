@@ -1041,7 +1041,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1195517489}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1418418914}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7946eb9c2ca39014fab67186b7935fab, type: 3}
@@ -15389,6 +15389,31 @@ PrefabInstance:
       propertyPath: sounds.Array.data[10].volume
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 8701945289241439753, guid: 0e053c1a3fbac0345874e58e4bdb6aee,
+        type: 3}
+      propertyPath: cpu
+      value: 
+      objectReference: {fileID: 88480069}
+    - target: {fileID: 8701945289241439753, guid: 0e053c1a3fbac0345874e58e4bdb6aee,
+        type: 3}
+      propertyPath: ram
+      value: 
+      objectReference: {fileID: 1714514191}
+    - target: {fileID: 8701945289241439753, guid: 0e053c1a3fbac0345874e58e4bdb6aee,
+        type: 3}
+      propertyPath: storage
+      value: 
+      objectReference: {fileID: 2113585665712417562}
+    - target: {fileID: 8701945289241439753, guid: 0e053c1a3fbac0345874e58e4bdb6aee,
+        type: 3}
+      propertyPath: highlight
+      value: 
+      objectReference: {fileID: 2126321136}
+    - target: {fileID: 8701945289241439753, guid: 0e053c1a3fbac0345874e58e4bdb6aee,
+        type: 3}
+      propertyPath: motherboard
+      value: 
+      objectReference: {fileID: 258439151}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e053c1a3fbac0345874e58e4bdb6aee, type: 3}
 --- !u!1 &1197219376
@@ -17997,6 +18022,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405725933}
   m_Mesh: {fileID: -2017424597858500294, guid: 3eee309d9cbb2604880a0da42223457d, type: 3}
+--- !u!1 &1418418914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5458039898297418627, guid: 0e053c1a3fbac0345874e58e4bdb6aee,
+    type: 3}
+  m_PrefabInstance: {fileID: 1195517489}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1418418915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418418914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9770c9cbc57a3824cbfa55b689238927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  motherboard: {fileID: 258439151}
+  ram: {fileID: 1714514191}
+  cpu: {fileID: 88480069}
+  storage: {fileID: 2113585665712417562}
 --- !u!1 &1438387990
 GameObject:
   m_ObjectHideFlags: 0
@@ -23613,6 +23660,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 204304651675669466, guid: 2781215186e39114588ab2d578ada521,
+        type: 3}
+      propertyPath: compatability
+      value: 
+      objectReference: {fileID: 1418418915}
     - target: {fileID: 272997687230347562, guid: 2781215186e39114588ab2d578ada521,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
@@ -25453,7 +25505,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1195517489}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1418418914}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dcd504fc82bc2494986b6b4075d5828f, type: 3}

@@ -1,21 +1,16 @@
 using UnityEngine;
-
-public class Highlight : MonoBehaviour
-{
-    public Shader startColor;
-    public Shader mouseOverColor;
+using System.Collections.Generic;
+public class Highlight : MonoBehaviour {
     GameObject oldComponent;
-    Color baseColor;
-    [SerializeField]
-    Material[] mats = new Material[20];
+    Color baseColor, highlightColor;
+    List<GameObject> IncompatableComps = new List<GameObject>();
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         oldComponent = new GameObject();
+        highlightColor = new Color(255, 240 ,0, 255);
     }
 
-    public void ObjectSelected(GameObject component)
-    {
+    public void ObjectSelected(GameObject component) {
         if (component != null) {
             Renderer[] children = component.GetComponentsInChildren<Renderer>();
             //Debug.Log("highlighting: " + component.name + ". Children: " + children.Length);
@@ -38,6 +33,35 @@ public class Highlight : MonoBehaviour
                 rend.material.SetFloat("_HighLightEnabled", 0);
             }
             oldComponent = component;
+        }
+    }
+
+    public void IncompatableObjects(List<GameObject> components) {
+        Debug.Log("in highlight");
+        ClearIncompatablities();
+        if (components != null) {
+            foreach (GameObject component in components) {
+                Renderer[] children = component.GetComponentsInChildren<Renderer>();
+                //Debug.Log("highlighting: " + component.name + ". Children: " + children.Length);
+                foreach (Renderer rend in children) {
+                    rend.material.SetColor("_HighlightColor", Color.red);
+                    rend.material.SetFloat("_HighLightEnabled", 1);
+                }
+            }
+        }
+        IncompatableComps = components;
+    }
+
+    void ClearIncompatablities() {
+        if (IncompatableComps != null) {
+            foreach (GameObject component in IncompatableComps) {
+                Renderer[] children = component.GetComponentsInChildren<Renderer>();
+                //Debug.Log("highlighting: " + component.name + ". Children: " + children.Length);
+                foreach (Renderer rend in children) {
+                    rend.material.SetColor("_HighlightColor", highlightColor);
+                    rend.material.SetFloat("_HighLightEnabled", 0);
+                }
+            }
         }
     }
     
