@@ -2,12 +2,9 @@ using UnityEngine;
 using System.Collections.Generic;
 public class Highlight : MonoBehaviour {
     GameObject oldComponent;
-<<<<<<< Updated upstream
     Color baseColor, highlightColor;
     List<GameObject> IncompatableComps = new List<GameObject>();
-=======
     [SerializeField]
->>>>>>> Stashed changes
     // Start is called before the first frame update
     void Start() {
         oldComponent = new GameObject();
