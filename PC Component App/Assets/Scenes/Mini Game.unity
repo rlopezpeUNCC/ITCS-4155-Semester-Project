@@ -26857,7 +26857,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073866248}
   m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -0.5, y: 5.42, z: 5.1400003}
+  m_LocalPosition: {x: -0.46, y: 5.34, z: 5.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1671396847}
@@ -40342,7 +40342,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -39.4, y: -78.49}
+  m_AnchoredPosition: {x: -39.4, y: -74}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1623644606
@@ -46842,7 +46842,7 @@ GameObject:
   - component: {fileID: 1916223064}
   - component: {fileID: 1916223063}
   m_Layer: 5
-  m_Name: 'CPU Fan Button Canvas '
+  m_Name: 'Fan Button Canvas '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48081,7 +48081,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1961947839
 MonoBehaviour:
   m_ObjectHideFlags: 0
