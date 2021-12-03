@@ -74,12 +74,10 @@ public class FirstLevel : MonoBehaviour
     {
         if (thisButton.name == "Correct")
         {
-            print("Correct");
             ramHandler.SetActive(false);
             cpuFanHandler.SetActive(false);
             cpuHandler.SetActive(false);
             gpuHandler.SetActive(false);
-            print("Parent name: " + thisButton.transform.parent.name);
             string parentName = thisButton.transform.parent.name;
             if (parentName == "CPU Button Canvas")
             {
@@ -89,9 +87,9 @@ public class FirstLevel : MonoBehaviour
             {
                 ram.transform.position = new Vector3(.82f, .08f, 7.37f);
             }
-            else if(parentName == "CPU Fan Button Canvas")
+            else if(parentName.Trim() == "Fan Button Canvas")
             {
-                cpuFan.transform.position = new Vector3(-1.21f, .07f, 6.5f);
+                cpuFan.transform.position = new Vector3(-1.12f, 2.13f, 5.4f);
             }
             else if(parentName == "GPU Button Canvas")
             {
