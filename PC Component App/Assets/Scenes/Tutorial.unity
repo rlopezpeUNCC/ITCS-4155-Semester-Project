@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -155,6 +155,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 204304651675669466, guid: 2781215186e39114588ab2d578ada521,
+        type: 3}
+      propertyPath: compatability
+      value: 
+      objectReference: {fileID: 767057199}
     - target: {fileID: 4777837773683954572, guid: 2781215186e39114588ab2d578ada521,
         type: 3}
       propertyPath: cpu
@@ -210,6 +215,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4777837774767626436, guid: 2781215186e39114588ab2d578ada521,
+        type: 3}
+      propertyPath: dropDown
+      value: 
+      objectReference: {fileID: 1427988583}
     - target: {fileID: 4777837774767626436, guid: 2781215186e39114588ab2d578ada521,
         type: 3}
       propertyPath: dropdown
@@ -949,6 +959,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7946eb9c2ca39014fab67186b7935fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &767057199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767057197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9770c9cbc57a3824cbfa55b689238927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  motherboard: {fileID: 14938081}
+  ram: {fileID: 1172384474}
+  cpu: {fileID: 1848038004}
+  storage: {fileID: 334279693}
 --- !u!114 &767057201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1098,6 +1124,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 571261473}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1427988583 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 204304651675669466, guid: 2781215186e39114588ab2d578ada521,
+    type: 3}
+  m_PrefabInstance: {fileID: 190026710}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df5b92ebf8c35764781c3e2da1cb9e50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1482762008
 PrefabInstance:
   m_ObjectHideFlags: 0
