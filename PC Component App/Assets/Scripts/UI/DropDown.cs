@@ -35,13 +35,15 @@ public class DropDown : MonoBehaviour {
             UpdateList();
         }
     }
-    void UpdateList() {
+    public void UpdateList() {
         dropdown.ClearOptions();
+        compatability.ClearIncompatablities();
         switch(selectedComponent) {
             case("Case"):
                 ReadDataBase("Cases");                
                 break;
             case("CPU"):
+                compatability.CheckCompatability(selectedModels, 1);
                 ReadDataBase("Processors");                
                 break;
             case("CPU Cooling"):
@@ -50,19 +52,22 @@ public class DropDown : MonoBehaviour {
             case("Case Cooling"):
                 ReadDataBase("CaseCooling");                
                 break;
-            case("GPU"):
+            case("GPU"):                
                 ReadDataBase("GPUs");                
                 break;
             case("Storage"):
+                compatability.CheckCompatability(selectedModels, 5);
                 ReadDataBase("SSDs");                
                 break;
             case("Motherboard"):
+                compatability.CheckCompatability(selectedModels, 6);
                 ReadDataBase("Boards");                
                 break;
             case("Power Supply"):
                 ReadDataBase("PowerSupply");                
                 break;
             case("RAM"):
+                compatability.CheckCompatability(selectedModels, 8);
                 ReadDataBase("Memory");                
                 break;
             default:
@@ -86,7 +91,7 @@ public class DropDown : MonoBehaviour {
         if (selectedModels[index, 1] == "Default") {
             models.Add("Default");
         } else {
-            print("Setting list start to: " + selectedModels[index, 1]);
+            //print("Setting list start to: " + selectedModels[index, 1]);
             models.Add(selectedModels[index, 1]);
             models.Add("Default");
         }
@@ -129,7 +134,6 @@ public class DropDown : MonoBehaviour {
            } 
         }
       selectedModels[index, 1] = dropdown.transform.Find("Label").GetComponent<TextMeshProUGUI>().text;
-      GetPrice();
       compatability.CheckCompatability(selectedModels, index);
     }
 
@@ -139,7 +143,7 @@ public class DropDown : MonoBehaviour {
             if (selectedModels[i, 1].IndexOf("$") > 0)
             price += float.Parse(selectedModels[i, 1].Substring(selectedModels[i, 1].IndexOf("$")+1));
         }
-        Debug.Log("System price = " + price);
+        //Debug.Log("System price = " + price);
         return price;
     }
 }

@@ -17,6 +17,8 @@ public class ComponentMenu : MonoBehaviour
     Animator animator;
     [SerializeField]
     TMPro.TMP_Dropdown dropdown;
+    [SerializeField]
+    DropDown dropDown;
     string component;
 
     //one for each component
@@ -38,7 +40,7 @@ public class ComponentMenu : MonoBehaviour
    } 
    
     // Start is called before the first frame update
-    void Start() {                
+    void Start() {              
         CPU.name = "CPU";
         CPU.description = "A central processing unit, also called a central processor, main processor or just processor, is the electronic circuitry that executes instructions comprising a computer program. "+
         "The CPU performs basic arithmetic, logic, controlling, and input/output operations specified by the instructions in the program.";
@@ -92,6 +94,7 @@ public class ComponentMenu : MonoBehaviour
     public void DetailSetup (string component) {
         bool isOpen = animator.GetBool("open");
         GameObject componentObj = GameObject.Find("Computer/" +component);
+        dropDown.UpdateList();
         if (this.component == component) {
             if (!isOpen) {
                 animator.SetBool("open", !isOpen);
@@ -108,9 +111,13 @@ public class ComponentMenu : MonoBehaviour
             if (!isOpen) {
                 componentObj = GameObject.Find("Computer/" +component);
                 animator.SetBool("open", !isOpen);
-                arrowAnimator.SetBool("open", isOpen);                
+                arrowAnimator.SetBool("open", isOpen);          
             } 
             highlight.ObjectSelected(componentObj);
+        }
+        if (isOpen) {
+            //print("Clearing in compmenu");
+            highlight.ClearIncompatablities();
         }
         
         FindObjectOfType<AudioManager>().Play("ButtonClicked1");
@@ -188,15 +195,18 @@ public class ComponentMenu : MonoBehaviour
     }
 
     public void Close () {
-            FindObjectOfType<AudioManager>().Play("PanelOpened");
-            bool isOpen = animator.GetBool("open");
-            animator.SetBool("open", !isOpen);
-            arrowAnimator.SetBool("open", isOpen);
-            if (isOpen) {
-                GameObject componentObj = GameObject.Find("Computer/" +component);
-                highlight.ObjectDeselected(componentObj);
-            }
+        highlight.ClearIncompatablities();
+        FindObjectOfType<AudioManager>().Play("PanelOpened");
+        bool isOpen = animator.GetBool("open");
+        animator.SetBool("open", !isOpen);
+        arrowAnimator.SetBool("open", isOpen);
+        if (isOpen) {
+            GameObject componentObj = GameObject.Find("Computer/" +component);
+            
+        } else {
+            
         }
+    }
 
     public void BackToMainMenu(){
         FindObjectOfType<AudioManager>().Play("ToMainMenu");

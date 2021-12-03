@@ -7,7 +7,7 @@ public class Highlight : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         oldComponent = new GameObject();
-        highlightColor = new Color(255, 240 ,0, 255);
+        highlightColor = new Color(1, .9411764705882353f ,0, 1);
     }
 
     public void ObjectSelected(GameObject component) {
@@ -36,8 +36,7 @@ public class Highlight : MonoBehaviour {
         }
     }
 
-    public void IncompatableObjects(List<GameObject> components) {
-        Debug.Log("in highlight");
+    public void IncompatableObjects(List<GameObject> components) {        
         ClearIncompatablities();
         if (components != null) {
             foreach (GameObject component in components) {
@@ -48,18 +47,24 @@ public class Highlight : MonoBehaviour {
                     rend.material.SetFloat("_HighLightEnabled", 1);
                 }
             }
-        }
+        } 
         IncompatableComps = components;
     }
 
-    void ClearIncompatablities() {
+    public void ClearIncompatablities() {
+        //Debug.Log("clearing");
         if (IncompatableComps != null) {
             foreach (GameObject component in IncompatableComps) {
                 Renderer[] children = component.GetComponentsInChildren<Renderer>();
                 //Debug.Log("highlighting: " + component.name + ". Children: " + children.Length);
                 foreach (Renderer rend in children) {
-                    rend.material.SetColor("_HighlightColor", highlightColor);
-                    rend.material.SetFloat("_HighLightEnabled", 0);
+                    if (oldComponent == component) {
+                        rend.material.SetColor("_HighlightColor", highlightColor);
+                    }
+                    if (rend.material.GetColor("_HighlightColor") == Color.red) {
+                        rend.material.SetColor("_HighlightColor", highlightColor);
+                        rend.material.SetFloat("_HighLightEnabled", 0);
+                    }
                 }
             }
         }
