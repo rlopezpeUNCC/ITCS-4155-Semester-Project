@@ -23,15 +23,14 @@ public class CompatabilityChecker : MonoBehaviour {
             case(6):
                 if (selectedModels[index, 1] == "Default") break;
                 //checking ram
-                foreach (string model in motherboardsRam) {
-                    if (selectedModels[index, 1].Contains(model)) {
-                        if (!selectedModels[8, 1].Contains("DDR3") && selectedModels[8, 1] != "Default") {
-                            incompatible.Add(ram);
-                        } 
-                        break;
-                    } else if (selectedModels[8, 1].Contains("DDR3")) {
+                if (selectedModels[8, 1].Contains("DDR3")) {
+                    if (!selectedModels[6, 1].Contains(motherboardsRam[0]) && !selectedModels[6, 1].Contains(motherboardsRam[1])) {
                         incompatible.Add(ram);
-                        break;
+                    }
+                } else if (selectedModels[8, 1].Contains("DDR4")) {
+                    print("DDR4");
+                    if (selectedModels[6, 1].Contains(motherboardsRam[0]) || selectedModels[6, 1].Contains(motherboardsRam[1])) {
+                        incompatible.Add(ram);
                     }
                 }
                 //checking CPU
@@ -70,22 +69,49 @@ public class CompatabilityChecker : MonoBehaviour {
                     }
                 }
                 //checking storage
-                foreach (string model in storageMotherboard1) {    
-                    if (selectedModels[5, 1].Contains(model)) {                
-                        bool compatable = false;
-                        foreach (string motherboard in motherboardStorage1) {
-                            if (selectedModels[index, 1].Contains(motherboard)) compatable = true;
-                        }
-                        if (!compatable) incompatible.Add(storage);
-                    } else {
-                        foreach (string motherboard in motherboardStorage1) {
-                            if (selectedModels[index, 1].Contains(motherboard)) incompatible.Add(storage);
+                if (selectedModels[5, 1] != "Default") {
+                    foreach (string model in storageMotherboard1) {    
+                        if (selectedModels[5, 1].Contains(model)) {                
+                            bool compatable = false;
+                            foreach (string motherboard in motherboardStorage1) {
+                                if (selectedModels[index, 1].Contains(motherboard)) compatable = true;
+                            }
+                            if (!compatable) incompatible.Add(storage);
+                        } else {
+                            foreach (string motherboard in motherboardStorage1) {
+                                if (selectedModels[index, 1].Contains(motherboard)) incompatible.Add(storage);
+                            }
                         }
                     }
                 }
                 gameObject.GetComponent<Highlight>().IncompatableObjects(incompatible);
                 
                 break;
+            //RAM
+            case(8):
+                if (selectedModels[index, 1] == "Default") break;
+                //print("Checking RAM<" + selectedModels[index, 1] + "> and Motherboard<" + selectedModels[6, 1] + "> compatability");
+                //checking motherboards
+                if (selectedModels[index, 1].Contains("DDR3")) {
+                    //print("DDR3 RAM");
+                    if (!selectedModels[6, 1].Contains(motherboardsRam[0]) && !selectedModels[6, 1].Contains(motherboardsRam[1])) {
+                        incompatible.Add(motherboard);
+                        //print("NOT DDR3 Motherboard");
+                    }
+                } else if (selectedModels[index, 1].Contains("DDR4")) {
+                    print("DDR4");
+                    if (selectedModels[6, 1].Contains(motherboardsRam[0]) || selectedModels[6, 1].Contains(motherboardsRam[1])) {
+                        incompatible.Add(motherboard);
+                        //print("NOT DDR4 Motherboard");
+                    }
+                }
+                
+                gameObject.GetComponent<Highlight>().IncompatableObjects(incompatible);
+                break;
+            //CPU
+            case(1):
+                break;
+
         }
     }
 

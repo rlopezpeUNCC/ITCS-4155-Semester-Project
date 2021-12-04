@@ -44,6 +44,7 @@ public class DropDown : MonoBehaviour {
                 ReadDataBase("Cases");                
                 break;
             case("CPU"):
+                print("checking cpu");
                 compatability.CheckCompatability(selectedModels, 1);
                 ReadDataBase("Processors");                
                 break;
@@ -57,10 +58,12 @@ public class DropDown : MonoBehaviour {
                 ReadDataBase("GPUs");                
                 break;
             case("Storage"):
+                print("checking storage");
                 compatability.CheckCompatability(selectedModels, 5);
                 ReadDataBase("SSDs");                
                 break;
             case("Motherboard"):
+                print("checking motherboard");
                 compatability.CheckCompatability(selectedModels, 6);
                 ReadDataBase("Boards");                
                 break;
@@ -68,6 +71,7 @@ public class DropDown : MonoBehaviour {
                 ReadDataBase("PowerSupply");                
                 break;
             case("RAM"):
+                print("checking RAM");
                 compatability.CheckCompatability(selectedModels, 8);
                 ReadDataBase("Memory");                
                 break;
@@ -138,7 +142,7 @@ public class DropDown : MonoBehaviour {
       compatability.CheckCompatability(selectedModels, index);
 
       selectedURL = URLs[index];
-      Debug.Log(selectedURL);
+      //Debug.Log(selectedURL);
     }
     /// <summary>
     /// Returns total price of all selected components
