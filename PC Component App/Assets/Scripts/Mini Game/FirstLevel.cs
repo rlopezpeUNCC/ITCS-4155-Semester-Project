@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -83,6 +84,7 @@ public class FirstLevel : MonoBehaviour
     public void ButtonClicked(Button thisButton)
     {
         if (thisButton.name == "Correct") { // Right choice made
+            FindObjectOfType<AudioManager>().Play("ButtonClicked1");
             // Gain points
             score += 10;
             scoreField.SetText(score.ToString());
@@ -103,10 +105,17 @@ public class FirstLevel : MonoBehaviour
                 gpu.transform.position = new Vector3(-0.3f, -.04f, 5.2f);
             }
         } else { // wrong choice made
+            FindObjectOfType<AudioManager>().Play("Incorrect");
             score -= 5;
             if (score < -999) { score = -999 ;} // prevent errors
             scoreField.SetText(score.ToString());
         }
+    }
+
+    // Copy of BackToMainMenu from ComponentMenu (would need to import lots of unused things otherwise)
+    public void BackToMainMenu(){
+        FindObjectOfType<AudioManager>().Play("ToMainMenu");
+        SceneManager.LoadScene("Main Menu");
     }
 }
 
