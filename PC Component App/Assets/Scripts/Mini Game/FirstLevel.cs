@@ -7,9 +7,9 @@ using TMPro;
 
 public class FirstLevel : MonoBehaviour
 {
-    public GameObject cpu, cpuFan, ram, gpu, ramHandler, cpuHandler, cpuFanHandler, gpuHandler, introPanel, sidePanel;
+    public GameObject motherboard, cpu, cpuFan, ram, gpu, ramHandler, cpuHandler, cpuFanHandler, gpuHandler, introPanel, sidePanel, finished;
     public TextMeshProUGUI scoreField;
-    private int score;
+    private int score, correctNum;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +21,7 @@ public class FirstLevel : MonoBehaviour
         introPanel.SetActive(true);
         sidePanel.SetActive(false);
         score = 0;
+        correctNum = 0;
     }
 
     // Update is called once per frame, detects which part user wants to place
@@ -38,12 +39,26 @@ public class FirstLevel : MonoBehaviour
                 }
             }
         }
+        if(correctNum >= 4)
+        {
+            cpu.SetActive(false);
+            ram.SetActive(false);
+            cpuFan.SetActive(false);
+            gpu.SetActive(false);
+            motherboard.SetActive(false);
+            EndLevel();
+        }
     }
 
     // Hides instructions so user can play game (not to be confused with the Start() method above!!!)
     public void StartLevel() {
         introPanel.SetActive(false);
         sidePanel.SetActive(true);
+    }
+
+    public void EndLevel()
+    {
+        finished.SetActive(true);
     }
 
     // Displays right/wrong choices for part placement
@@ -88,19 +103,20 @@ public class FirstLevel : MonoBehaviour
             // Gain points
             score += 10;
             scoreField.SetText(score.ToString());
-
+            correctNum += 1;
             // Hide choice buttons and place part
             string parentName = thisButton.transform.parent.name;
-            if (parentName == "CPU Button Canvas") {
+            if (parentName.Trim() == "CPU Button Canvas") {
                 cpuHandler.SetActive(false);
                 cpu.transform.position = new Vector3(-1.21f, .07f, 6.275f);
-            } else if (parentName == "RAM Button Canvas") {
+            } else if (parentName.Trim() == "RAM Button Canvas") {
                 ramHandler.SetActive(false);
                 ram.transform.position = new Vector3(.82f, .08f, 7.37f);
             } else if (parentName.Trim() == "Fan Button Canvas") {
+                if(cpu)
                 cpuFanHandler.SetActive(false);
                 cpuFan.transform.position = new Vector3(-1.12f, 2.13f, 5.4f);
-            } else if (parentName == "GPU Button Canvas") {
+            } else if (parentName.Trim() == "GPU Button Canvas") {
                 gpuHandler.SetActive(false);
                 gpu.transform.position = new Vector3(-0.3f, -.04f, 5.2f);
             }
