@@ -7,8 +7,8 @@ using TMPro;
 
 public class SecondLevel : MonoBehaviour
 {
-    public GameObject oldSidePanel, pcCase, motherboard, caseFan, power, discDrives, storage, caseFanButtons, motherboardButtons, powerButtons, discDriveButtons, storageButtons, oldPanel, sidePanel;
-    public TextMeshProUGUI scoreField, desc;
+    public GameObject oldSidePanel, pcCase, motherboard, caseFan, power, discDrives, storage, caseFanButtons, motherboardButtons, powerButtons, discDriveButtons, storageButtons, oldPanel, sidePanel, finished;
+    public TextMeshProUGUI scoreField, desc, endCardSub;
     int correctNum, score;
     // Start is called before the first frame update
     void Start()
@@ -44,9 +44,11 @@ public class SecondLevel : MonoBehaviour
         }
         if (correctNum >= 5)
         {
-
+            EndLevel();
         }
     }
+
+    // Place parts at starting positions when level begins
     public void MoveParts()
     {
         pcCase.transform.position = new Vector3(-.3f, -.7f, 9f);
@@ -56,9 +58,10 @@ public class SecondLevel : MonoBehaviour
         discDrives.transform.position = new Vector3(-2.5f, 6.6f, 9f);
         storage.transform.position = new Vector3(4.7f, 5.9f, 5.72f);
     }
+
+    // Display placement options for currently selected part
     public void ShowButtons(string component)
     {
-        print(component);
         if(component == "CMB")
         {
             desc.SetText("The motherboard will be fairly heavy at this point, be cautious");
@@ -106,10 +109,10 @@ public class SecondLevel : MonoBehaviour
         }
     }
 
+    // carry out game logic based on correctness and part choice
     public void ButtonClicked(Button thisButton)
     {
-        if(thisButton.name == "Correct")
-        {
+        if(thisButton.name == "Correct") { // Correct choice
             score += 10;
             scoreField.SetText(score.ToString());
             correctNum += 1;
@@ -141,11 +144,20 @@ public class SecondLevel : MonoBehaviour
                 storageButtons.SetActive(false);
                 storage.transform.position = new Vector3(2.5f, -1.1f, 8f);
             }
+        } else { // incorrect choice
+            score -= 5;
+            scoreField.SetText(score.ToString());
         }
     }
 
     public void StartLevel()
     {
         Start();
+    }
+
+    public void EndLevel() {
+        endCardSub.SetText("SCORE: " + score.ToString());
+        sidePanel.SetActive(false);
+        finished.SetActive(true);
     }
 }

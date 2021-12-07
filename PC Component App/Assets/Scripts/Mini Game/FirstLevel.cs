@@ -4,11 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+// CUrrently attached to Motherboard in Mini Game
 
 public class FirstLevel : MonoBehaviour
 {
     public GameObject motherboard, cpu, cpuFan, ram, gpu, ramHandler, cpuHandler, cpuFanHandler, gpuHandler, introPanel, sidePanel, finished;
-    public TextMeshProUGUI scoreField, description;
+    public TextMeshProUGUI scoreField, description, endCardSub;
     private int score, correctNum;
     private bool noCPU;
 
@@ -60,6 +61,7 @@ public class FirstLevel : MonoBehaviour
 
     public void EndLevel()
     {
+        endCardSub.SetText("SCORE: " + score.ToString());
         sidePanel.SetActive(false);
         finished.SetActive(true);
     }
@@ -67,7 +69,7 @@ public class FirstLevel : MonoBehaviour
     // Displays right/wrong choices for part placement
     public void ChangeButtons(string component)
     {
-        if (component == "CPU")
+        if (component == "CPU" || component == "Chip")
         {
             description.SetText("Most CPU's have an arrow that shows the correct orientation of it");
             ramHandler.SetActive(false);
