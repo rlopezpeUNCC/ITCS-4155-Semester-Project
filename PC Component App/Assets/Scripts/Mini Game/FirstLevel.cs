@@ -8,8 +8,9 @@ using TMPro;
 public class FirstLevel : MonoBehaviour
 {
     public GameObject motherboard, cpu, cpuFan, ram, gpu, ramHandler, cpuHandler, cpuFanHandler, gpuHandler, introPanel, sidePanel, finished;
-    public TextMeshProUGUI scoreField;
+    public TextMeshProUGUI scoreField, description;
     private int score, correctNum;
+    private bool noCPU;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class FirstLevel : MonoBehaviour
         sidePanel.SetActive(false);
         score = 0;
         correctNum = 0;
+        noCPU = true;
     }
 
     // Update is called once per frame, detects which part user wants to place
@@ -58,6 +60,7 @@ public class FirstLevel : MonoBehaviour
 
     public void EndLevel()
     {
+        sidePanel.SetActive(false);
         finished.SetActive(true);
     }
 
@@ -66,6 +69,7 @@ public class FirstLevel : MonoBehaviour
     {
         if (component == "CPU")
         {
+            description.SetText("Most CPU's have an arrow that shows the correct orientation of it");
             ramHandler.SetActive(false);
             cpuFanHandler.SetActive(false);
             gpuHandler.SetActive(false);
@@ -74,6 +78,7 @@ public class FirstLevel : MonoBehaviour
         }
         else if (component == "CPU Fan")
         {
+            description.SetText("Please only put a small amount of thermal paste\n(pea size)");
             cpuHandler.SetActive(false);
             gpuHandler.SetActive(false);
             ramHandler.SetActive(false);
@@ -81,6 +86,7 @@ public class FirstLevel : MonoBehaviour
         }
         else if (component == "RAM")
         {
+            description.SetText("Make sure to purchase RAM of the same brand and type. You will have issues otherwise.");
             cpuFanHandler.SetActive(false);
             cpuHandler.SetActive(false);
             gpuHandler.SetActive(false);
@@ -88,6 +94,7 @@ public class FirstLevel : MonoBehaviour
         }
         else if (component == "GPU")
         {
+            description.SetText("If you are lucky enough to get one at this time, be very careful with it!");
             ramHandler.SetActive(false);
             cpuFanHandler.SetActive(false);
             cpuHandler.SetActive(false);
@@ -99,24 +106,40 @@ public class FirstLevel : MonoBehaviour
     public void ButtonClicked(Button thisButton)
     {
         if (thisButton.name == "Correct") { // Right choice made
-            FindObjectOfType<AudioManager>().Play("ButtonClicked1");
-            // Gain points
-            score += 10;
-            scoreField.SetText(score.ToString());
-            correctNum += 1;
+            FindObjectOfType<AudioManager>().Play("ButtonClicked1");         
+            description.SetText("Correct!");
             // Hide choice buttons and place part
             string parentName = thisButton.transform.parent.name;
             if (parentName.Trim() == "CPU Button Canvas") {
+                noCPU = false;
+                score += 10;
+                scoreField.SetText(score.ToString());
+                correctNum += 1;
                 cpuHandler.SetActive(false);
                 cpu.transform.position = new Vector3(-1.21f, .07f, 6.275f);
             } else if (parentName.Trim() == "RAM Button Canvas") {
+                score += 10;
+                scoreField.SetText(score.ToString());
+                correctNum += 1;
                 ramHandler.SetActive(false);
                 ram.transform.position = new Vector3(.82f, .08f, 7.37f);
             } else if (parentName.Trim() == "Fan Button Canvas") {
-                if(cpu)
-                cpuFanHandler.SetActive(false);
-                cpuFan.transform.position = new Vector3(-1.12f, 2.13f, 5.4f);
+                if (noCPU)
+                {
+                    description.SetText("The CPU fan DOES go there, but there is nothing to cool yet!");
+                }
+                else
+                {
+                    score += 10;
+                    scoreField.SetText(score.ToString());
+                    correctNum += 1;
+                    cpuFanHandler.SetActive(false);
+                    cpuFan.transform.position = new Vector3(-1.12f, 2.13f, 5.4f);
+                }
             } else if (parentName.Trim() == "GPU Button Canvas") {
+                score += 10;
+                scoreField.SetText(score.ToString());
+                correctNum += 1;
                 gpuHandler.SetActive(false);
                 gpu.transform.position = new Vector3(-0.3f, -.04f, 5.2f);
             }

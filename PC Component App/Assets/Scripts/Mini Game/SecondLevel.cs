@@ -8,7 +8,7 @@ using TMPro;
 public class SecondLevel : MonoBehaviour
 {
     public GameObject oldSidePanel, pcCase, motherboard, caseFan, power, discDrives, storage, caseFanButtons, motherboardButtons, powerButtons, discDriveButtons, storageButtons, oldPanel, sidePanel;
-    public TextMeshProUGUI scoreField;
+    public TextMeshProUGUI scoreField, desc;
     int correctNum, score;
     // Start is called before the first frame update
     void Start()
@@ -52,28 +52,94 @@ public class SecondLevel : MonoBehaviour
         pcCase.transform.position = new Vector3(-.3f, -.7f, 9f);
         motherboard.transform.position = new Vector3(11.6f, 14.7f, -18.5f);
         caseFan.transform.position = new Vector3(-3.5f, 9.87f, 5.1f);
-        power.transform.position = new Vector3(.47f, 9.4f, 9.1f);
+        power.transform.position = new Vector3(3.7f, 9.4f, 9.1f);
         discDrives.transform.position = new Vector3(-2.5f, 6.6f, 9f);
         storage.transform.position = new Vector3(4.7f, 5.9f, 5.72f);
     }
     public void ShowButtons(string component)
     {
-
+        print(component);
+        if(component == "CMB")
+        {
+            desc.SetText("The motherboard will be fairly heavy at this point, be cautious");
+            caseFanButtons.SetActive(false);
+            motherboardButtons.SetActive(true);
+            powerButtons.SetActive(false);
+            discDriveButtons.SetActive(false);
+            storageButtons.SetActive(false);
+        }
+        else if(component == "Case Cooling")
+        {
+            desc.SetText("This will differ depending on the case you have, but most will have a fan in this area.");
+            caseFanButtons.SetActive(true);
+            motherboardButtons.SetActive(false);
+            powerButtons.SetActive(false);
+            discDriveButtons.SetActive(false);
+            storageButtons.SetActive(false);
+        }
+        else if(component == "Disc Drives")
+        {
+            desc.SetText("Most people building PC's won't use these but in case you do, this is where they go");
+            caseFanButtons.SetActive(false);
+            motherboardButtons.SetActive(false);
+            powerButtons.SetActive(false);
+            discDriveButtons.SetActive(true);
+            storageButtons.SetActive(false);
+        }
+        else if(component == "Power Supply")
+        {
+            desc.SetText("This part comes with a lot of the cables you will need to connect things together");
+            caseFanButtons.SetActive(false);
+            motherboardButtons.SetActive(false);
+            powerButtons.SetActive(true);
+            discDriveButtons.SetActive(false);
+            storageButtons.SetActive(false);
+        }
+        else if(component == "Storage")
+        {
+            desc.SetText("You can choose between SSD(better) or HDD(cheaper)");
+            caseFanButtons.SetActive(false);
+            motherboardButtons.SetActive(false);
+            powerButtons.SetActive(false);
+            discDriveButtons.SetActive(false);
+            storageButtons.SetActive(true);
+        }
     }
 
-    public void Buttonclicked(Button thisButton)
+    public void ButtonClicked(Button thisButton)
     {
         if(thisButton.name == "Correct")
         {
+            score += 10;
+            scoreField.SetText(score.ToString());
             correctNum += 1;
+            desc.SetText("Correct!");
             string parentName = thisButton.transform.parent.name;
             if(parentName.Trim() == "Complete Motherboard Button Canvas")
             {
                 motherboardButtons.SetActive(false);
+                motherboard.transform.position = new Vector3(2.5f, 14.1f, -17.5f);
             }
             else if(parentName.Trim() == "Case Cooling Button Canvas")
             {
                 caseFanButtons.SetActive(false);
+                caseFan.transform.position = new Vector3(2.5f, 0f, 5f);
+                caseFan.transform.Rotate(0f, 0f, 90f);
+            }
+            else if(parentName.Trim() == "Disc Drives Button Canvas")
+            {
+                discDriveButtons.SetActive(false);
+                discDrives.transform.position = new Vector3(2.5f, 1.5f, 8f);
+            }
+            else if(parentName.Trim() == "Power Button Canvas")
+            {
+                powerButtons.SetActive(false);
+                power.transform.position = new Vector3(-.2f, -.7f, 9f);
+            }
+            else if(parentName.Trim() == "Storage Button Canvas")
+            {
+                storageButtons.SetActive(false);
+                storage.transform.position = new Vector3(2.5f, -1.1f, 8f);
             }
         }
     }
