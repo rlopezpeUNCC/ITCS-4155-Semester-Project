@@ -1767,5 +1767,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Mini Game.unity
   - Assets/Scenes/Credits.unity
   - Assets/Scenes/Team Info.unity
-  playerPath: C:/Users/Robert Lopez-Perez/Desktop/ITCS-4155-Semester-Project/Final_Build/PC
-    Component App.exe
+  playerPath: C:/Users/Robert Lopez-Perez/Desktop/ITCS-4155-Semester-Project/PC Component
+    App/Builds/PC Component App.exe
