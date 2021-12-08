@@ -113,6 +113,7 @@ public class SecondLevel : MonoBehaviour
     public void ButtonClicked(Button thisButton)
     {
         if(thisButton.name == "Correct") { // Correct choice
+            FindObjectOfType<AudioManager>().Play("ButtonClicked1"); 
             score += 10;
             scoreField.SetText(score.ToString());
             correctNum += 1;
@@ -145,6 +146,7 @@ public class SecondLevel : MonoBehaviour
                 storage.transform.position = new Vector3(2.5f, -1.1f, 8f);
             }
         } else { // incorrect choice
+            FindObjectOfType<AudioManager>().Play("Incorrect");
             score -= 5;
             scoreField.SetText(score.ToString());
         }
