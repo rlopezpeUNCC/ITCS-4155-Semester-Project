@@ -96,11 +96,12 @@ public class ComponentMenu : MonoBehaviour
         GameObject componentObj = GameObject.Find("Computer/" +component);
         dropDown.UpdateList();
         if (this.component == component) {
-            if (!isOpen) {
+            FindObjectOfType<AudioManager>().Play("PanelOpened");
+            if (!isOpen) {                
                 animator.SetBool("open", !isOpen);
                 arrowAnimator.SetBool("open", isOpen);
                 highlight.ObjectSelected(componentObj);
-            } else {
+            } else {                
                 animator.SetBool("open", !isOpen);
                 arrowAnimator.SetBool("open", isOpen);
                 highlight.ObjectDeselected(componentObj);
@@ -108,14 +109,14 @@ public class ComponentMenu : MonoBehaviour
         } else {         
             highlight.ObjectDeselected(componentObj);
             this.component = component;   
-            if (!isOpen) {
+            if (!isOpen) {                
                 componentObj = GameObject.Find("Computer/" +component);
                 animator.SetBool("open", !isOpen);
                 arrowAnimator.SetBool("open", isOpen);          
             } 
             highlight.ObjectSelected(componentObj);
         }
-        if (isOpen) {
+        if (isOpen) {            
             //print("Clearing in compmenu");
             highlight.ClearIncompatablities();
         }
@@ -202,10 +203,7 @@ public class ComponentMenu : MonoBehaviour
         arrowAnimator.SetBool("open", isOpen);
         if (isOpen) {
             GameObject componentObj = GameObject.Find("Computer/" +component);
-            
-        } else {
-            
-        }
+        } 
     }
 
     public void BackToMainMenu(){
