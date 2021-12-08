@@ -7,17 +7,16 @@ public class SystemTotal : MonoBehaviour
 {
     float price = 0;
     public Text totalPrice;
-    //DropDown system = totalPrice.GetComponent<DropDown>();
-    public DropDown system;
+    public DropDown systemPrice;
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-     	if (price != system.GetPrice())
-	{  
-        	    price = system.GetPrice();
-	    totalPrice.text = "System Total: $" + price.ToString();
-	}
-        	
+        systemPrice.GetPrice();
+    }
+
+    void Update()
+    {   
+        price = systemPrice.GetPrice();
+	    totalPrice.text = "System Total: $" + price.ToString("0.00");
     }
 }
