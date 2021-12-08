@@ -18,7 +18,16 @@ public class TutorialPopupManager : MonoBehaviour {
         }
         Debug.Log("creating pop up");
         //create new pop up after delay
-        StartCoroutine(Create(title, body, positionX, positionY, buttonEnabled));
+        StartCoroutine(Create(title, body, positionX, positionY, buttonEnabled, true));
+    }
+    public void CreatePopupNoOkSound(string title, string body, float positionX, float positionY) {
+        //if popUp exist, close it
+        if (popUp != null) {
+            popUp.GetComponent<tutorialPopup>().Close();
+        }
+        Debug.Log("creating pop up");
+        //create new pop up after delay
+        StartCoroutine(Create(title, body, positionX, positionY, true, false));
     }
 
     // Allows TutorialSteps to get popup button to make a listener with
@@ -37,11 +46,11 @@ public class TutorialPopupManager : MonoBehaviour {
     }
 
     //creates popup clone from prefab after a delay
-    IEnumerator Create(string title, string body, float x, float y, bool buttonEnabled) {
+    IEnumerator Create(string title, string body, float x, float y, bool buttonEnabled, bool playCloseSound) {
         yield return new WaitForSeconds(delay);
         popUp = Instantiate(popUpPrefab, Vector3.zero, Quaternion.identity);
         //sets up pop up
-        popUp.GetComponent<tutorialPopup>().SetUp(title, body, buttonEnabled, x, y);
+        popUp.GetComponent<tutorialPopup>().SetUp(title, body, buttonEnabled, x, y, playCloseSound);
         Debug.Log("created pop up");
     }
 

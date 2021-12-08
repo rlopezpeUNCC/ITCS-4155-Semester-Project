@@ -5,6 +5,8 @@ using System.Collections.Generic;
 public class CompatabilityChecker : MonoBehaviour {
     [SerializeField]
     GameObject motherboard, ram, cpu, storage;
+    [SerializeField]
+    TutorialPopupManager popupManager;
     List<string> motherboardsCPU1 = new List<string> {"ASUS PRIME B550M CSM AM4 (Ryzen 3000 Supported) Motherboard", "MSI MPG X570 Gaming Edge WiFi AM4 (Ryzen 3000 Ready) Motherboard", "MSI MPG X570 GAMING PLUS ATX Motherboard - Socket AM4"};
     List<string> motherboardsCPU2 = new List<string> {"ASUS PRIME B460-PLUS LGA 1200 (Intel 10th Gen) Motherboard", "ASUS TUF GAMING Z490-PLUS WiFi LGA 1200 (Intel 10th Gen)"};
     List<string> motherboardsCPU3 = new List<string> {"ASUS TUF B360M Plus Gaming LGA1151 Intel B360 Intel Motherboard"};
@@ -23,15 +25,13 @@ public class CompatabilityChecker : MonoBehaviour {
             case(6):
                 if (selectedModels[index, 1] == "Default") break;
                 //checking ram
-                foreach (string model in motherboardsRam) {
-                    if (selectedModels[index, 1].Contains(model)) {
-                        if (!selectedModels[8, 1].Contains("DDR3") && selectedModels[8, 1] != "Default") {
-                            incompatible.Add(ram);
-                        } 
-                        break;
-                    } else if (selectedModels[8, 1].Contains("DDR3")) {
+                if (selectedModels[8, 1].Contains("DDR3")) {
+                    if (!selectedModels[6, 1].Contains(motherboardsRam[0]) && !selectedModels[6, 1].Contains(motherboardsRam[1])) {
                         incompatible.Add(ram);
-                        break;
+                    }
+                } else if (selectedModels[8, 1].Contains("DDR4")) {
+                    if (selectedModels[6, 1].Contains(motherboardsRam[0]) || selectedModels[6, 1].Contains(motherboardsRam[1])) {
+                        incompatible.Add(ram);
                     }
                 }
                 //checking CPU
@@ -70,21 +70,134 @@ public class CompatabilityChecker : MonoBehaviour {
                     }
                 }
                 //checking storage
-                foreach (string model in storageMotherboard1) {    
-                    if (selectedModels[5, 1].Contains(model)) {                
-                        bool compatable = false;
-                        foreach (string motherboard in motherboardStorage1) {
-                            if (selectedModels[index, 1].Contains(motherboard)) compatable = true;
+                if (!selectedModels[5, 1].Contains("Default")) {
+                    foreach (string model in storageMotherboard1) {    
+                        if (selectedModels[5, 1].Contains(model)) {                
+                            bool compatable = false;
+                            foreach (string motherboard in motherboardStorage1) {
+                                if (selectedModels[index, 1].Contains(motherboard)) compatable = true;
+                            }
+                            if (!compatable) incompatible.Add(storage);
+                        } else {
+                            foreach (string motherboard in motherboardStorage1) {
+                                if (selectedModels[index, 1].Contains(motherboard)) incompatible.Add(storage);
+                            }
                         }
-                        if (!compatable) incompatible.Add(storage);
-                    } else {
-                        foreach (string motherboard in motherboardStorage1) {
-                            if (selectedModels[index, 1].Contains(motherboard)) incompatible.Add(storage);
+                    }
+                }
+                gameObject.GetComponent<Highlight>().IncompatableObjects(incompatible);                
+                break;
+            //RAM
+            case(8):
+                if (selectedModels[index, 1] == "Default") break;
+                //print("Checking RAM<" + selectedModels[index, 1] + "> and Motherboard<" + selectedModels[6, 1] + "> compatability");
+                //checking motherboards
+                if (selectedModels[index, 1].Contains("DDR3")) {
+                    //print("DDR3 RAM");
+                    if (!selectedModels[6, 1].Contains(motherboardsRam[0]) && !selectedModels[6, 1].Contains(motherboardsRam[1])) {
+                        incompatible.Add(motherboard);
+                        //print("NOT DDR3 Motherboard");
+                    }
+                } else if (selectedModels[index, 1].Contains("DDR4")) {
+                    if (selectedModels[6, 1].Contains(motherboardsRam[0]) || selectedModels[6, 1].Contains(motherboardsRam[1])) {
+                        incompatible.Add(motherboard);
+                        //print("NOT DDR4 Motherboard");
+                    }
+                }
+                
+                gameObject.GetComponent<Highlight>().IncompatableObjects(incompatible);
+                break;
+            //CPU
+            case(1):
+                foreach (string model in motherboardsCPU1) {
+                    if (selectedModels[6, 1].Contains(model)) {
+                        bool compatable = false;
+                        foreach (string cpuModel in CPUmotherboards1) {
+                            if (selectedModels[1, 1].Contains(cpuModel)) {
+                                compatable = true;
+                                print("compatable 1");
+                            }
+                        }
+                        if (!compatable) incompatible.Add(motherboard);
+                    }
+                }
+                foreach (string model in motherboardsCPU2) {
+                    if (selectedModels[6, 1].Contains(model)) {
+                        bool compatable = false;
+                        foreach (string cpuModel in CPUmotherboards2) {
+                            if (selectedModels[1, 1].Contains(cpuModel)) compatable = true;
+                        }
+                        if (!compatable) incompatible.Add(motherboard);
+                    }
+                }
+                foreach (string model in motherboardsCPU3) {
+                    if (selectedModels[6, 1].Contains(model)) {
+                        if (!selectedModels[1, 1].Contains("Intel Core i7-8700K Coffee Lake 6-Core 3.7 GHz (4.7 GHz Turbo)")) {
+                            incompatible.Add(motherboard);
+                        }
+                    }
+                }
+                foreach (string model in motherboardsCPU4) {
+                    if (selectedModels[6, 1].Contains(model)) {
+                        bool compatable = false;
+                        foreach (string cpuModel in CPUmotherboards4) {
+                            if (selectedModels[1, 1].Contains(cpuModel)) compatable = true;
+                        }
+                        if (!compatable) {
+                            incompatible.Add(motherboard);                            
                         }
                     }
                 }
                 gameObject.GetComponent<Highlight>().IncompatableObjects(incompatible);
-                
+                break;
+            //check storage
+            case(5):
+                if (selectedModels[6, 1] != "Default" && selectedModels[5, 1] != "Default") {
+                    foreach (string model in storageMotherboard1) {    
+                        if (selectedModels[5, 1].Contains(model)) {                
+                            bool compatable = false;
+                            foreach (string motherboard in motherboardStorage1) {
+                                if (selectedModels[6, 1].Contains(motherboard)) compatable = true;
+                            }
+                            if (!compatable) incompatible.Add(motherboard);
+                        } else {
+                            foreach (string motherboards in motherboardStorage1) {
+                                if (selectedModels[6, 1].Contains(motherboards)) incompatible.Add(motherboard);
+                            }
+                        }
+                    }
+                }
+                gameObject.GetComponent<Highlight>().IncompatableObjects(incompatible);                
+                break;
+        }
+        //if (incompatible.Count > 0) IncompatiblePopup(index, incompatible);
+    }
+
+    void IncompatiblePopup(int selected, List<GameObject> incompatables) {
+        string body = "";
+        foreach (GameObject component in incompatables) {
+            if (component == motherboard) {
+                body += "- Motherboard\n";
+            } else if (component == cpu) {
+                body += "- CPU\n";
+            } else if (component == ram) {
+                body += "- RAM\n";
+            } else if (component == storage) {
+                body += "- Storage\n";
+            }
+        }
+        switch(selected) {
+            case(6):
+                popupManager.CreatePopupNoOkSound("Motherboard incompatibilities found:", body, 700, 415);
+                break;
+            case(1):
+                popupManager.CreatePopupNoOkSound("CPU incompatibilities found:", body, 700, 415);
+                break;
+            case(8):
+                popupManager.CreatePopupNoOkSound("RAM incompatibilities found:", body, 700, 415);
+                break;
+            case(5):
+                popupManager.CreatePopupNoOkSound("Storage incompatibilities found:", body, 700, 415);
                 break;
         }
     }

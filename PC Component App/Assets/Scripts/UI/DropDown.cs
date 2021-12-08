@@ -11,7 +11,8 @@ public class DropDown : MonoBehaviour {
     ComponentMenu componentMenu;
     [SerializeField]
     CompatabilityChecker compatability;
-    string selectedComponent = "Default", comp;
+    List<string> URLs =  new List<string>();
+    string selectedComponent = "Default", comp, selectedURL;
 
     string[,] selectedModels = new string[9, 2];
     void Start() {
@@ -43,6 +44,7 @@ public class DropDown : MonoBehaviour {
                 ReadDataBase("Cases");                
                 break;
             case("CPU"):
+                print("checking cpu");
                 compatability.CheckCompatability(selectedModels, 1);
                 ReadDataBase("Processors");                
                 break;
@@ -56,10 +58,12 @@ public class DropDown : MonoBehaviour {
                 ReadDataBase("GPUs");                
                 break;
             case("Storage"):
+                print("checking storage");
                 compatability.CheckCompatability(selectedModels, 5);
                 ReadDataBase("SSDs");                
                 break;
             case("Motherboard"):
+                print("checking motherboard");
                 compatability.CheckCompatability(selectedModels, 6);
                 ReadDataBase("Boards");                
                 break;
@@ -67,6 +71,7 @@ public class DropDown : MonoBehaviour {
                 ReadDataBase("PowerSupply");                
                 break;
             case("RAM"):
+                print("checking RAM");
                 compatability.CheckCompatability(selectedModels, 8);
                 ReadDataBase("Memory");                
                 break;
@@ -78,8 +83,8 @@ public class DropDown : MonoBehaviour {
 
     void ReadDataBase(string component) {
         comp = component;
-        List<string> models =  new List<string>();
-        List<string> URLs =  new List<string>();
+        URLs = new List<string>();
+        List<string> models =  new List<string>();        
         List<double> prices =  new List<double>();
         int index = 0;
         for (int i = 0; i < 9; i++) {
@@ -107,7 +112,7 @@ public class DropDown : MonoBehaviour {
         IDataReader reader = dbcmd.ExecuteReader();
         while (reader.Read()) {
             string model = reader.GetString(0) + " $" + reader.GetDouble(1).ToString();            
-            string URL = reader.GetString(2);
+            string URL = reader.GetString(reader.FieldCount-1);
             double price = reader.GetDouble(1);
             
             models.Add(model);
@@ -135,8 +140,13 @@ public class DropDown : MonoBehaviour {
         }
       selectedModels[index, 1] = dropdown.transform.Find("Label").GetComponent<TextMeshProUGUI>().text;
       compatability.CheckCompatability(selectedModels, index);
-    }
 
+      selectedURL = URLs[index];
+      //Debug.Log(selectedURL);
+    }
+    /// <summary>
+    /// Returns total price of all selected components
+    /// </summary>
     public float GetPrice() {
         float price = 0;
         for (int i = 0; i < 9; i++) {
@@ -145,5 +155,14 @@ public class DropDown : MonoBehaviour {
         }
         //Debug.Log("System price = " + price);
         return price;
+    }
+    /// <summary>
+    /// Returns string containing URL of currently selected component and model
+    /// </summary>
+    public string GetCurrentURL() {
+        if (selectedURL != null) {
+            return selectedURL;
+        }
+        return null;
     }
 }

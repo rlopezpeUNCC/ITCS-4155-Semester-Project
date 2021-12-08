@@ -11,13 +11,14 @@ public class MainMenu : MonoBehaviour
     }
 
      public void Tutorial(){
-         FindObjectOfType<AudioManager>().Play("MainMenuChoice");
+        FindObjectOfType<AudioManager>().Play("MainMenuChoice");
         SceneManager.LoadScene("Tutorial");
         
     }
 
      public void MiniGame(){
-        SceneManager.LoadScene("MiniGame");
+        FindObjectOfType<AudioManager>().Play("MainMenuChoice");
+        SceneManager.LoadScene("Mini Game");
         
     }
 

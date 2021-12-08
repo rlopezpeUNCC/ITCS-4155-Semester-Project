@@ -55,6 +55,8 @@ public class AudioManager : MonoBehaviour {
             songName = "MainMenuMusic";
         } else if (scene.name == "Tutorial" || scene.name == "Main Scene") {
             songName = "BuilderMusic";
+        } else if (scene.name == "Mini Game") {
+            songName = "GameMusic";
         }
 
         // Set music toggle image and/or play music depending on music settings
