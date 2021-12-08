@@ -12,6 +12,7 @@ ScriptsOnlyBuild:
     - ObjectClicker
     - SecondLevel
     - SwitchToggle
+    - SystemTotal
     - TableButtons
     - TableCheckBoxes
     - TableVisibility
@@ -408,6 +409,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7044}
     - Class: 114
       Script: {instanceID: 7332}
+    - Class: 114
+      Script: {instanceID: 7792}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1606,7 +1609,7 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: 27c11e39e4862c87e1f5ba5859dd9bf6
+      Hash: a10edd27a557bf61c48e376ae5b1f41a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FirstLevel
@@ -1666,7 +1669,7 @@ ScriptsOnlyBuild:
     className: MainMenu
   - hash:
       serializedVersion: 2
-      Hash: 82768ee5fedd792033000c61886fd493
+      Hash: d6a0a40266c3fab209d2de9de90e0964
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SecondLevel
@@ -1726,7 +1729,7 @@ ScriptsOnlyBuild:
     className: DataPrivacyButton
   - hash:
       serializedVersion: 2
-      Hash: 80273160f00789a028a5f15d089e033e
+      Hash: abe70f48c971579f2b7a5c998dbeb150
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SystemTotal
