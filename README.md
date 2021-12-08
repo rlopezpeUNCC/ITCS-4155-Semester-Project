@@ -8,3 +8,4 @@ An app that allows users to view a PC and all of it's individual components, as 
 - Extract file
 - Open Final_Build
 - Run PC Component App.exe
+- *Recommended* start with the tutorial first, to get an understanding of the UI and controls
