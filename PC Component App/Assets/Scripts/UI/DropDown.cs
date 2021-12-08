@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Mono.Data.Sqlite; 
 using System.Data; 
 using TMPro;
+using System;
 public class DropDown : MonoBehaviour {
     
     [SerializeField]
@@ -130,24 +131,30 @@ public class DropDown : MonoBehaviour {
     }
 
     public void ItemSelected() {
-      int index = 0;
-      for (int i = 0; i < 9; i++) {
+        int index = 0;
+        for (int i = 0; i < 9; i++) {
         if (comp == selectedModels[i, 0]) {
-               //print("match found: " + comp + " " + selectedModels[i, 0]); 
-               index = i;
-               break;
-           } 
+                //print("match found: " + comp + " " + selectedModels[i, 0]); 
+                index = i;
+                break;
+            } 
         }
-      selectedModels[index, 1] = dropdown.transform.Find("Label").GetComponent<TextMeshProUGUI>().text;
-      compatability.CheckCompatability(selectedModels, index);
-
-      selectedURL = URLs[index];
-      //Debug.Log(selectedURL);
+        selectedModels[index, 1] = dropdown.transform.Find("Label").GetComponent<TextMeshProUGUI>().text;
+        compatability.CheckCompatability(selectedModels, index);
+        index = dropdown.value-1;
+        if (index >= 0) {
+            selectedURL = URLs[index];
+        //Debug.Log("Index of url " + index + " <" +selectedURL + ">");
+        } else {
+            selectedURL = null;
+        }
+        
     }
     /// <summary>
     /// Returns total price of all selected components
     /// </summary>
     public float GetPrice() {
+        try {
         float price = 0;
         for (int i = 0; i < 9; i++) {
             if (selectedModels[i, 1].IndexOf("$") > 0)
@@ -155,14 +162,17 @@ public class DropDown : MonoBehaviour {
         }
         //Debug.Log("System price = " + price);
         return price;
+        } catch (NullReferenceException) {
+            return 0;
+        }
     }
     /// <summary>
     /// Returns string containing URL of currently selected component and model
     /// </summary>
-    public string GetCurrentURL() {
-        if (selectedURL != null) {
-            return selectedURL;
-        }
-        return null;
+    public void OpenURL() {
+        if (selectedURL != null)
+        Application.OpenURL(selectedURL);
     }
+
+
 }
