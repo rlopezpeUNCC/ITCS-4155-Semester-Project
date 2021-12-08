@@ -2,6 +2,9 @@
 
 An app that allows users to view a PC and all of it's individual components, as well as information on those components.
 
-Presentation: https://docs.google.com/presentation/d/1zT3E8jg58HXyD3YQAqBtVIJwtmNoIuaB6Pe76G03VAw/edit#slide=id.p
+# How to run the app
 
-Trello: https://trello.com/b/VClgNeii/itcs-4155-semester-project
+- Download the repsitory by pressing the green code button and selecting Download ZIP
+- Extract file
+- Open Final_Build
+- Run PC Component App.exe
